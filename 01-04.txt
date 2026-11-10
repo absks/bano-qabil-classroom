@@ -1,0 +1,245 @@
+# Digital skills & office productivity
+@ BQ-006 · Computer & IT Fundamentals
+= Turn a folder of raw classroom records into a clean document, a working spreadsheet, and a short presentation.
++ Trace input, processing, output, and storage in a familiar computer task.
++ Organize and share files with predictable names and appropriate permissions.
++ Calculate and explain totals, criteria counts, and statuses in Excel.
++ Use styles in Word and a readable chart in PowerPoint.
+> Follow a computer task
+- A keyboard captures input. The CPU runs instructions. A screen shows output. An SSD stores the saved file.
+- RAM holds active work while the device is powered. Saved files persist on storage after a normal shutdown.
+- An operating system manages hardware and files. Word is application software running on that system.
+! Print an attendance list. The keyboard provides input, Word lays out the list, the printer outputs it, and the saved file stays on disk.
+~ Ask students to classify a webcam and a touchscreen. A touchscreen can handle both input and output.
+> Manage files people can find
+- Use one project folder with Drafts, Data, and Exports subfolders.
+- A file extension identifies a format. Renaming .docx to .pdf does not convert its contents. Use Export or Save As.
+- Use versioned names such as attendance-v02.xlsx. Share a viewing link for review and grant edit access only when needed.
+! Put the editable attendance sheet in Data and its printable PDF in Exports. Open the PDF before sending it.
+~ Show the same filename on two formats. Ask which file a colleague should edit and which should be printed.
+> Create a readable Word report
+- Use Heading 1 and Heading 2 styles for structure. Use a table for aligned data and page breaks when a new page is required.
+- Add page numbers with the footer and use a caption to describe a table or figure.
+- Keep an editable DOCX and export a PDF for distribution. Inspect the PDF for clipped text and broken page breaks.
+! Produce a one-page attendance brief with a title, date range, findings, and a named next action.
+~ Change one heading style and show how every matching heading updates.
+> Calculate and validate in Excel
+- SUM adds values. COUNTIF counts cells that match a condition. IF chooses between two results.
+- A relative reference moves when copied. An absolute reference such as $F$1 remains anchored.
+- Filter to examine matching rows. Sort the entire table so each student's fields move together.
+! With B2:B5 equal to 8, 10, 6, 9, SUM returns 33. COUNTIF with ">=8" returns 3.
+: =SUM(B2:B5)
+: =COUNTIF(B2:B5,">=8")
+: =IF(B2>=$F$1,"On track","Follow up")
+~ Set F1 to 8, copy the status formula, then change F1 to 9. Ask which results should change and why.
+> Explain the result with slides
+- Start with one takeaway per slide. Use a bar chart for category comparisons and label units.
+- Keep chart text readable at projector distance. Use animation only to reveal information in a sensible sequence.
+- Present the finding, the supporting number, and the action in that order.
+! A two-bar chart can show 3 students on track and 1 needing follow-up. The action slide assigns a follow-up date.
+~ Ask for a title that states the finding, then check whether the title matches the chart.
+$ Attendance reporting pack
+! A trainer needs an attendance summary without exposing student identities. Use fictional labels A, B, C, D and attendance counts 8, 10, 6, 9 out of 10.
+- Create Data, Drafts, and Exports folders and enter the four records in Excel.
+- Place the threshold 8 in F1. Calculate total, count at or above the threshold, and copy a status formula for all four rows.
+- Draft a one-page Word brief and export it as PDF. Create two PowerPoint slides with the key finding and next action.
+- Inspect all three deliverables. Repeat the status check with a threshold of 9, then restore the threshold to 8.
+& Submit the workbook, editable brief, PDF, and slides. Expected at threshold 8: 33 sessions, 3 on track, 1 follow-up.
+% Prepare Microsoft 365 or an equivalent office suite. Make a blank spreadsheet and keep an offline copy of the practice data.
+% Show how a missing dollar sign changes a copied formula. If a device has a different locale, demonstrate its formula separator.
+% Ask students to predict the output before running the formula and to verify the count against the actual rows.
+% Rubric /10: file organization 2, correct formulas 4, clear brief 2, accurate chart and takeaway 2.
+% Homework: add a fifth fictional record with attendance 7, extend all ranges, and update the slide. Expected total is 40 with 3 students on track.
+^ Microsoft 365 training | https://support.microsoft.com/en-gb/office/o365-itpro/train-your-users-on-office-and-microsoft-365 | Browse the Word and PowerPoint sections for styles, slide layouts, and presentation tools.
+^ Microsoft Excel COUNTIF | https://support.microsoft.com/en-us/excel/get-started/use-the-countif-function-in-microsoft-excel | Check the range and criteria syntax before building the attendance count.
+? Which component normally keeps a saved workbook after shutdown?|*SSD|RAM|CPU registers|Display panel|Nonvolatile storage retains the saved file.
+? Which software manages files and devices for other programs?|Word processor|*Operating system|Spreadsheet|Web page|The operating system provides core file and hardware services.
+? How do you create a real PDF from a Word document?|Change the extension|Move it into Exports|*Use Export or Save As PDF|Duplicate the file|Export converts the document into the PDF format.
+? What is the SUM of 8, 10, 6, and 9?|23|30|32|*33|The four values add up to 33.
+? What does =COUNTIF(B2:B5,">=8") return for those values?|*3|4|2|33|8, 10, and 9 meet the threshold.
+? Which reference stays fixed when a formula is copied down?|B2|*$F$1|F1|B2:B5|The dollar signs anchor the column and row.
+? Which tool keeps all Word section headings consistently formatted?|Extra blank lines|Text boxes on every page|*Heading styles|Manual page breaks|Styles apply a shared formatting definition to headings.
+? Which chart best compares two attendance categories in this exercise?|Scatter plot|Time-series line chart|Empty slide with animation|*Bar chart|A bar chart makes the two category counts easy to compare.
+
+# Build a WordPress website
+@ BQ-007 · Web Development
+= Build a local service website with a clear navigation structure, accessible content, and a mobile layout.
++ Explain how a domain, hosting, and WordPress fit together.
++ Choose pages, posts, categories, and tags for different content.
++ Build a page with blocks or Elementor and verify it on a narrow viewport.
++ Assign roles based on the work each person needs to do.
+> From address to website
+- A domain is a name people type. Hosting serves the site's files and runs WordPress. WordPress uses a database for content and settings.
+- A local site gives you a practice environment. Hosting makes the site reachable through a public or restricted URL.
+- Save a backup before major changes and keep track of where the files and database live.
+! Build a fictional Balakot Skills Hub locally. The project can use a public host later when content and forms are ready.
+~ Ask which item changes if the client moves host but keeps the same domain.
+> Organize content and navigation
+- Pages suit stable content such as Home, Courses, and Contact. Posts suit dated updates and announcements.
+- A category groups posts broadly. Tags label narrower topics that recur across posts.
+- Set the homepage and add main links to navigation. Menu editing depends on whether the active theme uses the Site Editor or classic menus.
+! Keep Courses as a page. Publish a dated enrollment update as a post in Announcements.
+~ Ask learners to classify a price list, a registration notice, and an About page before opening the editor.
+> Build a useful page
+- A theme controls the overall design. A plugin adds a capability such as a contact form.
+- In the block editor, assemble a heading, text, image, and button. In Elementor, build the same hierarchy inside a container and check responsive spacing.
+- Give informative images descriptive alt text. Resize oversized media before uploading and use meaningful link text.
+! Write "View course schedule" as the button label and link it directly to Courses.
+~ Compare the same page on a phone and a desktop. Check text, spacing, keyboard focus, and the call to action.
+> Choose roles and moderate comments
+- An Editor can manage content across authors. An Author can publish their own posts. A Contributor can draft their own posts for review.
+- Reserve Administrator access for people responsible for configuration and maintenance.
+- Review comments before approval as needed. Keep moderation rules and a review workflow documented.
+! Give a trainee who writes drafts the Contributor role. Ask an Editor to approve and publish the drafts.
+~ Open the dashboard in a separate trainee session. Compare which menus the trainee and site maintainer see.
+> Test the handoff
+- Check every menu item, public page, and button as a visitor. Confirm drafts are only available to the intended users.
+- For a test form, submit fictional data and verify where the message goes.
+- Record the theme, essential plugins, and update owner in a handoff note.
+! Verify the three navigation links at phone width and record one issue and its fix.
+~ Ask partners to swap devices or viewport widths and review each other's homepage.
+$ Three-page site build
+! Use a local or approved staging WordPress site. The fictional Skills Hub needs a Home page, Courses page, and Contact page.
+- Create the pages, set Home as the front page, and add navigation.
+- Build a hero and a call to action, then publish an announcement post in a dedicated category.
+- Check the phone layout and confirm the Courses button works. If a form is installed, send one fictional test submission.
+- Document the role you would assign a trainee and capture evidence of a visitor test.
+& Submit desktop and phone screenshots, a page and post inventory, and three checked visitor paths.
+% Prepare a local WordPress install, one block theme, a sample image, and two demo accounts. Have screenshots ready if installs are delayed.
+% If students cannot find Appearance → Menus, check the theme type and show the Navigation block in the Site Editor when applicable.
+% Ask pairs to explain why they used a page or post and demonstrate the result in a private visitor window.
+% Rubric /10: content structure 3, responsive layout and accessibility 3, tested links or form 2, permissions explanation 2.
+% Homework: create a second announcement, add a consistent category, and have a partner test both mobile navigation and descriptive link text.
+^ WordPress block editor | https://wordpress.org/documentation/article/wordpress-block-editor/ | Learn how to insert, group, and arrange the blocks used in the homepage.
+^ WordPress roles and capabilities | https://wordpress.org/documentation/article/roles-and-capabilities/ | Compare what Contributors, Authors, Editors, and Administrators can do.
+^ Elementor mobile editing | https://elementor.com/help/responsive-editing/ | Review Elementor's controls for testing and adjusting layouts on smaller screens.
+? What is the main purpose of a domain name?|Store posts|*Provide a readable site address|Resize images|Grant editor access|A domain is a human-readable name that resolves to a network destination.
+? Where should a dated enrollment announcement normally go?|Theme settings|A user profile|*A post|A form field|Posts suit chronological updates.
+? What groups posts under a broad recurring topic?|*A category|Alt text|A backup|A WordPress role|Categories group posts by broader subject.
+? Which adds a contact-form feature?|Theme background|Image caption|Post category|*Plugin|Plugins extend WordPress with features such as forms.
+? Which role suits someone who writes drafts for approval?|*Contributor|Administrator|Subscriber|Editor|Contributors can write drafts but cannot publish them by default.
+? Which button label best explains the destination?|Here|*View course schedule|More|Link|The descriptive label tells visitors what to expect.
+? Where should you check responsive spacing?|Only the theme name|Only the editor sidebar|*On a narrow preview and a real phone when available|Only the site title|Testing the rendered page reveals layout and interaction issues.
+? What should a form handoff verify?|The button color alone|Only the plugin version|Only the existence of a draft|*A test submission arrives at its intended destination|A delivery check tests the full visitor path.
+
+# Launch a WordPress store
+@ BQ-007 · Web Development
+= Configure a small WooCommerce catalog and verify checkout, search readiness, performance, and recovery on staging.
++ Choose simple or variable WooCommerce products.
++ Configure and verify prices, stock, delivery, and sandbox checkout.
++ Explain how product content, search visibility, and performance affect launch readiness.
++ Document a backup and a tested restore plan.
+> Define the catalog
+- A simple product has one set of purchasing options. A variable product has selectable variations with their own price, stock, or SKU.
+- Categories organize similar products. An attribute describes a choice or property, such as Serving size.
+- A clear title, concise description, useful image, and accurate price make the product easier to assess.
+! Use a simple Rice Bowl and a variable Chicken Karahi with Half and Full servings. Use fictional prices of PKR 1,200 and 2,200.
+~ Ask whether serving size belongs in a tag or should be a variation when the size changes price.
+> Verify the purchase path
+- Review currency, stock, delivery zones, and payment settings before running an order.
+- Use a sandbox payment method or a test-only offline method on staging.
+- Check the product, cart, checkout, order record, and notifications. Include an address outside the available delivery area.
+! A fictional Half Karahi at PKR 1,200 plus PKR 150 delivery should total PKR 1,350 when tax and discounts are zero.
+~ Follow one order from the storefront into the dashboard. Compare cart total, order total, and expected stock behavior.
+> Prepare the site for search
+- Use descriptive titles, product copy, meaningful URLs, and internal links.
+- Decide which public pages should be indexable. Keep staging protected and review search settings after moving to production.
+- Use a sitemap and Search Console to inspect URLs and monitor indexing. Discovery can take time.
+! Link the restaurant menu page to the Chicken Karahi product using a descriptive anchor.
+~ Ask which report would help investigate a public product page that has not appeared in Google.
+> Improve speed with evidence
+- Record a baseline for the same page under similar conditions. Prioritize oversized images and unneeded scripts.
+- Optimize image sizes and apply caching carefully. Review plugin and host guidance for dynamic cart, checkout, and account pages.
+- Repeat the performance check and re-test the buying journey after configuration changes.
+! Resize a 2 MB hero image and compare transfer size before and after. Test that two sessions still have separate carts.
+~ Show how an optimization checklist includes both a performance metric and a behavior check.
+> Plan recovery and handoff
+- Back up site files and the database. Keep recovery copies separate from the live site and restrict access.
+- Restore to an isolated test environment. Check pages, admin login, and sample order data after the restore.
+- Record change owners, support contact, and the checks required before a release.
+! Keep a launch record with test order ID, backup timestamp, and restore evidence.
+~ Ask the class how a backup schedule affects lost orders after a failure.
+$ Restaurant storefront release checklist
+! Build a fictional restaurant store on staging with a simple Rice Bowl and variable Chicken Karahi.
+- Create the two products and assign prices, descriptions, image text, and stock settings as needed.
+- Configure a fictional PKR 150 delivery option and verify the PKR 1,350 test order for Half Karahi.
+- Check a rejected delivery address, mobile layout, and a second independent cart.
+- Record a baseline and retest after one image improvement. Document files plus database backup and restore evidence or a supervised restore plan.
+& Submit the catalog inventory, two checkout results, performance comparison, and release checklist.
+% Prepare a WooCommerce staging install, two lightweight demo product images, a test delivery address, and a backup to restore in isolation.
+% If a variation is missing on the storefront, check that the attribute is used for variations and that each variation has a price.
+% Ask students to show their order record and explain what could happen to orders made after the last backup.
+% Rubric /10: product configuration 3, checkout cases 3, measured optimization 2, recovery plan 2.
+% Homework: add an out-of-stock variation, verify the visitor behavior, and record how staff should replenish stock.
+^ WooCommerce product management | https://woocommerce.com/document/managing-products/ | Review product types and the settings for prices, stock, and variations.
+^ WordPress backups | https://developer.wordpress.org/advanced-administration/security/backup/ | Identify the database and file backups that support a complete restore.
+^ Google SEO Starter Guide | https://developers.google.com/search/docs/fundamentals/seo-starter-guide | Review site structure, descriptive content, and search discovery.
+? Which product type fits Half and Full serving options with different prices?|*Variable|Grouped list only|External link only|A tag|Variable products allow distinct purchasing options with separate prices.
+? What is the expected total for PKR 1,200 plus PKR 150 delivery?|PKR 1,200|PKR 1,250|*PKR 1,350|PKR 1,500|The total is 1,200 + 150 with no other charges.
+? Which test best verifies checkout end to end?|Preview the product image|*Place a staging order and inspect its totals and record|Count the installed plugins|Read the homepage title|A real test order follows the full path and confirms stored results.
+? Which type of page requires special care when applying shared caches?|A static brand story|A plain policy page|An image attachment|*Checkout|Checkout carries visitor-specific state.
+? Which two components are central to a WordPress backup?|*Site files and database|Logo and site title|Products and menu labels|Theme colors and domain name|Files and the database together hold the site's code, media, settings, and records.
+? What makes an optimization comparison meaningful?|Change three tools at once|*Measure the same page under similar conditions before and after|Compare the desktop home page with the mobile checkout|Record only the best result|Comparable conditions make the observed difference more interpretable.
+? What is a strong way to validate recovery?|Rename the backup file|Count the image files|*Restore in isolation and verify expected data and key paths|Keep the archive on the live site only|A restoration test establishes whether the backup can recover the site.
+? Which tool can help inspect Google's indexing of a product URL?|WordPress Media Library|WooCommerce cart|PowerPoint|*Google Search Console|Search Console provides URL inspection and indexing information.
+
+# Plan and measure digital marketing
+@ BQ-001 · Digital Marketing Beginner
+= Build a one-week campaign around a clear audience, a search goal, and a measurable conversion.
++ Map awareness, consideration, and conversion to different content.
++ Match search intent to useful page content.
++ Design a small content calendar and consent-based email follow-up.
++ Calculate conversion rate and explain what analytics can and cannot prove.
+> Set the audience and goal
+- Define one audience by need, context, and decision. Use interviews or existing evidence when available.
+- Choose one primary objective and measurable action, such as an inquiry form submission.
+- A buyer persona is a working hypothesis. Update it after listening to users.
+! A fictional Balakot training center targets beginners seeking evening classes. Its campaign goal is verified course inquiries.
+~ Ask which is more useful for this campaign: 1,000 impressions or 20 verified inquiries. Discuss how each answers a different question.
+> Map content to the funnel
+- Awareness introduces the problem or opportunity. Consideration addresses options, requirements, and common questions.
+- Conversion content offers a specific action. Retention content supports people after they sign up.
+- Use a channel the audience actually uses and adapt the format and call to action.
+! A short video introduces classes, a schedule post answers questions, and a landing page invites users to request a callback.
+~ Ask students to rewrite a vague “Learn more” action for a person ready to enroll.
+> Match keywords to intent
+- Informational queries seek an answer. Commercial and transactional queries signal comparison or intent to act.
+- Google Trends compares relative interest over time. Check location, period, and search term before drawing conclusions.
+- Put useful answers on relevant pages. Write a descriptive title and heading, then add credible internal links.
+! “What is WordPress?” fits an explainer. “WordPress classes in Balakot” fits a local course page with schedule and inquiry form.
+~ Compare two search terms in the same region and time window. Explain why a Trends score is not an exact search count.
+> Create a calendar and permission-based follow-up
+- For each item, record the date, channel, funnel stage, owner, and call to action.
+- Use accessible Canva graphics and concise copy. Treat AI-generated copy as a draft and verify claims before publishing.
+- Send follow-up email to people who opted in and provide a clear way to unsubscribe.
+! Monday: short intro video. Wednesday: schedule and fee FAQ. Friday: opt-in email for people who asked for details.
+~ Give pairs two minutes to edit one draft for accuracy and one clear action.
+> Measure a campaign
+- Track one event aligned with the goal, such as a verified form submission. Test that one successful form action records one event.
+- Define the denominator before calculating a rate. Label the date range and traffic source in reports.
+- Build a portfolio case study with objective, work samples, measured outcome, and limitations. Use a clear scope and deliverables in freelance proposals.
+! 12 verified inquiries from 300 landing-page visits is 4%. An increase in the rate alone does not establish which campaign change caused it.
+~ Ask students to describe the numbers in one sentence without claiming causation.
+$ One-week campaign brief
+! A fictional training center wants beginners to request its class schedule. No actual posts or emails are required.
+- Describe one audience and one measurable objective. Write two search queries and match each to a page or post.
+- Draft three calendar items for different funnel stages and one short opt-in follow-up email.
+- Define how to verify an inquiry event. Compute the rate for 12 inquiries and 300 landing-page visits.
+- Prepare a portfolio summary with audience, creative sample, proposed metric, and one limitation.
+& Submit the brief, three calendar rows, follow-up draft, and 4% result with numerator and denominator.
+% Prepare a blank calendar and a screenshot of a Trends comparison. Use mock analytics data and fictional contact details.
+% Separate views, sessions, and verified inquiries on the board. Require students to label their denominator.
+% Compare one strong and one weak headline. Ask what changes when the audience is already considering enrollment.
+% Rubric /10: audience and funnel 3, intent and content 3, consent and tracking 2, correctly reported conversion 2.
+% Homework: write a 100-word portfolio case summary and a two-sentence proposal for delivering the same campaign to a client.
+^ Google SEO Starter Guide | https://developers.google.com/search/docs/fundamentals/seo-starter-guide | Review useful content, descriptive titles, and discoverable links.
+^ Google Trends Help | https://support.google.com/trends/answer/4365533 | Read how to compare terms and interpret relative search interest.
+^ Google Analytics events | https://developers.google.com/analytics/devguides/collection/ga4/events | Review the purpose of events and plan how to test an inquiry event.
+? What is the primary campaign conversion in the lesson?|A page impression|*A verified inquiry submission|A new design file|An unpublished draft|A verified inquiry is the requested business action.
+? Which asset best serves someone considering an evening class?|An unrelated meme|A staff-only note|*A schedule and fees FAQ|A blank signup page|The FAQ helps prospective learners evaluate the offer.
+? Which query has the clearest local enrollment intent?|WordPress definition|History of websites|What is a plugin?|*WordPress classes in Balakot|The query names a service and location.
+? What does Google Trends primarily report in a comparison?|*Relative search interest|Exact campaign revenue|Every searcher's identity|Exact sales totals|Trends normalizes search interest for the selected context.
+? When should the follow-up email be sent?|Whenever an address is visible|*After the recipient opts in|Before writing the schedule|After importing a scraped list|Permission-based follow-up respects the recipient's stated preference.
+? What is 12 inquiries from 300 visits?|2.5%|12%|*4%|40%|12 divided by 300 and multiplied by 100 equals 4%.
+? What should you test for an inquiry event?|Only the font size|Only whether the page loads|Only whether the form looks good|*One confirmed submission produces one expected event|Tracking validation checks successful conversion and duplicate recording.
+? What belongs in a portfolio case study?|*Goal, work, measured result, and limits|A promise that every client gets the same result|Only a logo|Only impressions without context|Evidence and limitations help a reader evaluate the work.

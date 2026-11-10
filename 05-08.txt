@@ -1,0 +1,247 @@
+# Defend accounts, devices & websites
+@ BQ-005 · Cyber Security Fundamentals
+= Protect a small training center with layered controls and practice responding to a fictional incident.
++ Apply confidentiality, integrity, and availability to classroom data.
++ Match common threats to preventive and detective controls.
++ Prioritize safe response actions using a supplied incident timeline.
++ Verify backups and document recovery priorities.
+> Know what you are protecting
+- Confidentiality limits disclosure. Integrity keeps information accurate and trustworthy. Availability keeps services usable when needed.
+- An asset is something of value. A threat can harm it. A vulnerability is a weakness. Risk reflects likelihood and impact.
+- Rank risks using the real effect on users and operations. Assign an owner to each priority control.
+! Unauthorized editing of grades harms integrity. Accidental publication harms confidentiality. A failed drive can harm availability.
+~ Ask the class to identify the primary impact of a backup failure during enrollment.
+> Recognize phishing and protect identities
+- Check the sender, expected context, destination, and requested action. Verify unusual requests through an independently known channel.
+- Use unique passwords managed securely and enable MFA. Prefer phishing-resistant options, such as passkeys, where supported.
+- Review permissions when staff change roles and remove access they no longer need.
+! A mock message asks a trainer to enter a password urgently. Report it and open the portal through a known bookmark.
+~ Have learners name a verification channel that does not depend on information inside the message.
+> Harden devices, networks, and apps
+- Maintain updates on phones, desktops, website plugins, and network devices. Remove unnecessary software and stale accounts.
+- Separate guest Wi-Fi from staff resources. Limit access with least privilege and protect web traffic with HTTPS.
+- Review website access controls, validate incoming data, and keep security-relevant logs. Apply the same access review to cloud accounts and IoT administration.
+! Visitors get guest Wi-Fi. Only authorized staff can access the attendance system and its admin area.
+~ Give students an inventory with a shared admin account, overdue updates, and a public export. Ask them to rank fixes.
+> Respond to an incident
+- Record the reported time, affected account or device, evidence, and owner. Use approved response channels.
+- Triage and contain the impact with authorized staff. Preserve relevant evidence and communicate updates to the people responsible.
+- Review how the issue happened after recovery. Turn the findings into preventive changes and updated procedures.
+! For a reported suspicious sign-in, the administrator verifies the event, revokes affected sessions when appropriate, and checks for unauthorized changes.
+~ Role-play reporter and responder. Ask the responder to distinguish observed facts from assumptions.
+> Recover and improve
+- Recovery time objective (RTO) is a target for how quickly a service should return. Recovery point objective (RPO) is a target for acceptable data loss measured in time.
+- Protect backups and test restores in isolation. Compare tested recovery results with targets.
+- Document scope and written authorization for security assessments. Practice reporting weaknesses with impact, remediation, and follow-up verification.
+! Daily backups may leave nearly a day of changes unrecovered. A four-hour RPO requires a strategy capable of restoring more recent data.
+~ Ask students to explain why a successful backup notification alone does not establish recovery readiness.
+$ Incident response tabletop
+! Fictional timeline: 09:10 suspicious message reported, 09:17 unfamiliar sign-in alert, 09:21 export activity observed, 09:30 admin notified. Details are incomplete.
+- Classify the affected assets and primary risks. Separate what the timeline confirms from what needs checking.
+- Write a short incident ticket with timestamps, reported evidence, owners, and three prioritized response actions.
+- Set example RTO and RPO targets and describe how you would validate a restore from isolated backups.
+- Write a plain-language status update for staff and identify one follow-up control with a verification method.
+& Submit a timeline, incident ticket, recovery targets, and status update. The cause stays unconfirmed until corroborated.
+% Prepare printed scenario cards, an inventory list, and a sample access review. Assign reporter, IT owner, and communications roles.
+% Keep the exercise on fictional evidence and defensive review. Ask who has authority to take each proposed action.
+% Ask which log could help confirm an alert and what information should be shared in the staff update.
+% Rubric /10: assets and risks 2, evidence and triage 3, recovery targets 3, clear communication 2.
+% Homework: write a one-page account hardening checklist for an imaginary school. Identify a control owner and a verification step for each item.
+^ CISA Secure Our World | https://www.cisa.gov/secure-our-world | Review practical guidance on phishing recognition, strong passwords, MFA, and software updates.
+^ NIST incident response recommendations | https://csrc.nist.gov/pubs/sp/800/61/r3/final | Read how preparation, detection, response, and recovery fit into cybersecurity risk management.
+^ NIST Cybersecurity Framework | https://www.nist.gov/cyberframework | Use the framework overview to classify controls and responsibilities.
+? A public link exposes a private student list. What is the clearest immediate impact?|*Confidentiality|Chart formatting|File naming|System speed|The information has been disclosed beyond its intended audience.
+? What is the best way to verify an unexpected password request?|Reply with the password|*Use an independently known contact channel|Open the link first|Forward it to every student|Independent verification avoids relying on the suspicious message.
+? Which control limits a guest device from reaching staff resources?|A new desktop wallpaper|A shared admin password|*Network separation|A renamed router|Separate network access limits the paths guest devices can use.
+? Which record is appropriate at the start of triage?|An invented attribution|A personal opinion about the sender|A deletion log for all evidence|*Alert time, affected account, and observed events|Record facts and timestamps to support investigation.
+? What does an RPO of four hours describe?|*A target for acceptable data loss measured in time|The budget for a firewall|How often staff rotate roles|The number of restored devices|RPO expresses the target point in time for recovery.
+? Which demonstrates that recovery worked?|The backup job emailed a report|*An isolated restore passes data and service checks|The file name contains a recent date|The archive is larger than yesterday's|Verification must show the restored service and required data actually work.
+? A trainee needs to update one page. Which access design is best?|Share the system owner's password|Grant every available permission|*Grant the minimum necessary permissions|Let the trainee use a coworker's session|Least privilege limits access to the work required.
+? What should a defensive findings report include?|Only the screenshot|Only the title|A guess about the person responsible|*Observed weakness, impact, fix, and retest|A finding should help the owner understand and verify a correction.
+
+# Python, data & machine learning basics
+@ BQ-023 + BQ-024 · Shared AI foundations
+= Use Python to clean a tiny dataset and explain the difference between reporting, prediction, and evaluation.
++ Use values, lists, dictionaries, conditions, loops, and functions in Python.
++ Identify missing records, duplicates, and label inconsistencies.
++ Distinguish regression from classification and explain a held-out evaluation.
++ Interpret precision and recall for a small set of predictions.
+> Set up and read Python
+- Use a Python 3 interpreter, an editor, and a project folder. Run a script from the correct working directory.
+- A string holds text, an integer holds a whole number, and a Boolean holds True or False.
+- A list stores a sequence of values. A dictionary maps keys to values and can describe one record.
+! Use a dictionary with student_id and attended fields, then store several records in a list.
+~ Ask what happens when a numeric field is stored as a string. Demonstrate explicit conversion when the format is valid.
+> Make decisions and reuse code
+- A condition chooses a branch. A loop repeats work over values. A function names a reusable operation and returns its result.
+- Use descriptive names and test normal, boundary, and invalid inputs.
+- A class can group state and behavior. For a small list of records, dictionaries and simple functions are often enough.
+! A threshold function marks attendance 8 as on track when the cutoff is 8. Passing 7 should mark it for follow-up.
+: def status(attended, threshold=8):
+:     return "On track" if attended >= threshold else "Follow up"
+:
+: print([status(value) for value in [8, 10, 6, 9]])
+~ Trace the condition for 7, 8, and 9 before executing the example.
+> Prepare data
+- Inspect column names, types, missing values, duplicates, and possible value ranges.
+- Use NumPy arrays for numerical operations and Pandas tables for labeled rows and columns.
+- Use a chart to look for patterns and outliers. Document every cleaning choice and report excluded rows.
+! Keep A:8, B:10, C:6, D:9. Set aside E:missing for verification and remove an identical duplicate row for B.
+~ Ask whether missing attendance means zero. Discuss what would justify either interpretation.
+> Pick the right task and evaluate it
+- Regression predicts a number. Classification predicts a label. Reporting summarizes known observations.
+- Use data held out from training for evaluation and keep the target or later outcomes out of features.
+- Precision answers how many predicted positives were correct. Recall answers how many actual positives were found.
+! With 3 true positives, 1 false positive, and 2 false negatives, precision is 3/4 or 75% and recall is 3/5 or 60%.
+~ Draw the three counts and have students point to the denominator for each metric.
+> Move from data to language
+- NLP treats text as data for tasks such as sentiment or topic classification.
+- Models can misread wording, spelling variation, or languages underrepresented in training data.
+- Check output against labeled examples, including short or ambiguous inputs.
+! “The class is fine, but the schedule clashes” can be positive about content and negative about scheduling.
+~ Ask students to agree on a labeling rule before scoring any predictions.
+$ Clean data and score predictions
+! Start with A:8, B:10, C:6, D:9, E:missing, and a repeated B:10. Each count is out of 10.
+- Enter the rows as Python dictionaries and identify the missing and duplicate entries.
+- Retain four usable records, run the status function, and report how the other two rows were handled.
+- Give one classroom example each of reporting, classification, and regression.
+- For TP=3, FP=1, FN=2, calculate and interpret precision and recall.
+& Submit the script, four status labels, a cleaning log, and the 75% and 60% metric calculations.
+% Prepare Python 3 and a code editor or notebook. Keep printed code and a hand-trace table available.
+% Watch for indentation errors, threshold comparisons that exclude 8, and numeric strings. Ask students to test boundaries before adding features.
+% Explain that a threshold rule can classify labels without being a trained machine-learning model.
+% Rubric /10: correct function and boundaries 3, cleaning decisions 3, task distinctions 2, metric interpretation 2.
+% Homework: add a separate validation rule for counts outside 0–10 and two test records that demonstrate it.
+^ Python tutorial | https://docs.python.org/3/tutorial/ | Review control flow, functions, data structures, and classes.
+^ Pandas introductory tutorials | https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html | Follow examples for reading, selecting, and summarizing tabular data.
+^ Scikit-learn model evaluation | https://scikit-learn.org/stable/modules/model_evaluation.html | Compare classification and regression metrics, then review precision and recall.
+? Which structure stores named fields such as student_id and attended?|*Dictionary|A single integer|Boolean|Plain separator|A dictionary maps field names to values.
+? With threshold=8, what should status(8) return?|Follow up|*On track|An empty list|An error|The condition is greater than or equal to the threshold.
+? What is a sound first action for an unknown attendance count?|Assume ten|Delete every student's record|*Flag the missing value and document how it is handled|Assume zero without checking|A missing value has no known numeric meaning without context.
+? Which task is regression?|Label inquiries as sales or support|Count already recorded sales|Choose a category for a message|*Predict next week's number of inquiries|Regression estimates a numeric target.
+? What data is used for a held-out evaluation?|*Examples separate from training|Only repeated training examples|Only the model's best guesses|A screenshot of the training process|Held-out examples provide a check on performance beyond training data.
+? What is precision for TP=3 and FP=1?|60%|*75%|25%|100%|Precision is TP divided by TP plus FP.
+? What is recall for TP=3 and FN=2?|75%|40%|*60%|33%|Recall is TP divided by TP plus FN.
+? What should be fixed before comparing text classification scores?|The font of the dataset|The notebook name|The order of project folders|*A consistent labeling rule|Consistent labels make model comparisons interpretable.
+
+# Create and evaluate generative AI outputs
+@ BQ-024 · Generative AI
+= Build a source-grounded FAQ prototype and test how it handles ambiguity, missing information, and conflicting sources.
++ Explain tokens, transformers, and multimodal inputs in everyday terms.
++ Draft a prompt with a goal, source context, constraints, and output format.
++ Compare prompting, retrieval, and fine-tuning.
++ Evaluate answers against known facts and require evidence for claims.
+> How a model generates
+- Tokens are units of text a language model processes. A token may be a word, part of a word, or punctuation.
+- Transformers use attention to weigh relationships within context. An autoregressive language model predicts the next token repeatedly.
+- Outputs can be plausible and wrong. Facts used in a school or client setting need verification.
+! An assistant writes a convincing start date that is absent from the provided schedule. The wording cannot verify the date.
+~ Ask students what evidence would turn the date from a plausible guess into a supported answer.
+> Prompt with a clear contract
+- State the task, audience, allowed context, and output structure.
+- Say how to handle missing information and include an example when output consistency matters.
+- Compare the output of a vague prompt with a precise one and log the difference.
+! “Use only the supplied course sheet. Answer in two sentences and cite the section. If it is absent, say the schedule does not specify it.”
+~ Read both prompts aloud. Ask students to predict which errors the second version may reduce and which still require review.
+> Work with text and images
+- Multimodal systems may accept more than one kind of input, such as text plus an image.
+- Use a fictional flyer and confirm names, dates, numbers, and small print against the original.
+- Remove personal data and use assets the class is permitted to share.
+! Extract the time and location from a poster, then compare the answer against the source image at full size.
+~ Ask students to design one ambiguity test using a partly cropped or unreadable notice.
+> Ground answers with retrieval
+- Retrieval-augmented generation (RAG) finds relevant source passages and supplies them as context at answer time.
+- Index approved sources and retain section names or IDs for traceable answers.
+- Fine-tuning changes model behavior using examples. Retrieval is appropriate when factual material changes and should be cited.
+! Store a small class policy by section. Retrieve Schedule §2 for a timing question and cite that section in the answer.
+~ If two documents disagree, have the assistant surface the conflict and route it for review.
+> Evaluate before sharing
+- Keep a fixed test set with normal, ambiguous, missing, and conflicting cases.
+- Score factual correctness, citation support, and safe handling of unknowns. Record failures and change one thing at a time.
+- Preserve a human review step before publishing generated copy or formal answers.
+! If a test answer cites §2 but §2 does not support the statement, mark the citation as unsupported.
+~ Have pairs swap three questions and score answers against the same source sheet.
+$ Evidence-based course FAQ
+! Use this fictional sheet: §1 Classes meet on Tuesday and Thursday. §2 Lessons run 4:00–6:00 p.m. §3 Bring a notebook. Fees are absent. An old draft says 3:00 p.m.
+- Write a prompt that returns a short answer and source section. Tell it to identify conflicts and missing facts.
+- Test day, timing, materials, fees, and the conflict case. A manual simulation can use the same input and answer table.
+- Record expected answer, actual answer, citation support, and a pass or fail result for each case.
+- Revise one instruction and repeat the same tests.
+& Submit both prompts and the five-row evaluation. A fee amount without evidence fails.
+% Prepare a fictional one-page FAQ, an outdated version, and a screenshot of a flyer. Keep the manual test path available.
+% Ask learners to open each cited section. A citation field alone does not establish grounding.
+% Discuss how a retrieval error and a generation error can produce different failures and require different fixes.
+% Rubric /10: prompt contract 2, answer accuracy 3, citation support 3, handling unknowns and conflicts 2.
+% Homework: add two paraphrased questions and one partially unreadable flyer case to the evaluation table.
+^ Hugging Face LLM Course | https://huggingface.co/learn/llm-course/chapter1/1 | Learn the concepts behind transformer models and common NLP tasks.
+^ OpenAI prompting guidance | https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt | Review examples of clear task instructions and specific output requirements.
+^ OpenAI file search | https://developers.openai.com/api/docs/guides/tools-file-search | Read how retrieval supplies relevant passages from indexed documents.
+? What is a token?|*A unit of text processed by a model|A guaranteed citation|A complete paragraph in every case|A network firewall|Tokens are text units and may be smaller than a word.
+? What should an FAQ prompt specify?|Only the greeting|*Task, source, constraints, and answer format|A promise that the model is always correct|A random formatting rule only|A clear prompt defines the answer contract.
+? Which is a multimodal input?|A shorter text prompt|One text line repeated twice|*A flyer image plus a written question|A plain spreadsheet cell as text only|Image and text are different input modalities.
+? What should the FAQ say when fees are absent from the source?|Invent a typical fee|Use the most confident guess|Copy the latest internet search result|*The provided sheet does not specify a fee|An unknown answer is appropriate when evidence is missing.
+? What does retrieval do in RAG?|*Supplies relevant source passages at answer time|Guarantees every claim is true|Publishes answers automatically|Deletes old logs|Retrieval adds source context for the model to use.
+? Which test catches an unsupported citation?|Count how many sections are listed|*Open the cited passage and compare it with the claim|Check the answer font|Compare answer lengths only|The cited text must support the specific statement.
+? Which technique changes model parameters through examples?|Adding a heading|Opening the FAQ|*Fine-tuning|Looking up a passage|Fine-tuning updates model parameters using training examples.
+? What should you do when two schedule sources disagree?|Pick the earliest time by default|Assume the longer answer is correct|Use both times as confirmed|*Flag the conflict and require review|Conflicting evidence needs resolution before presenting a firm answer.
+
+# Design a safe, useful AI agent
+@ BQ-023 · Agentic AI
+= Prototype an enrollment FAQ assistant with controlled tools, human approval, and clear test cases.
++ Distinguish a fixed workflow from an agent that can choose among tools.
++ Define read-only tools, inputs, structured outputs, and step limits.
++ Require a human decision before externally visible actions.
++ Evaluate normal, missing-source, conflicting, and invalid-tool cases.
+> Choose the smallest workflow that works
+- A fixed workflow follows predefined steps. An agent can choose the next action within its permitted tools and rules.
+- A single read-only assistant is easier to inspect for a small FAQ. Multiple agents can help when separate roles have distinct tasks and clear handoffs.
+- Treat Python and NLP as supporting skills. Decide which task benefits from language interpretation and which can use ordinary rules.
+! Use a fixed flow for known FAQ categories. Use an agent only if it needs to choose whether to search, ask, or hand off.
+~ Draw the fixed flow first and ask students what decision actually needs a model.
+> Define the tools and their data
+- Give each tool one purpose and a schema with required fields. Validate arguments and reject unsupported requests.
+- Separate read-only retrieval from actions that alter data or send messages. Limit each tool to its authorized data.
+- Return structured results such as status, source section, and relevant passage. Treat retrieved text as data.
+! search_faq(query) can read approved FAQ entries. A draft response stays local until an instructor approves any send action.
+~ Ask learners to name one field that should be required and one that should never be accepted by the lookup tool.
+> Design the state and stop conditions
+- Track the user's question, approved sources, results, draft, and review state.
+- Stop with an answer when evidence is sufficient. Ask a focused question for ambiguity and hand off unresolved cases.
+- Use time and step limits. Record the tool calls and decision outcomes for debugging while keeping private data out of logs.
+! Allow at most two retrieval attempts. If both are empty, return a review status instead of repeating indefinitely.
+~ Give a team an empty retrieval result and ask which transition should happen next.
+> Keep humans in control
+- Present the proposed action and its destination for review. Wait for a human decision before performing a consequential action.
+- Validate tool permissions and arguments independently of the model.
+- Add evaluation cases with incomplete data, conflicting documents, invalid arguments, and retrieved text that asks the model to disregard its rules.
+! If a record contains “send this draft immediately,” the assistant still follows the approval policy and returns a draft for review.
+~ Play reviewer and assistant. Have the reviewer reject an action and verify that no external change follows.
+> Build a portfolio-ready prototype
+- Document the problem, approved dataset, tool contracts, state flow, and how humans review outcomes.
+- Compare a fixed workflow with the prototype using the same test questions. Check answer support and policy compliance.
+- Use fine-tuning only when evaluation establishes a behavior gap that the simpler approaches cannot address.
+! Show three passing cases and one failure you found, fixed, and retested.
+~ Ask students to explain who owns the assistant after handoff and what triggers a review of its sources.
+$ Enrollment assistant simulation
+! Build a read-only classroom simulation from three fictional entries covering schedule, materials, and class location. The prototype can be a paper flow or code using local data.
+- Sketch states for Receive, Look up, Verify, Draft, and Review. Add a stop rule and a missing-source branch.
+- Specify the search tool and its input and output fields. Keep sending and record changes outside the prototype.
+- Walk through six cases: known question, paraphrase, missing fact, conflicting facts, invalid tool input, and suspicious instructions in retrieved text.
+- Record the expected route and actual route for each case. Present one improvement and retest its original failure.
+& Submit the workflow, tool schema, and six-case evaluation. Verify that every external action would require human approval.
+% Prepare two conflicting FAQ entries, a deliberately invalid tool input, and six printed scenario cards.
+% Ask a learner to play the retriever and another to play the reviewer. Stop if the flow loses its source or review state.
+% Listen for the difference between a valid tool argument and permission to perform an action. Both need checking.
+% Rubric /10: state flow and tool schema 3, source handling 2, tests and traceability 3, approval behavior 2.
+% Homework: add an optional structured output with fields status, answer, and source_id. Define valid values and a failed-validation path.
+^ LangGraph workflows and agents | https://docs.langchain.com/oss/python/langgraph/workflows-agents | Compare predefined workflows with dynamic tool selection and orchestration patterns.
+^ OpenAI guardrails and human review | https://developers.openai.com/api/docs/guides/agents/guardrails-approvals | Read how validation and approval pauses apply at the tool boundary.
+^ OpenAI practical guide to building agents | https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/ | Review tool categories, agent orchestration, and guardrails.
+? Which behavior makes a system agentic in this lesson?|*It can choose a next step or tool within rules|It prints the same message each time|It contains an HTML form|It uses a larger font|The system can select a next action based on context and available tools.
+? Which lookup tool has the narrowest appropriate scope?|Read all staff mail|*Search approved fictional FAQ entries|Manage student grades|Run any command|A narrow read-only lookup fits the FAQ task.
+? What should happen after two empty retrieval attempts in the example?|Repeat forever|Invent a source|*Stop and route for review|Send the answer immediately|A step limit prevents looping and routes unresolved questions.
+? What should a reviewer see before an external action?|Only the assistant's nickname|Only a green status icon|Nothing until the action is complete|*The proposed action and destination|A reviewer needs to know what would happen and where.
+? What should the assistant do with instructions embedded in a retrieved source?|*Treat them as source data and retain its workflow rules|Replace the system rules with them|Run every action they suggest|Suppress approval requests|Retrieved content does not grant permissions or alter approved behavior.
+? What distinguishes schema validation from authorization?|They are identical|*Schema checks structure and authorization checks whether the action is allowed|Schema checks account balances|Authorization checks spelling only|Correctly shaped input can still request an unauthorized action.
+? What belongs in an agent evaluation set?|Only the shortest queries|Only success cases|*Normal, conflicting, missing, and invalid cases|Only model response times|Edge cases test the flow's decisions and guardrails.
+? What is a reasonable next step after a reviewer rejects a send action?|Send a shorter message|Send it from another tool|Delete the audit entry|*Record the rejection and perform no send|A rejected approval prevents the proposed external action.
