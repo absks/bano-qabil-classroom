@@ -1,6 +1,6 @@
 {
   "framework": null,
   "outputDirectory": "dist",
-  "buildCommand": "mkdir -p dist && cp index.html app.js course.js style.css icon.svg dist/",
+  "buildCommand": "mkdir -p dist && cp index.html app.js course.js bq*.js style.css icon.svg dist/",
   "installCommand": null
 }

@@ -1,0 +1,82 @@
+hubmarket|HubSpot Academy Digital Marketing|https://academy.hubspot.com/courses/digital-marketing|Review the overview of marketing channels and plan a measurable campaign.
+persona|HubSpot buyer persona guide|https://blog.hubspot.com/marketing/buyer-persona-research|Use the interview and research examples to validate the persona.
+upwork|Upwork profile guide|https://support.upwork.com/hc/en-us/articles/360016252373-How-to-build-your-freelancer-profile-the-essentials|Compare profile examples and use the sections relevant to your service.
+fiverr|Fiverr Creating a Gig|https://help.fiverr.com/hc/en-us/articles/360010451397-Creating-a-Gig|Review the service description, requirements, scope, and pricing fields.
+hubcontent|HubSpot Academy Content Marketing|https://academy.hubspot.com/courses/content-marketing|Explore content strategy and reuse ideas for the weekly publishing exercise.
+prompt|OpenAI prompting guidance|https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt|Compare the guidance on context, instructions, and iteration with your own prompts.
+seo|Google SEO Starter Guide|https://developers.google.com/search/docs/fundamentals/seo-starter-guide|Review content organization, descriptive links, titles, and search discovery.
+keyword|Google Ads Keyword Planner|https://support.google.com/google-ads/answer/7337243|Read how to discover relevant queries and interpret planning estimates.
+trends|Google Trends data FAQ|https://support.google.com/trends/answer/4365533|Check how relative interest is normalized in the selected place and time range.
+canva|Canva Design School|https://www.canva.com/designschool/|Use the design and video resources while creating the classroom assets.
+meta|Meta Blueprint advertising course|https://communitytraining.facebookblueprint.com/student/path/211543-meta-advertising-course|Review Meta's introductory advertising workflow and objective choices.
+analytics|Google Analytics events|https://developers.google.com/analytics/devguides/collection/ga4/events|Read event names and parameters before planning or testing an inquiry event.
+mailchimp|Mailchimp email marketing guide|https://mailchimp.com/marketing-glossary/email-marketing/|Review email campaign types, list growth, and campaign measurement concepts.
+youtube|YouTube Help for Shorts|https://support.google.com/youtube/answer/10059070|Review Shorts creation and publishing options before uploading classroom work.
+nistcsf|NIST Cybersecurity Framework|https://www.nist.gov/cyberframework|Use the framework to organize cybersecurity responsibilities and controls.
+cisa|CISA Secure Our World|https://www.cisa.gov/secure-our-world|Review basic guidance on phishing recognition, passwords, MFA, and software updates.
+owasp|OWASP Top 10|https://owasp.org/www-project-top-ten/|Explore major application security risk categories and their defensive context.
+pakcode|Pakistan Code PECA text|https://www.pakistancode.gov.pk/pdffiles/administrator6a061efe0ed5bd153fa8b79b8eb4cba7.pdf|Read the instructor-selected provision and verify current amendments and application through official sources.
+owmas|OWASP Mobile Application Security|https://mas.owasp.org/|Review the mobile security project and look up a relevant permission or storage topic.
+sqlinj|OWASP SQL Injection Prevention|https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html|Compare parameterized queries and least-privilege database access.
+xss|OWASP XSS Prevention|https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html|Review safe sinks, contextual encoding, and sanitization.
+aws|AWS Shared Responsibility Model|https://aws.amazon.com/compliance/shared-responsibility-model/|Use the examples to distinguish provider duties and customer configuration.
+incident|NIST incident response guidance|https://csrc.nist.gov/pubs/sp/800/61/r3/final|Read how incident response fits into cybersecurity risk management.
+wireshark|Wireshark User’s Guide|https://www.wireshark.org/docs/wsug_html_chunked/|Use the capture and display-filter sections with an instructor-provided file.
+nmap|Nmap Reference Guide|https://nmap.org/book/man.html|Read how service observations are reported in authorized lab work.
+nisttest|NIST Guide to Security Testing|https://csrc.nist.gov/pubs/sp/800/115/final|Review assessment planning and reporting for the scope and findings exercises.
+nicects|NICE Workforce Framework|https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center|Explore cybersecurity roles and choose learning goals for your portfolio plan.
+computbasics|GCFGlobal Computer Basics|https://edu.gcfglobal.org/en/computerbasics/|Review basic hardware, operating systems, and common device categories.
+fileexplorer|Microsoft File Explorer in Windows|https://support.microsoft.com/en-gb/windows/experience/fileexplorer/file-explorer-in-windows|Follow the folder navigation and search guidance during the file management lab.
+word|Microsoft Word Help and Learning|https://support.microsoft.com/en-us/word|Find Word guidance for formatting, styles, layout, review, and export.
+mstraining|Microsoft 365 training resources|https://support.microsoft.com/en-gb/office/o365-itpro/train-your-users-on-office-and-microsoft-365|Choose Word, Excel, or PowerPoint resources for the relevant classroom task.
+mailmerge|Microsoft mail merge data preparation|https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge|Check source columns and field formats before connecting the Word template.
+excel|Microsoft Excel Help and Learning|https://support.microsoft.com/en-us/excel|Look up worksheet formatting, formula entry, data validation, and charts.
+vlookup|Microsoft VLOOKUP reference|https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1|Check range placement, return-column index, and the exact match argument.
+countif|Microsoft COUNTIF reference|https://support.microsoft.com/en-us/excel/get-started/use-the-countif-function-in-microsoft-excel|Practice criteria syntax and verify results against the raw values.
+powerpoint|Microsoft PowerPoint Help and Learning|https://support.microsoft.com/en-us/powerpoint|Review slide layouts, masters, media, slide show, and export options.
+slides|Google Slides training and help|https://support.google.com/a/users/answer/9282488|Use the editing and collaboration guidance when reviewing a presentation.
+gmail|Gmail Help|https://support.google.com/mail/|Look up recipients, attachments, filters, and reporting suspicious email.
+drive|Google Drive file sharing|https://support.google.com/drive/answer/2494822|Compare viewer, commenter, and editor permissions before sharing practice work.
+forms|Google Forms help|https://support.google.com/docs/answer/6281888|Follow form creation guidance and check how to review responses.
+wpinstall|WordPress installation documentation|https://wordpress.org/documentation/article/how-to-install-wordpress/|Check requirements, database setup, and the installation sequence.
+wpdash|WordPress Dashboard overview|https://wordpress.org/documentation/article/dashboard-screen/|Find the principal dashboard screens and tools used in the lesson.
+wppages|WordPress Pages and Posts|https://wordpress.com/support/post-vs-page/|Choose content types based on purpose and organization.
+wpthemes|WordPress Theme Directory|https://wordpress.org/themes/|Review theme information, compatibility, and examples before choosing one.
+wpplugins|WordPress Plugin Directory|https://wordpress.org/plugins/|Compare maintenance, use cases, and support for candidate plugins.
+wpmedia|WordPress Media Library|https://wordpress.org/documentation/article/media-library/|Use the media management guidance to inspect metadata and reuse files.
+wpblock|WordPress Block Editor|https://wordpress.org/documentation/article/wordpress-block-editor/|Use the block hierarchy and editing tools to build the comparison page.
+elementor|Elementor responsive editing|https://elementor.com/help/responsive-editing/|Review breakpoint and device editing behavior for your Elementor version.
+wppatterns|WordPress Patterns|https://wordpress.org/documentation/article/block-pattern/|Compare reusable, synced, and independent layouts where supported.
+wproles|WordPress roles and capabilities|https://wordpress.org/documentation/article/roles-and-capabilities/|Check what each default role can do before assigning users.
+wpbackup|WordPress backups|https://developer.wordpress.org/advanced-administration/security/backup/|Identify the files and database components needed for a recoverable site.
+wpharden|WordPress hardening guide|https://developer.wordpress.org/advanced-administration/security/hardening/|Review access, updates, backups, and host responsibilities.
+searchconsole|Google Search Console help|https://support.google.com/webmasters/|Review ownership verification, sitemap reports, and URL Inspection.
+wooproduct|WooCommerce product management|https://woocommerce.com/document/managing-products/|Review simple and variable product options, stock, and prices.
+woopay|WooCommerce payment gateways|https://woocommerce.com/document/payment-gateways/|Compare payment methods and follow the chosen gateway's test instructions.
+wooship|WooCommerce flat-rate shipping|https://woocommerce.com/document/flat-rate-shipping/|Review flat-rate settings and verify them against the shipping zone.
+pagespeed|PageSpeed Insights documentation|https://developers.google.com/speed/docs/insights/v5/about|Distinguish lab and field data and plan a fair comparison.
+lighthouse|Chrome Lighthouse documentation|https://developer.chrome.com/docs/lighthouse/overview/|Review how to run audits and interpret recommendations.
+wpcache|WP Super Cache|https://wordpress.org/plugins/wp-super-cache/|Read caching options and review compatibility with personalized pages.
+python|Python Tutorial|https://docs.python.org/3/tutorial/|Review control flow, functions, collections, files, and classes.
+pythonjson|Python json module|https://docs.python.org/3/library/json.html|Read examples of parsing and writing structured task data.
+pythoncsv|Python csv module|https://docs.python.org/3/library/csv.html|Review DictReader and DictWriter for records with named fields.
+gitbook|Pro Git|https://git-scm.com/book/en/v2|Use the Git basics chapters for tracking changes and making commits.
+jupyter|Project Jupyter documentation|https://docs.jupyter.org/en/latest/|Review notebook setup and how to run and reproduce examples.
+numpy|NumPy Absolute Basics|https://numpy.org/doc/stable/user/absolute_beginners.html|Follow array shape, types, and vectorized operations in the data exercises.
+pandas|Pandas introductory tutorials|https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html|Review loading, filtering, summarizing, and plotting tabular data.
+matplotlib|Matplotlib tutorials|https://matplotlib.org/stable/tutorials/index.html|Use chart examples to select axes, labels, and plot types.
+sklearn|Scikit-learn model evaluation|https://scikit-learn.org/stable/modules/model_evaluation.html|Check classification metrics and evaluate predictions against a baseline.
+sktext|Scikit-learn text feature extraction|https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction|Compare counts, TF-IDF, and practical text preprocessing.
+hfllm|Hugging Face LLM Course|https://huggingface.co/learn/llm-course/chapter1/1|Review transformer, tokenizer, and NLP concepts used in the lessons.
+hfmodels|Hugging Face model cards|https://huggingface.co/docs/hub/model-cards|Find model usage information, intended use, and reported limitations.
+hftrain|Hugging Face Transformers Trainer|https://huggingface.co/docs/transformers/trainer|Review training configuration and evaluation before designing an experiment.
+hfpeft|Hugging Face parameter-efficient fine-tuning|https://huggingface.co/docs/transformers/peft|Compare adapter-based approaches and their runtime implications.
+langgraph|LangGraph workflows and agents|https://docs.langchain.com/oss/python/langgraph/workflows-agents|Compare predefined workflows with agent decisions and orchestration.
+crew|CrewAI documentation|https://docs.crewai.com/|Explore agents, tasks, crews, and flows for role-based orchestration.
+guardrails|OpenAI guardrails and human review|https://developers.openai.com/api/docs/guides/agents/guardrails-approvals|Review automatic validation and human approval at action boundaries.
+agenttools|OpenAI agent tools|https://developers.openai.com/api/docs/guides/tools|Review how tools connect a model to approved external capabilities.
+rag|LangChain retrieval guidance|https://docs.langchain.com/oss/python/langchain/retrieval|Compare ingestion, indexing, retrieval, and answer generation.
+chromadb|Chroma documentation|https://docs.trychroma.com/|Review collection setup, metadata, and vector similarity queries.
+pinecone|Pinecone quickstart|https://docs.pinecone.io/guides/get-started/quickstart|Review vector index setup and retrieval on a small test corpus.
+imageguide|OpenAI image prompting|https://developers.openai.com/api/docs/guides/image-prompting|Compare approaches to subject, composition, constraints, and iteration.
+diffusers|Hugging Face Diffusers text-to-image|https://huggingface.co/docs/diffusers/using-diffusers/conditional_image_generation|Read about diffusion-based image workflows and their practical controls.

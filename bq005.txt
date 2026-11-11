@@ -1,0 +1,183 @@
+@ Cyber Security Fundamentals|Learn to recognize threats, protect systems, respond to incidents, and explain security findings.|Present a defensive security portfolio, an incident plan, and a scoped client proposal.|shield
+# Security foundations, attacks & malware|1–2|Classify threats and connect common attack patterns to defenses.
++ Apply confidentiality, integrity, and availability to a local organization.
++ Distinguish threats, vulnerabilities, risks, and common attack techniques.
++ Compare malware defenses and use evidence when reviewing a public incident.
+> CIA and risk|Confidentiality restricts disclosure, integrity preserves accuracy, and availability keeps services accessible.|An asset has value, a threat can harm it, and a vulnerability is an exploitable weakness. Risk depends on likelihood and impact.|A shared public link to a private student list affects confidentiality. Unauthorized grade edits affect integrity.
+> Security roles and authorization|A SOC analyst triages alerts, an engineer builds controls, and an auditor checks evidence. A tester works within written authorization.|Common white-, gray-, and black-hat labels describe intent and permission imperfectly. Confirm the actual scope and written authorization.|A consultant authorized to assess a training server has no implied permission to test its payment provider.
+> Attack patterns|Social engineering manipulates people. DDoS floods a service with traffic or requests. SQL injection changes the intended database query when input is handled unsafely.|Layer defenses: verification channels, traffic controls, parameterized queries, and monitoring.|A fake urgent portal notice exploits trust. It does not need malicious software to succeed.
+> Malware and spyware|Ransomware can encrypt or disrupt access. Spyware collects information. A trojan disguises its purpose.|Update software, limit privileges, monitor endpoints, and plan recovery. Compare capabilities across anti-malware products.|On a managed device, a suspicious executable alert prompts IT to inspect logs and containment options.
+> Incident evidence|Read advisories or confirmed reports. Separate affected assets, known facts, suspected causes, and recommended controls.|Avoid attributing an attack from an alert alone. A date, source, and citation let others check your conclusion.|A login alert confirms the system recorded an event. It does not establish who was behind it.
+$ Analyze threats and controls|A fictional academy receives a spoofed email, sees an outage, and receives a malware alert.|Submit three incident summaries, a risk table, and a three-tool anti-malware comparison.
+- Classify the academy's three events and record affected assets and CIA impacts.
+- Compare three documented public cases or trainer-provided advisories by evidence and defense.
+- Compare an endpoint scanner, managed endpoint detection, and a gateway filter by scope and limitation.
+- Recommend three controls and name who can verify each one.
+% Prepare public advisories and redacted or fictional alert cards.|Have pairs distinguish the event from the cause and connect one control to each event.|A spoofed message is social engineering. A flood may affect availability. A malware alert needs triage.|Threat reasoning 4, credible evidence 3, controls 3.|Write a one-page career comparison between SOC analyst, engineer, and auditor.
+^ nistcsf,cisa,owasp
+? An attendance database is altered without permission. What is affected first?|Integrity|Screen brightness|Availability only|File compression|Integrity concerns correctness and trustworthiness.
+? Which attack primarily floods a service?|DDoS|Spreadsheet formatting|Backup rotation|MFA enrollment|A distributed denial-of-service attack seeks to exhaust availability.
+? What distinguishes a threat from a vulnerability?|A threat can cause harm and a vulnerability is a weakness.|They are identical.|A threat is always a password.|A vulnerability is always a person.|Risk analysis benefits from tracking the actor or event and the weakness separately.
+? Which malware is designed to collect information covertly?|Spyware|A file backup|A password manager|A browser update|Spyware observes or collects information without suitable authorization.
+? What permits a penetration test on a real target?|Explicit authorization and defined scope|The target being public|A student assignment alone|A friend's suggestion|Permission must cover the systems and methods used.
+! A user reports a suspicious attachment but you have no execution evidence. How should you report it?|Record a reported attachment and investigate whether it executed.|Report a confirmed breach.|Delete all logs.|Attribute it to a named attacker.|Use observed facts and distinguish suspicion from confirmation.
+# Network defense, authentication & safe email|3–4|Separate network access, harden accounts, and practice phishing response within authorized scope.
++ Explain IP addresses, firewalls, segmentation, and Wi-Fi basics.
++ Draft a password and MFA policy for a small organization.
++ Identify spoofing clues and explain the need for legal and ethical authorization.
+> Network traffic and rules|An IP address identifies an interface in a network context. A firewall allows or blocks traffic according to rules.|Segmentation limits reachable resources. Keep guest devices separated from internal administrative services.|Draw Internet, guest Wi-Fi, staff network, and attendance server. Mark the paths that should be allowed.
+> Protect Wi-Fi and accounts|Use supported wireless security, firmware updates, separate guest access, and restricted administration.|Use unique credentials managed securely. Enforce MFA where possible and prefer phishing-resistant sign-in methods when supported.|A guest phone can reach the internet while access to the staff admin panel remains restricted.
+> Recognize suspicious email|Review sender identity, destination, attachment, context, and request. A display name alone can be spoofed.|Verify unusual requests through a known channel, report messages, and avoid exposing credentials.|An invoice message changes the destination bank details. Call the vendor using a previously known number.
+> Organization-wide email practices|Teach a clear reporting path. Restrict access to shared mailboxes and explain that SPF, DKIM, and DMARC are complementary domain-level controls.|Log reports, preserve relevant evidence, and give staff a plain-language status update.|A trainer forwards a suspected message to IT through the approved reporting channel and stops further interaction.
+> Ethics and local law sources|Read the official Pakistan Code entry for PECA and check amendments or current guidance with the trainer.|Record allowed systems, purpose, methods, dates, evidence handling, and who can stop an assessment.|A laboratory exercise grants permission for a named VM and specified tests only.
+$ Network map and phishing role-play|An imaginary school needs guest Wi-Fi and a safer staff mail process.|Submit a network map, password and MFA policy, phishing report, and a short PECA source-reading note.
+- Draw staff, guest, and admin segments. List one allowed and two denied paths.
+- Write requirements for unique passwords, MFA, recovery, and reporting.
+- Review a mock suspicious message and identify the independent verification channel.
+- Summarize what the official source says about authorization for one instructor-selected provision.
+% Prepare an example subnet map, mock email, and official law link. Verify legal text and applicable amendments before class.|Ask learners to spot plausible display names and verify identity independently. Keep legal discussion grounded in the source.|Guest access excludes admin tools. The report includes sender, timestamp, observed request, and verification owner.|Network 3, authentication and email 4, source reading and scope 3.|Design an onboarding checklist for a new staff account.
+^ cisa,pakcode,nistcsf
+? What does network segmentation help restrict?|Paths from guest devices to staff systems|Character count in a password|Computer screen brightness|Email attachment sizes only|Segmentation separates resources and limits reachable services.
+? What should staff do with an unexpected password request?|Verify it through a known channel and report it.|Reply with credentials.|Open the attachment first.|Forward it to everyone.|Independent verification avoids relying on the suspicious message.
+? Which setup strengthens staff accounts?|Unique passwords and MFA|One shared password|Disabled account recovery|Passwords in a public sheet|Unique credentials limit reuse, and MFA adds a separate check.
+? What does a friendly sender display name prove?|Nothing about authorization by itself|The message came from the named person|The link is safe|The attachment is approved|Display names can be set or spoofed.
+? What belongs in an assessment scope?|Systems, methods, dates, and authorization|Only the tester's nickname|A promise to test all visible domains|An unrestricted credential list|Scope defines the boundaries of the work.
+! A guest device should browse the internet only. Which test confirms the design?|Verify internet access works and staff administration is blocked from the guest segment.|Check the Wi-Fi logo.|Test only a staff laptop.|Rename the guest network.|A useful test checks both the allowed and denied paths.
+# Operating system & mobile security|5|Review permissions, updates, app behavior, and device hardening.
++ Apply least privilege in Windows, Linux, and mobile settings.
++ Compare device controls such as patches, encryption, and screen lock.
++ Document an app-permission risk and a verification step.
+> OS and account boundaries|Use standard accounts for daily work and reserve admin access for maintenance. Inventory installed programs and active users.|On Windows inspect account roles and update status. On Linux relate owner, group, and others to file permissions.|A trainer can view a class folder while only the supervisor can edit roster data.
+> File permissions|Read, write, and execute permissions represent different actions. Group grants can be easier to audit than one-off exceptions.|Test both a permitted user and a denied user after changes. Record the owner and intended access.|A read-only reviewer can open a report without modifying it.
+> Endpoint hardening|Keep operating systems and applications patched. Enable approved screen locks, encrypted storage, and security tooling.|Remove unused accounts, unnecessary software, and obsolete administrative paths.|A shared lab computer locks automatically and separates trainer and student sessions.
+> Mobile app review|Look at install source, update history, requested permissions, and the task the app is meant to perform.|Review camera, microphone, location, and contact access. Deny or constrain permissions that are unnecessary for the intended task.|A flashlight app requesting contacts gives the trainer a reason to question the permission.
+> Report a finding|State the observation, expected behavior, impact, suggested action, and retest.|Use fictional screenshots or redact names and device identifiers when sharing in class.|“The practice app asked for location on launch. The sample workflow only needs local camera access.”
+$ Device audit|Review an approved test Windows or Linux account and one demo mobile permission screen.|Submit an access matrix, patch and device checklist, and one finding with a retest.
+- List users and the smallest permission required for each task.
+- Verify one authorized and one denied action using lab accounts.
+- Compare three requested mobile permissions with the app's features.
+- Write a prioritized finding with evidence, action owner, and expected retest result.
+% Prepare mock Windows, Linux, and Android screenshots and two disposable user roles.|Show the difference between read and write. Ask learners to explain why a permission is needed.|Reviewer reads only. Owner can edit. The app report identifies one permission with insufficient justification.|Access matrix 4, device review 3, evidence and retest 3.|Write a brief mobile hardening guide for a first-time smartphone user.
+& Practice explaining a denied permission as an access decision with a clear reason and next step.
+^ owmas,cisa
+? Which permission lets a reviewer open a file without changing it?|Read|Write|Administrator|Delete|Read access allows inspection without editing.
+? Which account should be used for everyday browsing?|Standard user|Unrestricted shared administrator|Disabled account|Public service account|Use the minimum privileges needed for ordinary work.
+? What should you compare when assessing app permission?|Requested permission and actual feature need|Only the app icon|Only battery percentage|The model of the monitor|A permission needs a justified relationship to the task.
+? What is a useful access retest?|Try the action as both permitted and restricted users.|Only inspect the account name.|Change all users to admin.|Remove the audit record.|Checking both paths confirms access and denial.
+? Why patch an operating system?|To address known defects and vulnerabilities|To automatically replace backups|To guarantee no future risk|To make all apps require admin|Patches reduce exposure to known issues.
+! A role was changed from editor to viewer. What is the best verification?|The account can still open the file and cannot save edits.|The account still appears in a list.|The admin can still edit.|The folder was renamed.|A least-privilege change should preserve the required read action while blocking writes.
+# Web, cloud & IoT security|6|Explain common web flaws and check shared responsibility and device boundaries.
++ Explain HTTPS, TLS, and cookie attributes.
++ Distinguish SQL injection from cross-site scripting and identify preventive controls.
++ Assess a cloud storage and IoT scenario using an ownership matrix.
+> Transport and cookies|HTTPS uses TLS to protect data in transit and verify the server identity through certificates.|Secure limits cookies to secure transport, HttpOnly blocks typical script access, and SameSite influences cross-site cookie sending.|A login cookie can use Secure and HttpOnly plus a SameSite setting compatible with the application's flows.
+> SQL injection|Injection occurs when untrusted input becomes part of a database command. Parameterized queries keep values separate from SQL syntax.|Also limit database privileges and handle errors safely. Use trainer-provided examples instead of testing public sites.|A mock search handler passes a query and a separate search parameter to the database.
+> Cross-site scripting|XSS can occur when a site includes untrusted data in a browser context that treats it as executable content.|Prefer safe rendering APIs, contextual output encoding, and sanitization where rich HTML is deliberately allowed.|Render a display name as text in a sample page rather than assigning it as HTML.
+> Cloud responsibility|Cloud providers and customers have different responsibilities depending on the service. The customer commonly owns data classification, IAM, and settings.|Check public access, roles, logging, and recovery in the chosen service.|A cloud provider operates storage infrastructure while the customer configures who can read the objects.
+> IoT inventory and isolation|List devices, owner, firmware, network, and support status. Change default credentials and restrict unnecessary access.|Segment cameras and sensors from ordinary staff systems where possible. Plan for unsupported devices.|A demo camera stays on its own segment with access limited to the monitoring workstation.
+$ Review a fictional architecture|A small school app uses a login, cloud exports, and a network camera.|Submit five checks, a cloud responsibility matrix, and a prioritized remediation note.
+- Identify data in transit, cookie settings, and one safe method for rendering input.
+- Review two pseudocode snippets for SQL injection and XSS controls.
+- Compare the responsibility for IAM, logging, and storage permissions on two cloud platforms.
+- Draw a device boundary and write verification steps for the top two findings.
+% Prepare offline snippets and a shared responsibility diagram.|Contrast traffic encryption with application authorization. Ask learners to explain why both are required.|Use parameterized queries, render plain text safely, restrict storage and separate IoT where appropriate.|Web reasoning 4, cloud matrix 3, IoT and verification 3.|Add a safe check for one public file accidentally exposed in the mock architecture.
+& Write an executive summary with one risk, its user impact, and an owner.
+^ owasp,sqlinj,xss,aws
+? What does HTTPS primarily protect?|Data in transit between browser and server|All application logic|Every stored database record by itself|The office's physical locks|TLS protects traffic in transit and authenticates the server.
+? What is a primary defense for SQL injection?|Parameterized queries|A larger page title|Hidden links|Renaming the database|Parameters keep user input separate from SQL instructions.
+? Which rendering choice reduces XSS risk for a plain name?|Insert it as text using a safe API.|Interpret it as HTML.|Disable all backups.|Put it in a URL without encoding.|Plain text insertion avoids treating user content as executable markup.
+? Who commonly configures the permissions for a cloud storage bucket?|The customer account or its administrators|Every internet visitor|The browser vendor|The person who made the logo|Cloud customers typically control access to their own data.
+? What is useful for an IoT camera network?|Limit reachability and review firmware.|Connect it to all admin systems.|Keep default credentials.|Remove inventory tracking.|Isolation and maintenance reduce risk.
+! A site uses HTTPS but returns private records to every logged-in user. What control needs attention?|Server-side authorization for those records|Only the certificate color|Image compression|The monitor's refresh rate|Transport encryption does not determine who is permitted to see records.
+# Incident response, backup & tool literacy|7|Triage an incident, define recovery goals, and interpret sample security-tool outputs.
++ Distinguish detection, containment, recovery, and lessons learned.
++ Define RTO and RPO and design a restore check.
++ Explain the roles of Kali Linux, Wireshark, and Nmap in an isolated lab.
+> Triage with a timeline|Record time, source, affected systems, and confidence. Escalate using approved channels.|Confirm impact before stating cause. Assign a responder and preserve relevant evidence according to the plan.|09:10 user report, 09:17 login alert, 09:21 export event. These observations justify investigation.
+> Contain and communicate|Containment reduces spread or exposure. Coordinate account restrictions or network isolation with authorized owners.|Give timely status updates using facts, expected next step, and time for the next check.|An authorized admin revokes the affected sessions while the incident owner checks account changes.
+> Recovery objectives|RTO is target time to restore service. RPO is target acceptable loss measured as time.|Use protected backups and test restores in isolation. Check actual timings against both targets.|With four-hour RPO, a daily snapshot alone can exceed the data-loss target.
+> Know the tools|Kali Linux packages security tools. Wireshark inspects captured packets. Nmap can discover hosts or services under approved scope.|Use provided captures or instructor-owned lab targets. Distinguish observed traffic from inferred purpose.|Identify DNS in an offline sample capture, then read an instructor-prepared port inventory.
+> Close the incident|Verify normal operation, restore access carefully, and keep a record of affected data and outstanding checks.|Turn root-cause findings into actions with owners and dates.|After verifying login and expected records, assign one preventive update and a follow-up check.
+$ Incident response tabletop|A fictional organization reports an unfamiliar login and an export. No cause is confirmed.|Submit an incident ticket, RTO/RPO, a restore checklist, and annotated lab evidence.
+- Write the timeline and classify observations, assumptions, and unanswered questions.
+- Assign three containment or verification steps to authorized staff.
+- Choose recovery targets and list data and behavior checks after a test restore.
+- Inspect a supplied capture or port report and explain what it shows and what remains unknown.
+% Prepare a redacted example capture, isolated restore sample, and role cards for reporter, IT owner, and communicator.|Have a learner compare a backup success notice with proof of a successful restore.|A two-hour RTO is a service target. A four-hour RPO is the acceptable data-loss interval.|Triage 3, recovery 4, tool evidence and communication 3.|Write a plain-language incident status update with the next check time.
+& Practice a two-minute verbal briefing. List what is known, what is being checked, and who owns the next step.
+^ incident,wireshark,nmap
+? What should be recorded first?|Time, report source, and observed facts|A guessed attacker name|A fabricated cause|Only the brand logo|Triage needs a reliable record of observations.
+? What is RTO?|Target time to restore a service|Allowed data loss interval|Password length|Size of a capture|RTO describes how quickly service should be restored.
+? What does Wireshark inspect?|Captured network packets|Spreadsheet formulas|Office layouts|Guest speaker schedules|Wireshark analyzes network traffic recorded in a capture.
+? Which proves recovery readiness?|An isolated restore passes required checks.|The backup file has a date.|The archive is large.|An email says the job started.|A tested restore verifies recoverable data and functionality.
+? What does containment aim to do?|Reduce ongoing harm or spread|Automatically prove the root cause|Create a public attribution|Replace all monitoring|Containment limits the immediate impact.
+! A service has a four-hour RPO and only nightly snapshots. What should the plan test?|Whether the available recovery strategy can restore data within the four-hour target.|Whether the logo displays.|Whether a single administrator has a new password.|Whether the file name has today's date.|Backup frequency and recovery behavior affect data-loss exposure.
+# Authorized testing, security policy & risk|8|Plan a defensive assessment and produce reproducible findings.
++ Distinguish reconnaissance, service discovery, and vulnerability validation.
++ Write a risk register and an authorization-aware testing scope.
++ Draft policy language and a prioritized remediation report.
+> Plan before testing|Define the system, owner, time window, approved methods, data handling, exclusions, and stop conditions.|Verify written authorization and isolate the classroom lab. Use prepared evidence when a live test is outside the scope.|A lab scope covers one named VM and stops after a specified validation window.
+> Reconnaissance and scanning|Reconnaissance gathers context. A scan can report visible services. A visible service is evidence of reachability.|Validate findings against version, configuration, and intended behavior. Avoid assuming every flagged item is exploitable.|A report shows an open web port. Check whether that exposure is intended.
+> Vulnerability reporting|Describe asset, evidence, impact, likelihood, correction, and retest.|Use a simple risk matrix and document assumptions. Rank fixes by exposure and consequence.|A public admin screen without appropriate access restrictions is prioritized over a cosmetic label.
+> Write a usable policy|A policy says who owns the control, what must happen, when it is checked, and how exceptions are handled.|Examples include access review, patch windows, incident reporting, and backup testing.|“The IT owner reviews admin accounts monthly and records approved exceptions.”
+> Recheck after changes|Use the same authorized verification method after remediation. Log whether the observation changed and whether normal behavior still works.|Separate mitigation status from accepted residual risk and identify who approved it.|Confirm guests cannot reach administration and staff can still use the approved service.
+$ Write a small assessment report|Use three fictional findings and one instructor-provided scan excerpt.|Submit a scope sheet, risk register, one-page IT policy, and prioritized report.
+- Define scope, boundaries, evidence retention, and stop conditions.
+- Label observations as expected exposure, candidate issue, or confirmed lab finding.
+- Rank three risks and propose corrections with named owners.
+- Draft access review and incident-reporting policy clauses and a retest checklist.
+% Prepare sample output with an intentionally misleading finding and a blank risk register.|Ask why an open port can be expected and which evidence would confirm a defect.|A valid finding links observation, impact, remediation, and retest. Testing remains inside the stated scope.|Scope 3, evidence and risk 4, policy and retest 3.|Ask a peer to act as system owner and review your scope before signing the practice assessment plan.
+& Role-play a scope change request. Document the change and wait for the fictional owner's written approval.
+^ nisttest,nmap,nistcsf
+? What must be decided before testing?|Authorized targets and methods|The color of the report|A root cause for all findings|A fixed number of severe findings|A defined scope controls assessment activity.
+? An open port by itself proves what?|A service appears reachable under the scan conditions.|The system was breached.|There is definitely an exploitable bug.|The device must be offline.|Reachability is an observation that needs context.
+? What should a finding include?|Evidence, impact, remediation, and retest|Only a screenshot|Only the tool name|A guessed perpetrator|The owner needs enough information to verify and fix the issue.
+? What makes a policy enforceable in practice?|A clear owner, schedule, and verification method|A vague request to be careful|No review process|An unnamed approver|Specific responsibilities make controls testable.
+? What is a successful remediation check?|The issue is resolved and approved functionality still works.|Every network service is disabled.|The earlier report is deleted.|Only the title changed.|A retest checks the fix and important behavior.
+! A scan identifies a service outside the written scope. What is the next step?|Document it and seek an approved scope change before testing it.|Assess it because it is visible.|Ask another student to test it secretly.|Remove the scope record.|Visibility does not grant permission to test the service.
+# Defensive practice & project presentation|9–10|Apply controls to a complete scenario and defend your decisions in a project review.
++ Build a security baseline for a fictional small organization.
++ Prioritize improvements and test two representative cases.
++ Present risks, controls, evidence, and residual concerns.
+> Read the scenario|Inventory systems, people, and data. Link critical assets to the services people depend on.|Identify what you can verify from the lab brief and what you need to ask the client.|The academy uses a public signup site, staff Wi-Fi, a cloud attendance export, and an admin dashboard.
+> Prioritize improvements|Rank likely problems by impact and exposure. Pick a small set of fixes the organization can maintain.|Connect each priority to a named owner and proof that it works.|Review public export permissions and separate guest Wi-Fi before changing a dashboard theme.
+> Test two paths|Write expected behavior, test data, observations, and pass or fail for each control.|Check success and denial cases where access is involved. Keep tests inside the sandbox.|A learner account can see its sample record. Another learner's record stays blocked.
+> Build the incident playbook|Combine reporting, evidence handling, containment, recovery targets, and communication in a one-page plan.|Include where the owner checks backup availability and who can approve restoration.|A fictional IT lead receives a suspicious login report, confirms event details, and documents next steps.
+> Present with evidence|Start with asset and risk, show the tested change, then name residual risk and next action.|Use readable diagrams and explain why the selected control fits the organization.|Show a before-and-after access matrix and a repeatable test result.
+$ Present a security baseline|Groups review the academy scenario and deliver an initial and revised presentation after feedback.|Submit a one-page baseline, two test records, and a five-slide presentation.
+- Inventory four assets and rank three meaningful risks.
+- Select two controls and document expected and observed behavior.
+- Include an incident playbook and recovery checkpoints.
+- Present, collect peer feedback, and revise one finding or recommendation.
+% Prepare four scenario cards and a short practice quiz. Arrange two presentation rounds or a guest review.|Require evidence for any claim that a control works. Ask each group to name the remaining uncertainty.|A strong presentation connects each control to one asset, test, and owner.|Baseline 3, proof and incident response 5, presentation 2.|Rework one slide for a nontechnical school administrator.
+& Give feedback using one observed strength, one question, and one specific improvement.
+^ nistcsf,incident
+? What starts a security baseline?|An inventory of assets, data, and responsibilities|A promise that all systems are safe|A new presentation background|A list of unrelated job titles|Inventory defines what needs protection.
+? What makes a control test repeatable?|Inputs, steps, and expected result|Only a screenshot with no labels|A different target each time|An unrecorded test|Others can reproduce a test with an explicit procedure.
+? What should a finding presentation show?|Risk, evidence, action, and owner|Only the number of slides|A private password|Only vague assurances|A reviewer should understand what to do and why.
+? Which check belongs in an incident playbook?|Who can approve restoring a backup?|Which font looks best?|Which laptop is newest?|What title is most dramatic?|Recovery decisions need ownership and verification.
+? How should residual risk be recorded?|Describe what remains and who owns the decision.|Pretend the risk has disappeared.|Delete the test notes.|Assign it to every visitor.|Remaining exposure needs a clear owner and next step.
+! Two controls cost the same. What should drive the first fix?|Expected risk reduction for critical assets and available evidence|The length of the control name|The color of the report|The order of rows in the spreadsheet|Priority should reflect risk and practical impact.
+# Freelancing, portfolio & career planning|11–12|Package two safe-to-share projects and pitch a clearly scoped security engagement.
++ Compare security services and describe appropriate beginner responsibilities.
++ Write two portfolio case studies and a scoped proposal.
++ Present a 90-day career roadmap and rehearse interview responses.
+> Services and boundaries|Common work includes policy review, access audits, vulnerability assessments, and incident preparation.|Align scope to skills and authorization. For a beginner, a lab-backed defensive review is a concrete starting point.|Offer a review of an approved configuration against a checklist with a concise report.
+> Portfolio evidence|Write problem, scope, method, observation, action, and retest. Sanitize identifiers and use cases you may share.|Demonstrate tools using fictional labs and clearly label simulations.|Pair an isolated incident tabletop with a least-privilege access audit.
+> Proposal writing|State the client's need, authorized targets, limits, expected deliverables, and timing.|Include discovery questions and clarify who approves scope and handles evidence.|Ask which environment is authorized, whether there is a staging target, and who receives the report.
+> Build a career plan|Set weekly practice and monthly milestones across networking, operating systems, web security, and reporting.|Track projects, feedback, and job applications. Review goals based on actual progress.|Month 1 packet analysis, month 2 isolated web review, month 3 portfolio polish and mock interviews.
+> Interview practice|Use a clear example with context, action, evidence, and lesson. Keep communication concise and professional.|Practice explaining a risk to a technical reviewer and to a nontechnical client.|Describe a permission flaw as possible access to another student's report and show the denied-path retest.
+$ Security portfolio and 90-day roadmap|Prepare for a mock interview with a client who needs a safe defensive assessment.|Submit two sanitized cases, a scope-aware proposal, and a 90-day plan. Give a three-minute presentation.
+- Select two projects and remove private identifiers or use synthetic evidence.
+- Write a proposal with authorization boundaries, evidence handling, and concrete deliverables.
+- Set three monthly outcomes and one realistic weekly activity metric.
+- Rehearse two interview answers and revise one area from feedback.
+% Invite a security practitioner or reviewer if available. Prepare a fictional service request and scoring sheet.|Ask who grants authorization and which result the client can verify after remediation.|Portfolio includes two cases with evidence. Proposal names scope, owner, reporting method, and retest.|Cases 4, proposal and roadmap 4, presentation 2.|Turn one case into a one-page professional portfolio entry.
+& Practice a mock interview and give a short client update in plain language.
+^ nicects,nisttest,upwork
+? What belongs in a security portfolio?|Sanitized evidence from approved work or labeled labs|Credentials from a client|Private records from a report|Unsourced claims about systems|A portfolio can show capability without exposing sensitive data.
+? What belongs in a proposal?|Scope, authorization, deliverables, timeline, and evidence handling|A promise to scan any related target|All account passwords|A guarantee that no risk exists|A specific scope and method clarify the engagement.
+? What is an achievable first-month goal?|Complete two approved labs and write one report.|Guarantee a paid contract every day.|Become authorized on every public service.|Avoid all peer feedback.|A practical goal has a controllable activity and deliverable.
+? What makes an interview answer strong?|A specific example with action and verification|A list of vague superlatives|A guess presented as evidence|A claim about a confidential client|Specific evidence makes experience easy to assess.
+? How should a lab case be labeled?|A practice or simulated case|An audited real client engagement|An official security clearance|A confidential breach report|Honest labels distinguish the setting and scope.
+! A client wants a draft sent to a new contact. What should you verify first?|That the owner authorized the recipient and the evidence can be shared.|Only that the email has a subject.|Whether the report has many screenshots.|The contact's preferred color.|Security reports should go to authorized recipients under agreed evidence-handling rules.

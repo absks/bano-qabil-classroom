@@ -1,60 +1,89 @@
 from pathlib import Path
 import json
+from teaching import enrich
 
 ROOT = Path(__file__).resolve().parent
-SRC = ROOT
+COURSES = ('001', '005', '006', '007', '023', '024')
 
-def quiz(line):
-    prompt, *values = line.split('|')
-    assert len(values) == 5, line
-    [answer] = [i for i, choice in enumerate(values[:4]) if choice.startswith('*')]
-    choices = [choice.removeprefix('*') for choice in values[:4]]
-    assert len(set(choices)) == 4, line
-    return {'prompt': prompt, 'choices': choices, 'answer': answer, 'explanation': values[4]}
+def fields(body, size):
+    values = [value.strip() for value in body.split('|')]
+    assert len(values) == size and all(values), body
+    return values
 
-lessons = []
-for file in ('01-04.txt', '05-08.txt'):
-    for line in (SRC / file).read_text().splitlines():
+def question(body, rotation):
+    prompt, answer, other1, other2, other3, explanation = fields(body, 6)
+    choices = [answer, other1, other2, other3]
+    assert len(set(choices)) == 4, prompt
+    rotation %= len(choices)
+    choices = choices[rotation:] + choices[:rotation]
+    return dict(prompt=prompt, choices=choices, answer=choices.index(answer), explanation=explanation)
+
+references = {}
+for line in (ROOT / 'references.txt').read_text(encoding='utf-8').splitlines():
+    key, title, url, description = fields(line, 4)
+    assert key not in references and url.startswith('https://'), line
+    references[key] = [title, url, description]
+
+def read_course(code, course_index):
+    course = dict(id='bq' + code, code='BQ-' + code, lessons=[], final=[])
+    lesson = None
+    slide = None
+    for line in (ROOT / ('bq' + code + '.txt')).read_text(encoding='utf-8').splitlines():
         if not line:
             continue
-        symbol = line[0]
         body = line[2:]
-        if symbol == '#':
-            lesson = dict(id=len(lessons)+1, title=body, objectives=[], slides=[], notes=[], refs=[], quiz=[])
-            lessons.append(lesson)
-        elif symbol in '@=':
-            lesson[{'@': 'track', '=': 'summary'}[symbol]] = body
+        symbol = line[0]
+        if symbol == '@':
+            course['title'], course['summary'], course['outcome'], course['theme'] = fields(body, 4)
+        elif symbol == '#':
+            title, source, summary = fields(body, 3)
+            lesson = dict(id=len(course['lessons']) + 1, title=title, source=source,
+                          summary=summary, objectives=[], slides=[], quiz=[])
+            course['lessons'].append(lesson)
         elif symbol == '+':
             lesson['objectives'].append(body)
         elif symbol == '>':
-            slide = dict(title=body, points=[], code=[])
+            title, concept, application, example = fields(body, 4)
+            slide = dict(title=title, points=[concept, application], example=example, code=[])
             lesson['slides'].append(slide)
-        elif symbol == '$':
-            slide = dict(title=body, points=[])
-            lesson['lab'] = slide
-        elif symbol == '-':
-            slide['points'].append(body)
-        elif symbol in '!~&':
-            slide[{'!':'example','~':'cue','&':'deliverable'}[symbol]] = body
         elif symbol == ':':
             slide['code'].append(body)
+        elif symbol == '$':
+            title, scenario, deliverable = fields(body, 3)
+            lesson['lab'] = dict(title=title, example=scenario, deliverable=deliverable, points=[])
+        elif symbol == '-':
+            lesson['lab']['points'].append(body)
         elif symbol == '%':
-            lesson['notes'].append(body)
+            lesson['notes'] = fields(body, 5)
+        elif symbol == '&':
+            lesson['softSkill'] = body
         elif symbol == '^':
-            lesson['refs'].append([piece.strip() for piece in body.split('|')])
+            lesson['refs'] = [references[key.strip()] for key in body.split(',')]
         elif symbol == '?':
-            lesson['quiz'].append(quiz(body))
+            lesson['quiz'].append(question(body, course_index + lesson['id'] + len(lesson['quiz'])))
+        elif symbol == '!':
+            course['final'].append(question(body, course_index + 2 + len(course['final'])))
         else:
             raise ValueError(line)
-final = [quiz(line[2:]) for line in (SRC / 'final.txt').read_text().splitlines()]
-roadmap = []
-for line in (SRC / 'roadmap.txt').read_text().splitlines():
-    title, ids, topics = line.split('|')
-    roadmap.append(dict(title=title, lessons=[int(i) for i in ids.split(',')], weeks=topics.split('; ')))
-assert len(lessons) == 8 and len(final) == 16 and len(roadmap) == 6
-for l in lessons:
-    assert len(l['slides']) == 5 and len(l['quiz']) == 8 and len(l['notes']) == 5
-    assert all(len(r) == 3 and r[1].startswith('https://') for r in l['refs'])
-    assert len(l['lab']['points']) == 4
-payload = dict(lessons=lessons, final=final, roadmap=roadmap)
-(ROOT / 'course.js').write_text('window.COURSE = '+json.dumps(payload, ensure_ascii=False, indent=2)+';\n')
+    return course
+
+def validate(course):
+    assert len(course['lessons']) == len(course['final']) == 8, course['code']
+    source_weeks = []
+    prompts = [q['prompt'] for q in course['final']]
+    for lesson in course['lessons']:
+        assert len(lesson['objectives']) == 3, lesson['title']
+        assert len(lesson['slides']) == len(lesson['quiz']) == len(lesson['notes']) == 5, lesson['title']
+        assert len(lesson['lab']['points']) == 4 and len(lesson['refs']) >= 2, lesson['title']
+        limits = [int(n) for n in lesson['source'].split('–')]
+        source_weeks.extend(range(limits[0], limits[-1] + 1))
+        prompts.extend(q['prompt'] for q in lesson['quiz'])
+    assert source_weeks == list(range(1, 13)), course['code']
+    assert len(set(prompts)) == len(prompts), course['code']
+
+for index, code in enumerate(COURSES):
+    course = read_course(code, index)
+    validate(course)
+    enrich(course)
+    data = json.dumps(course, ensure_ascii=False, separators=(',', ':'))
+    (ROOT / ('bq' + code + '.js')).write_text('window.BQ_COURSES.push(' + data + ');\n', encoding='utf-8')

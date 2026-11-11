@@ -1,21 +1,23 @@
 # Bano Qabil Digital Skills Classroom
 
-An eight-lecture teaching intensive adapted from six Bano Qabil outlines. Each lecture has seven browser slides, examples, a practical lab, instructor preparation notes, an eight-question quiz and documentation links. The course includes a separate 16-question final test, a capstone, and a roadmap to all six source outlines.
+Six independent courses adapted from the supplied Bano Qabil outlines. Each course has eight weekly sessions, seven slides per session, worked examples, a lab, trainer notes, official reference links, a five-question weekly quiz, an eight-question final test, and a capstone. The syllabus map links each teaching week to its original outline weeks. Scores are saved in the current browser under separate course and week keys.
 
 ## Open locally
 
-Open `index.html` in a browser. For a local HTTP preview, run:
+Open `index.html` in a browser, or run `python -m http.server 8000` and visit http://localhost:8000. No API keys, dependencies, or accounts are needed. Quiz keys are present in the client so the assessments are intended for practice and classroom self-checks.
 
-```sh
-python -m http.server 8000 --directory .
-```
+## Edit and deploy
 
-Then open http://localhost:8000. No API keys, dependencies, or accounts are needed. Quiz best scores are saved on the current browser. The teacher notes and quiz keys are visible in the site source and the teacher tab, so the quizzes are suitable for practice rather than secure graded exams.
+Edit `bq001.txt`, `bq005.txt`, `bq006.txt`, `bq007.txt`, `bq023.txt`, or `bq024.txt` and `references.txt`. Run `python build.py` and commit the regenerated course JavaScript along with the text source. The builder validates all 48 weeks, their source coverage, and the assessment counts. The correct answer is the first option in each source question. The builder rotates displayed positions.
 
-## Edit course content
+The repository's `vercel.json` stages the static browser assets without installing dependencies.
 
-Edit the plain-text files named `01-04.txt`, `05-08.txt`, `final.txt`, and `roadmap.txt` and run `python build.py` with Python 3.9 or later. Commit the generated `course.js` along with the source edit. Mark exactly one answer per MCQ with an asterisk before the option. The site needs only the five web assets copied by the Vercel build command.
+## Teacher Studio upgrade
 
-## Deploy on Vercel
+Each of the 48 weekly sessions now includes a word-for-word teacher script with 14 timed teaching stages, everyday explanations, model answers, lab coaching, quiz discussion, and homework. Open a week and choose **Teacher guide**. Download the plain-text guide or use **Print / Save PDF**. The Presentation tab also exposes the script for the current slide.
 
-Import this GitHub repository. Select the Other framework preset if prompted. The committed `vercel.json` copies the five web assets into the deployment directory without installing any dependencies. Connect the `main` branch for future deployments.
+Presentations use six subject colour themes, three-part lesson visuals, separate idea/application cards, classroom example panels, and slide progress indicators. Keyboard navigation and presentation mode remain available.
+
+Edit `teaching.json` for each lesson's main idea, everyday explanation, three-part visual, and misconception. `teaching.py` builds the rehearsal scripts from these additions and the subject-specific content in `bq*.txt`. Run `python build.py` and commit the generated `bq*.js` files. Vercel serves these committed generated assets without requiring Python during deployment.
+
+Live classroom: https://bano-qabil-classroom.vercel.app/

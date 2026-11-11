@@ -1,0 +1,183 @@
+@ Web Development with WordPress|Build, maintain, and launch a responsive WordPress website and practice WooCommerce storefront.|Deliver a tested WordPress site with a launch checklist and client handoff.|web
+# Web fundamentals, installation & dashboard|1–2|Install WordPress locally and build a navigable foundation with pages and posts.
++ Explain static and dynamic sites, domains, hosting, and content management.
++ Install WordPress with Local, XAMPP, or an approved host.
++ Organize pages, posts, categories, and tags in the dashboard.
+> What happens when a site loads|The domain is the readable address. Hosting runs or serves the site. A CMS lets editors manage content.|A static site serves prepared files. WordPress usually generates responses using code and stored content, with caching where configured.|A five-page brochure can be static or WordPress-based. WordPress helps a client update course listings through the dashboard.
+> Choose an installation route|Local creates a practice environment. XAMPP can provide PHP and a database for manual installs. An approved host may provide an installer or cPanel setup.|Manual setup needs WordPress files, a database, database user, and secure credentials. Confirm environment requirements in official guidance.|Create a fictional Balakot Skills Hub locally. Record the local URL and admin path.
+> Navigate dashboard and Site Health|Review Settings, Users, Tools, Plugins, Themes, and Site Health. Set site title, timezone, and permalinks deliberately.|Separate the public visitor view from administrator access. Use a private window when checking the visitor experience.|Set the public homepage, then verify it opens as an anonymous visitor.
+> Pages, posts and classification|Pages suit stable information. Posts suit dated updates. Categories group posts and tags describe narrower recurring topics.|Use clear slugs and navigation. Set Home as a static page when the project calls for it.|Courses is a page. The upcoming admissions announcement is a post in Announcements.
+> Test and document|Check the homepage, contact path, navigation, and post list. Capture evidence and record environment differences.|Use sample content and explain which settings must change before moving from local to production.|Write an environment note with the local URL, site purpose, and three verified paths.
+$ Start a three-page training site|Build a fictional school or business site in Local, XAMPP, or an approved sandbox.|Submit the three-page site inventory, two posts, dashboard screenshot, and visitor checks.
+- Install WordPress and record the environment and public URL.
+- Create Home, Courses or Services, and Contact pages. Set the homepage.
+- Add two dated posts, assign a category and a useful tag, and add primary navigation.
+- Check three paths in a visitor window and inspect Site Health.
+% Prepare Local or XAMPP and a clean sample database if doing manual installation.|Show the site URL and dashboard URL side by side. Ask why the announcement belongs in a post.|The visitor reaches all three pages. Two posts are visible and correctly grouped.|Installation 3, content and dashboard settings 4, visitor testing 3.|Add another post and verify its category and navigation context.
+^ wpinstall,wpdash,wppages
+? What is a CMS used for?|Managing site content|Only sending email|Only routing local Wi-Fi|Replacing all backups|A CMS provides a way to create and manage content.
+? What does WordPress usually need for a manual install?|Files, a database, and configuration|A spreadsheet alone|Only a logo|Only a domain name|WordPress stores content and settings in a database and runs code from its files.
+? Which suits a permanent Contact screen?|Page|Dated post only|A tag|A user role|Pages are appropriate for stable information.
+? What groups related announcements?|Category|Database password|Menu color|Media filename|Categories group posts by a broader subject.
+? How can you test public visibility accurately?|Open the page as a logged-out visitor.|Only preview while logged in as admin.|Only count the dashboard rows.|Disable every plugin.|A logged-out view checks what ordinary visitors can access.
+! A trainer moves a site from local to approved hosting. What should be verified first after migration?|Public URL, database-backed content, and visitor navigation.|Only the logo color.|Only the file name.|Only how long the migration took.|A useful check confirms the site loads with its content and important paths.
+# Themes, navigation, plugins & media|3–4|Customize the site's identity and add a small, tested set of features.
++ Compare block and classic themes and safe customization approaches.
++ Set site identity, navigation, widgets or blocks, and footer.
++ Install and test suitable plugins, forms, and optimized media.
+> Choose a theme|A theme controls presentation. Evaluate support, update history, features, licensing, and responsiveness.|A classic theme often uses the Customizer and menus. A block theme uses the Site Editor for templates and navigation. Use child themes where appropriate for theme-file overrides.|Preview a theme with sample content and check pages at narrow width.
+> Identity and navigation|Set title, logo, tagline, header, footer, and a short menu. Use meaningful labels and current links.|Classic widgets may appear in widget areas. Block themes may use template parts and blocks for similar layout roles.|Add Home, Courses, and Contact links in the header and a privacy link in the footer.
+> Choose plugins by task|Plugins add functionality such as contact forms and SEO controls. Review compatibility, updates, and support before adding them.|Test each change in staging and avoid overlapping plugins that perform the same job.|Choose one form plugin, one SEO plugin, and one justified backup or image tool.
+> Media and accessibility|Use correctly sized images and descriptive filenames. Compare JPEG or WebP for photos and PNG for transparency where suitable.|Write alternative text that conveys the information an image contributes. Decorative images can use empty alt text when appropriate.|Use “Learners practicing WordPress in the computer lab” when the photo communicates the activity.
+> Form and handoff checks|Submit fictional data and verify validation, confirmation, and delivery destination. Local mail may need a test mail catcher or configured transport.|Keep a record of installed plugins, configuration owners, and what was tested.|Test one valid inquiry and one missing required field. Document where the valid message appeared.
+$ Theme and contact form build|Customize the training site and verify how a visitor uses it.|Submit mobile and desktop previews, plugin inventory, two optimized media examples, and form evidence.
+- Choose a theme and note how navigation is edited in that theme.
+- Build header and footer navigation and set site identity.
+- Install three justified tools, optimize two images, and configure a test form.
+- Check two submission paths and record confirmation and delivery evidence.
+% Prepare a classic theme, a block theme, and two sample images.|Compare the navigation controls and show how to test the correct delivery destination.|The site has consistent identity, working links, and one verified fictional submission or captured local mail.|Theme and navigation 3, plugins and media 4, tests and documentation 3.|Write a handoff note explaining why each installed plugin is needed.
+^ wpthemes,wpplugins,wpmedia
+? What normally controls the overall design?|Theme|Post category|Database user|Search query|A theme governs site presentation and layout.
+? What can add contact-form functionality?|Plugin|A blog tag|A file extension|A permalink alone|Plugins extend WordPress functionality.
+? Where do block themes commonly manage templates?|Site Editor|The public checkout|The Recycle Bin|Only the image file name|The Site Editor works with templates and block-based layouts.
+? What should alt text capture for an informative image?|The relevant information or purpose of the image|Every decorative pixel|Only the file name|A random keyword list|Alternative text communicates the contribution of the image.
+? Which checks a contact form end to end?|Submit sample data and verify delivery.|Count installed plugins.|Change the button color.|Only inspect the editor.|Delivery confirms the actual visitor path.
+! A theme update would overwrite direct edits to its files. What should you consider for supported overrides?|A child theme or the appropriate editor-based customization.|More copies of the same plugin.|Editing the database password.|A shorter logo filename.|A supported customization path keeps changes manageable across updates.
+# Block editor, Elementor & responsive layout|5|Build a landing page with blocks and Elementor and verify it on different screens.
++ Compose content using WordPress blocks, patterns, and reusable content.
++ Use Elementor containers, widgets, templates, and responsive controls.
++ Validate semantics, spacing, links, and keyboard interaction.
+> WordPress blocks|Use a group, heading, paragraph, image, and buttons to build a clear hierarchy. Use List View to inspect nested blocks.|A pattern provides a reusable starting layout. A synced pattern can share later content updates where appropriate.|Use an unsynced hero pattern for individual pages and a synced CTA where the wording should match.
+> Shortcodes and reusable elements|A shortcode can render plugin-provided dynamic content in supported contexts. Use a Shortcode block or the plugin's native block as directed.|Record dependencies so a later editor knows which plugin supplies a dynamic element.|Insert a form using its supported block or shortcode and verify the public view.
+> Elementor containers and widgets|A container groups elements and controls layout. Widgets provide content such as heading, image, text, or buttons.|Use templates for repeatable structure and test what is available in your installed Elementor version.|Build a hero with heading, explanatory text, illustration, and a direct link to Courses.
+> Responsive and accessible layout|Set sensible content widths, readable spacing, and a stacked order for narrow screens. Check layout in a real visitor view.|Use descriptive button text, semantic headings, and visible focus. Verify no horizontal scrolling at phone width.|Replace “Click here” with “View course schedule” and tab to the link.
+> Compare editing workflows|Build the same core content in each editor on different practice pages. Compare ease of handoff, responsiveness, and dependencies.|Choose based on the site's maintainers and the required features.|A volunteer can update a standard FAQ in blocks. A custom marketing page may use Elementor if that matches the maintenance plan.
+$ Build a landing page twice|Make a five-section landing page in Elementor and a smaller comparison version in the block editor.|Submit both pages or screenshots, a mobile check, and a short editor-selection note.
+- Draft a hero, benefits, course list, FAQ, and CTA.
+- Build the block version with one pattern or a reusable section and a functional form or button.
+- Build the Elementor page with a container layout, one template or reusable element, and mobile spacing.
+- Verify three screen widths, keyboard navigation, and CTA destination.
+% Prepare one block theme and Elementor on the sandbox. Use only features available in that installation.|Show mobile overflow and fix the container width. Demonstrate List View and page preview.|Both pages preserve the same content hierarchy and a working CTA. The Elementor version passes phone-width checks.|Structure 3, editor skills 4, responsive and accessibility checks 3.|Write two handoff instructions so a teammate can update the CTA in each editor.
+& Explain a responsive design choice to a client in plain language and invite a targeted review.
+^ wpblock,elementor,wppatterns
+? What does a synced pattern allow?|Shared updates across uses of that pattern|Automatic migration of the database|Replacement of all backups|Email delivery by default|Synced patterns reuse a shared version of content.
+? What is an Elementor container used for?|Grouping and laying out widgets|Creating the database server|Changing the domain owner|Tracking payroll|Containers control layout for grouped elements.
+? Which is the clearest CTA?|View course schedule|Click|More|Link|Descriptive text explains the action.
+? Where should mobile layout be checked?|In a narrow visitor viewport and on a phone when possible|Only the desktop editor toolbar|Only the theme's name|Only the database editor|Testing the rendered page exposes real layout issues.
+? What should accompany a shortcode handoff?|The plugin dependency and a visitor test|Only the writer's name|A new unrelated logo|A list of guest passwords|The next editor needs to know what provides the feature.
+! A hero fits on desktop but overflows a phone. What should be checked first?|Widths, padding, and stacking at the affected breakpoint.|The site name only.|The database collation.|The admin's email address.|Responsive overflow is often caused by layout sizing or spacing.
+# Permissions, moderation, security & restore|6–7|Secure the site and prove that content workflow and backups work.
++ Assign roles using least privilege and configure comment moderation.
++ Explain TLS, MFA, updates, and login protections.
++ Create or inspect a full backup and verify a restore in isolation.
+> WordPress roles and capabilities|Administrator maintains site settings. Editor handles content across authors. Author publishes their own posts. Contributor drafts for review. Subscriber has limited access.|Choose the least role that covers the task. Custom capabilities should be explicit and tested.|A volunteer writes drafts as Contributor and an Editor publishes after review.
+> Moderate comments and spam|Review Discussion settings, approval workflow, and notifications. Use suitable anti-spam controls and verify their behavior.|A comment interface plugin and an anti-spam tool serve different roles. Review moderation queues regularly.|Send a fictional comment and confirm it waits for review before appearing publicly.
+> Secure the operating site|Use HTTPS, supported plugins, prompt updates, MFA where available, and sensible login limits.|Back up before major updates and test changes in staging. Remove unused accounts and plugins after verification.|Record which maintainer owns updates and how they confirm the site still works.
+> Files and database backups|A full backup covers files and the database. Manual options include a file transfer plus database export. Plugins such as UpdraftPlus can schedule backups.|Store copies separately, restrict access, and keep retention aligned to recovery needs.|A media copy alone would miss post records, roles, and order data in the database.
+> Restore and verify|Restore in an isolated environment. Check homepage, login, media, selected content, and sample forms or orders.|Document the timestamp, restore result, and known gaps. Test before relying on a backup for release.|Restore a sandbox snapshot and confirm one post and image appear in the correct state.
+$ Roles and recovery lab|A local site needs a safe editorial workflow and a documented restore.|Submit a role matrix, moderation check, backup inventory, and restore verification or instructor-observed result.
+- Add three fictional accounts with distinct required tasks and minimum roles.
+- Verify draft review, public visibility, and one comment moderation path.
+- Document HTTPS, updates, MFA or login protections, and a full backup plan.
+- Restore a practice copy and verify login, content, and media.
+% Prepare a disposable staging site and a full backup. Provide two test account sessions.|Ask learners to show a denied permission. Verify site data after restoration, not just the archive's existence.|Contributor can draft without publishing. Backup includes files and database. A restore opens the expected content.|Roles and moderation 4, hardening 3, recovery proof 3.|Write a one-page policy for plugin updates and backup testing.
+& Run a maintenance handoff role-play. Agree on the owner, maintenance window, evidence, and escalation contact.
+^ wproles,wpbackup,wpharden
+? Which role suits a trainee who drafts posts for review?|Contributor|Administrator|Subscriber|Editor|Contributor can draft without publishing by default.
+? What is needed for a full backup?|Site files and database|Only the logo|Only the front page HTML|Only the admin email|WordPress content and settings also live in the database.
+? Which helps restrict public comments until reviewed?|Comment moderation settings|A new site tagline|A larger media file|An unrelated permalink|Moderation can hold comments for approval.
+? What confirms the backup works?|An isolated restore passes expected checks.|The archive name says backup.|The file is large.|The backup email contains a date.|A restore tests practical recoverability.
+? When should major plugin updates be tested?|In a staging or controlled environment where possible|Only after a public outage|Only in a screenshot|Never when the site is functional|Staging supports verification before production changes.
+! A writer can unexpectedly publish another author's posts. What should the trainer verify?|The user's role and capabilities, then test both permitted and denied paths.|Only the browser version.|Only the menu title.|The width of the homepage.|Permissions should match the actual role and expected actions.
+# SEO, Search Console & GA4|8|Prepare a WordPress page for discovery and verify a meaningful analytics event.
++ Apply search intent, readable URLs, headings, and internal links.
++ Explain Search Console verification, sitemaps, and URL inspection.
++ Configure or simulate GA4 and validate an inquiry event.
+> Search-friendly content|Write for user intent and use descriptive titles, headings, and links. Set meaningful URLs and optimize image text.|A plugin such as Yoast can help manage metadata and sitemaps. Review recommendations against the content rather than chasing a score.|For a local class page, state location, schedule, prerequisites, and the registration path.
+> Indexing and Search Console|Confirm production pages are crawlable and intended for indexing. Keep staging access controlled.|Verify property ownership using an authorized method, submit a sitemap when appropriate, and use URL Inspection to investigate issues.|Check whether a published course page is discoverable before interpreting low traffic.
+> Set up analytics|GA4 captures events from a configured data stream and tag. Use an authorized method to install one appropriate implementation.|Consider consent and privacy requirements. Keep personal details out of event parameters.|Send an inquiry event only after a successful fictional form submission.
+> Verify behavior and data|Use Realtime or DebugView as appropriate to confirm events during controlled testing. Check duplicates and triggers.|A clicked button differs from a successful submission. Decide which event represents the goal.|A form validation failure should create no confirmed-inquiry event.
+> Read separate reports|Search Console covers search visibility and indexing. Analytics describes measured on-site activity and events.|Use date ranges, definitions, and source context. Avoid claims of causation from one metric.|A search impression and a lead submission answer different questions.
+$ Search and measurement check|Improve the site’s course page and prove how a successful inquiry would be measured.|Submit a metadata audit, an indexability plan, and two GA4 test cases or a documented simulation.
+- Rewrite title, description, and headings based on one target query.
+- Check sitemap, internal links, and intended indexing settings.
+- Configure an authorized test property or produce a tag and event plan using mock data.
+- Test valid and invalid submissions and document expected events and duplicate prevention.
+% Prepare a practice page, Search Console screenshots, and a sample GA4 test view.|Show the difference between inspecting a URL and seeing an event. Keep test data fictional.|A valid submission creates one expected event. A validation failure creates none.|Page SEO 4, indexing and property reasoning 3, event testing 3.|Produce a two-sentence client update with the search and measurement findings.
+& Practice explaining an analytics limitation while giving the client a concrete next check.
+^ seo,searchconsole,analytics
+? What can Search Console help inspect?|Google search indexing of a URL|A customer's private credit card|WordPress user passwords|Only the size of a PDF|URL Inspection helps investigate indexing state.
+? What represents an inquiry conversion in this lab?|A confirmed successful submission|Any button hover|Every page load|Any failed form attempt|The event should correspond to the intended outcome.
+? Which improves page clarity and discoverability?|Descriptive titles and internal links|Random repeated keywords|A fake ranking claim|Hidden spam links|Titles and links help readers and search systems understand content.
+? What should be avoided in event parameters?|Personal contact details|A meaningful event name|A documented goal|An event timestamp where collected appropriately|Analytics should avoid transmitting unnecessary personal data.
+? How do you detect duplicate conversion recording?|Test that one successful action creates one event.|Count the site's images.|Install a second tag without checking.|Read only the headline.|A controlled test checks the event count for one known action.
+! A public page records views but is absent from search reports. Where should the indexing investigation start?|Search Console URL Inspection and indexability settings.|The checkout theme.|The image editor's zoom.|The site's administrative password.|Indexing checks address whether search can discover and include the URL.
+# WooCommerce catalog, checkout & shop design|9–10|Build a practice storefront and verify pricing, shipping, checkout, and fulfillment.
++ Configure simple and variable products, stock, and categories.
++ Set up test payments, tax assumptions, shipping zones, and cart checks.
++ Customize the shop and document an order lifecycle.
+> Catalog and product types|A simple product has one purchasing configuration. A variable product uses attributes for selectable options with separate price, stock, or SKU.|Use categories for groups, clear titles, and useful descriptions and images.|Add a simple Rice Bowl and a Chicken Karahi with Half and Full serving variations.
+> Store settings and delivery|Review currency, stock, classroom tax assumptions, shipping zones, and available methods. Zones match destinations.|Configure a practice flat rate, and compare free shipping conditions and local pickup where relevant.|A Half Karahi at PKR 1,200 plus PKR 150 shipping totals PKR 1,350 with no tax or discount.
+> Payment testing|Use a sandbox gateway, test-mode integration, or offline payment on an isolated practice store.|Verify success, failure or rejection, order records, and notices. Avoid placing real charges during the lab.|Test a fictional address inside the shipping zone and a second outside it.
+> Design the shop|Use clear category navigation and featured or sale sections. Use block-based tools or Elementor WooCommerce features available under the installed plan.|Make price, stock, and button behavior clear on mobile. Check product → cart → checkout as a visitor.|A featured section links to the product page and shows accurate availability.
+> Order lifecycle|Review received, processing, completed, canceled, and refunded states as applicable. Confirm order actions and inventory behavior for the configured setup.|Document who handles orders and what evidence confirms fulfillment.|A test order can be found by its ID and compared with expected price and shipping.
+$ Build and test a demo store|Create three fictional products, including a variable item with two servings.|Submit the catalog, two checkout cases, order record, and mobile shop screenshot.
+- Create and price three products. Give the variable item two attributes or options as needed.
+- Configure PKR and a test-only payment method plus an approved fictional shipping zone.
+- Design a shop section and check the visitor path at phone width.
+- Place one valid test order and verify an invalid zone. Record totals, order status, and stock behavior.
+% Prepare WooCommerce, fictional addresses, and a test payment method. Verify all activity is isolated.|Demonstrate one option with no price, then show how a valid variation becomes purchasable.|Half serving + shipping is PKR 1,350 in the example. Out-of-zone delivery is unavailable.|Catalog 3, checkout and fulfillment evidence 5, shop layout 2.|Add an out-of-stock variation and verify the public message and behavior.
+& Role-play the client handoff for a late order. Explain the status, owner, and next step clearly.
+^ wooproduct,woopay,wooship
+? What fits Half and Full options with separate prices?|Variable product|A category only|A user role|A report export|Variable products support separate options and prices.
+? What is 1,200 plus 150 without tax or discount?|PKR 1,350|PKR 1,150|PKR 1,200|PKR 1,550|Add the product price and shipping charge.
+? What determines available delivery methods?|The shipping zone and configured methods|Only the store logo|The dashboard theme|The product image format|Zones use destination rules to select available methods.
+? What is appropriate for payment practice?|A sandbox or approved offline test method|A real customer's saved card|A production charge without permission|An invented order number without testing|Use test methods to verify checkout without real transactions.
+? What confirms an order reached the dashboard?|A matching test order record with expected details|A screenshot of the shop header|Only an installed plugin|A draft product title|The record confirms the transaction reached the order workflow.
+! Checkout offers the same delivery method for an excluded address. What should be checked?|Shipping zone matches, ordering, and method configuration.|The menu color.|The browser bookmarks.|The website's favicon.|Shipping availability depends on zone matching and configured methods.
+# Speed, caching & mobile QA|11|Measure performance, make a focused improvement, and retest visitor behavior.
++ Compare caching, image optimization, minification, and CDN roles.
++ Record a fair performance baseline and compare it after a change.
++ Test mobile layout and check cart and checkout after optimization.
+> Record a baseline|Choose one page, consistent device and network conditions, and a comparable measurement. Test more than once where results vary.|Use PageSpeed Insights or Lighthouse and record transfer size and relevant metrics.|Capture the current homepage's image weight and one comparable load test.
+> Optimize images|Resize files to the displayed use, compress them, and select a suitable format. Give images useful dimensions to reduce layout movement.|Balance size with readability and visual quality. Check phone and desktop crops.|Reduce a 2 MB hero image while preserving legibility and framing.
+> Understand caching and CDN|Caching reuses work or files. A CDN can deliver assets from locations closer to users. Minification can reduce source asset size.|Use compatible tools and retest when combining features. Treat personalized cart and checkout pages with care.|Verify two separate sessions still have separate carts after enabling an optimization.
+> Test responsive behavior|Use browser responsive tools and a real device where possible. Check narrow navigation, touch targets, overflow, contrast, and readable text.|Google’s former Mobile-Friendly Test has been retired. Use current browser tools, PageSpeed Insights, or Lighthouse for practice.|On a narrow phone, the menu opens, every link remains reachable, and the checkout form fits.
+> Evaluate results|Compare the same route and conditions before and after. Note uncertainty and which change you made.|A faster result matters when the expected visitor behavior still works.|Record both a smaller image transfer and a successful mobile test order.
+$ Measure and improve|Optimize one training-site or storefront page while preserving its visitor paths.|Submit before and after evidence, the exact change, and three repeatable regression checks.
+- Run a baseline under documented conditions and identify the largest clear issue.
+- Apply one image, cache, or asset change and repeat the measurement.
+- Test menu, primary CTA, and checkout or form at phone width.
+- Write a short release note naming the change, improvement, and rollback path.
+% Prepare one oversized image and two browser sessions. Record a baseline before class.|Ask whether each before-and-after measurement used the same page and settings.|A complete result shows measured evidence and verifies that personalized paths still work.|Baseline and change 4, mobile and visitor checks 4, release note 2.|Test the slowest page under a second device or network profile.
+& Give a 60-second status report with the metric, business effect, and remaining check.
+^ pagespeed,lighthouse,wpcache
+? What makes a performance comparison fair?|Same page and similar conditions before and after|Unrelated pages on different devices|Only the best final result|Changing many tools at once|Comparable conditions help isolate the change.
+? Which page requires special care with shared caches?|Checkout|Static About page|A public logo image|A generic policy paragraph|Checkout can contain visitor-specific state.
+? What can reduce a large image transfer?|Resize and compress an appropriate copy.|Make its filename longer.|Add a second duplicate.|Disable all navigation.|Image optimization reduces bytes served.
+? What should you test at phone width?|Navigation, text, CTA, and form or checkout usability|Only the editor color|Only a large desktop screenshot|Only the administrator menu|Mobile QA should follow real visitor tasks.
+? What does a CDN commonly do?|Deliver eligible assets from distributed locations|Grant user roles automatically|Write product descriptions|Restore deleted order records|A CDN can serve resources closer to users.
+! A faster cache configuration causes two visitors to share the same cart. What is the next step?|Correct or roll back the cache configuration and retest separate carts.|Keep it because the benchmark improved.|Hide the cart button.|Clear only one visitor's history.|Functional correctness and session separation are required.
+# Launch checklist, client handoff & portfolio|12|Finish a client-ready site and present evidence that it is ready for handoff.
++ Complete an accessible and functional WordPress site.
++ Perform launch checks across links, forms, store behavior, security, and backups.
++ Prepare client documentation, portfolio evidence, and maintenance ownership.
+> Agree acceptance criteria|Define the audience and required paths, content, features, and technical checks. Keep a short issue list with owners.|Use a peer reviewer and revise one issue before release.|A training site requires working course, contact, and policy paths on desktop and phone.
+> Confirm functional behavior|Check navigation, form delivery, permissions, analytics events, and shopping paths where applicable.|Use approved test data and document expected versus actual behavior.|Verify that a valid test inquiry reaches its intended inbox and records one event.
+> Prepare a launch plan|Verify backup and restoration readiness, production domain and HTTPS, indexing intent, and update ownership.|Record how to revert a release if a critical path fails.|Store a backup timestamp and a rollback owner in the launch checklist.
+> Write client handoff|Explain which account edits content, where to find key settings, how to request changes, and who maintains backups.|Document scopes and service limits. Share appropriate access using approved methods.|Provide a one-page guide for publishing an announcement and checking inquiries.
+> Present your work|Show the project brief, decisions, evidence, and one improvement after peer feedback. Invite a guest developer where available.|Present one specific service package and explain what a client needs to supply.|Show the mobile landing page and a verified working form with fictional data.
+$ Release rehearsal|Complete the training site or fictional store and conduct a release rehearsal.|Submit the site link or export, a tested checklist, handoff guide, and three-minute portfolio presentation.
+- Verify the brief and resolve one issue after peer review.
+- Check three visitor paths, mobile behavior, role boundaries, and recovery evidence.
+- Write a maintenance and release guide with clear owners and next steps.
+- Present a specific design choice and support it with a test result.
+% Invite a local developer or experienced freelancer if available. Prepare review and launch templates.|Ask learners to demonstrate the actual visitor path and show the backup and retest record.|A reviewer can edit approved content and verify a critical visitor path from the handoff instructions.|Site and tests 5, launch and handoff 3, presentation 2.|Publish a short portfolio case or submit a private classroom version with screenshots.
+& Practice a client handoff meeting. Agree on acceptance, support, and the next review date.
+^ wpharden,wpbackup,upwork
+? What should acceptance criteria describe?|Required user outcomes and verification|Only the theme name|Only the number of colors|A guaranteed search ranking|Criteria make a release review concrete.
+? Which result verifies a form?|A controlled submission reaches the intended destination.|The form has a green button.|The form exists in a draft.|The admin knows the plugin name.|A delivery test follows the visitor journey.
+? What belongs in a release checklist?|Backup status, critical path tests, ownership, and rollback plan|Only the homepage screenshot|Unrelated passwords|A list of every font choice|Release checks cover function and recovery.
+? What helps a client after handoff?|Clear instructions and maintenance ownership|A screenshot with no labels|Shared public admin credentials|Only a link to the editor|Clients need instructions and a responsible owner.
+? What makes a portfolio claim credible?|A specific decision backed by observed evidence|A promised future outcome|An unnamed client's private data|A tool list with no project|Evidence makes the work reviewable.
+! A new release passes homepage checks but checkout fails. What should the release owner prioritize?|Restore or fix the critical checkout path and verify it before declaring release success.|Update the hero image first.|Publish a success notice immediately.|Delete all test records.|A critical business path must work before the release is accepted.

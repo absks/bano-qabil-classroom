@@ -1,0 +1,193 @@
+@ Generative AI|Learn Python and practical methods for creating, grounding, and evaluating generated content.|Present a generative AI prototype with source checks, a test set, and a portfolio case.|spark
+# Generative AI foundations & first Python notebook|1–2|Compare generative AI use cases and run a small statistics program.
++ Explain data, algorithms, models, training, inference, and generative outputs.
++ Compare text, image, audio, and video generation in practical settings.
++ Set up Python and Git and write a program that summarizes a small dataset.
+> What generative AI does|Traditional rule-based systems follow explicit logic. Predictive models estimate outcomes, and generative models produce new outputs learned from patterns.|Training adjusts a model using data and an algorithm. Inference uses the trained model for new inputs.|A sentiment classifier predicts a label. A language model can draft a summary from supplied reviews.
+> Modalities and practical uses|Text models draft and summarize, image models generate visuals, audio models can synthesize sound, and video models generate temporal sequences.|Examine local and global examples. Use reliable sources to verify whether a product uses generative AI, predictive AI, or another technique.|A fictional clinic may draft patient education with approved facts and human review. Company claims require evidence.
+> Set up the environment|Install or select Python 3, use Jupyter or VS Code, and verify the active interpreter. Use Git to save code and a README.|Document setup and keep personal data and API credentials outside the repository.|A partner runs your notebook from top to bottom using the stated dependencies.
+> Variables, inputs, and decisions|Strings hold text, numeric types hold values, and booleans represent decisions. Console input arrives as text and may need conversion.|Use if/else for checks and loops to process many values. Guard against invalid and empty inputs.|Before dividing by the number of reviews, check whether the list has any values.
+> Calculate and interpret statistics|Use count, sum, mean, and bounds to describe a small dataset. Report units and assumptions.|Check results manually on a few inputs. A descriptive statistic summarizes observed data.|Ratings 4, 5, and 3 total 12, with mean 4.
+: ratings = [4, 5, 3]
+: if ratings:
+:     print("Mean:", sum(ratings) / len(ratings))
+: else:
+:     print("No ratings to summarize.")
+$ First notebook and AI case note|Analyze fictional course ratings and research a documented local AI application.|Submit a running notebook or script, three tests, and a one-page sourced case note.
+- Confirm Python and create a reproducible folder or notebook with Git instructions.
+- Calculate count, sum, mean, minimum, and maximum for 4, 5, 3.
+- Test a single value and an empty list. Document expected behavior.
+- Compare one Pakistani and one global use case and label their AI approach with evidence.
+% Prepare ratings and two public source examples. Keep an offline run path.|Compare classification and generation with the same review. Check that an empty list is handled before division.|The sample mean is 4. The case note distinguishes verified facts from assumptions.|Working code and tests 5, AI concepts and evidence 3, reproducibility 2.|Add input validation for ratings outside 1–5 and test two boundaries.
+^ python,jupyter,gitbook,hfllm
+? Which task is generative?|Draft a new summary from approved reviews.|Count the number of reviews.|Sort three ratings.|Retrieve a stored file by name.|Generation produces new text from the provided context.
+? What is training?|Adjusting a model using data and an algorithm|Opening an existing spreadsheet|Only formatting the result|Renaming a notebook|Training changes learned parameters.
+? What is the mean of 4, 5, and 3?|4|3|5|12|12 divided by 3 is 4.
+? What should happen before dividing by a record count?|Check that the count is positive.|Convert the result into a random number.|Delete all data.|Assume missing data is always zero.|An empty dataset has no arithmetic mean and division by zero fails.
+? How should a company AI claim be taught?|Check a reliable source and state what it supports.|Assume every AI feature is generative.|Treat the logo as proof.|Invent a local customer quote.|Evidence is required to classify the documented use.
+! A teammate opens your notebook and cannot find the interpreter setup. What should you add?|A reproducible setup and run section with dependencies.|Only a screenshot of the last cell.|A private API key in the first cell.|A larger title.|Run instructions enable another person to verify the work.
+# Python data processing, files & OOP|3–4|Turn raw review records into reusable Python code with clear validation.
++ Use loops, conditionals, comprehensions, functions, and imported modules.
++ Apply lists, tuples, dictionaries, and sets to labeled review data.
++ Load a data file and model behavior with a class or simple inheritance.
+> Control flow and comprehensions|Use if/else to choose actions and loops to repeat work. Use comprehensions when the transformation stays readable.|Check boundaries and invalid inputs explicitly before processing.|Keep records with numeric ratings 1–5 and log other rows for review.
+> Functions and modules|A function packages a reusable step with parameters and a return value. A module groups reusable definitions.|Write small tests for normalization and validation before chaining them.|A normalize_text function strips outside whitespace and returns a clean string.
+: def normalize_text(value):
+:     return value.strip() if isinstance(value, str) else ""
+:
+: rows = ["  Very useful  ", "", None]
+: print([clean for row in rows if (clean := normalize_text(row))])
+> Data structures and files|Use a list for ordered records, a tuple for fixed values, a dictionary for named fields, and a set for seen IDs.|Read CSV or JSON through the standard library. Specify encoding and handle missing files or malformed data.|Read id, review, and rating fields from a fictional CSV and preserve the original.
+> Classes and inheritance|A class stores state and groups related methods. An object is an instance. Inheritance can specialize behavior under a shared contract.|Keep I/O and model access separate from the record object where practical.|Review stores text and rating. A ProductReview can add a product category.
+> Verify data and output|Test valid, invalid, boundary, and duplicate records. Make rejections visible in a separate summary.|Write cleaned output to a new file and record rules that affected the result.|Rows A and B remain. A repeated B and blank C receive clear rejection reasons.
+$ Clean a review dataset|Process five fictional reviews with whitespace, missing text, invalid rating, and a duplicate ID.|Submit the Python source, original and cleaned files, validation notes, and four test cases.
+- Define expected fields and implement normalization and validation functions.
+- Load a CSV or JSON file and choose data structures for records and seen IDs.
+- Create a Review class with a method returning a compact summary.
+- Save clean rows and rejection reasons, then test normal and edge cases.
+% Prepare a UTF-8 review file and a deliberately broken copy.|Trace one dictionary through functions and class construction. Show how a missing file differs from a bad row.|Whitespace is cleaned. Blank text and invalid ratings are rejected with reasons.|Data structures and functions 4, files and class 3, tests 3.|Add one derived field and explain how its tests prove expected behavior.
+^ python,pythoncsv
+? Which structure pairs review with a named rating field?|Dictionary|A single integer|A comment|A browser tab|Dictionary keys let you access named fields.
+? What does a class instance represent?|An object with the class's state and behavior|Only a text file|A separate interpreter|An automatic API subscription|Objects are instances of classes.
+? Why preserve the raw input file?|It allows comparison and reproducibility.|It automatically fixes all errors.|It changes the model license.|It hides invalid records.|The original is evidence of what changed.
+? What should a validator do with an invalid rating?|Report it under a defined rule.|Assume it is five.|Erase the source silently.|Accept it to avoid a warning.|Explicit validation prevents misleading data.
+? Which collection helps check whether an ID was already processed?|Set|A color theme|An empty screenshot|A PDF title|Sets model uniqueness and membership.
+! A parser finds one invalid record after reading several valid rows. What improves the result?|Log that rejection and preserve valid outputs where the policy allows.|Treat all rows as valid.|Replace the raw file immediately.|Delete every record.|Predictable error handling preserves usable work and documents the issue.
+# Data analysis, visualization & ML evaluation|5–6|Clean a dataset, visualize patterns, and compare a baseline model with held-out evidence.
++ Use NumPy arrays and Pandas DataFrames for inspection and cleanup.
++ Build two visualizations and explain data cleaning choices.
++ Distinguish model tasks and evaluate a scikit-learn baseline.
+> Numerical data with NumPy|Arrays have a shape and a data type. Vectorized operations apply across values and can make common math clearer.|Check ranges, units, and missing values before summary calculations.|Response lengths [10, 20, 30] have mean 20 and shape (3,).
+> Prepare data with Pandas|Load structured rows, inspect types, trim text, and detect missing or duplicate records. Record each cleaning decision.|Do not assume blank values mean zero. Choose to flag, remove, or impute using a justified rule.|A missing review category goes to a review list rather than being guessed.
+> Communicate with charts|Use bar charts for categories and histograms for distributions. Label axes and report units and counts.|Build with Matplotlib or Seaborn and compare chart output to source rows.|Plot count by product category and distribution of review lengths.
+> Baselines and machine learning|Supervised models use targets, while unsupervised methods discover patterns without labels. Classification predicts labels, and regression predicts numbers.|Split before fitting and evaluate on held-out examples. Compare with a simple baseline using the same split.|Classify reviews as positive or negative. Predicting a numeric star rating with regression is a separate task.
+> Interpret metrics|Accuracy is overall correctness. Precision measures correct predicted positives. Recall measures found actual positives.|Use a confusion matrix and describe why mistakes matter. Check class balance and leakage.|TP=4, FP=1, FN=2 gives precision 80% and recall about 66.7%.
+$ Data and baseline notebook|Use a fictional labeled dataset with ratings, text length, category, and a documented target.|Submit cleaned data, two labeled figures, baseline and model results, and a metric interpretation.
+- Inspect arrays and tables and write the cleanup rules.
+- Chart a category count and a numerical distribution.
+- Split before fitting and compare a simple supervised model with a baseline.
+- Record evaluation counts and interpret accuracy, precision, and recall.
+% Prepare fictional rows and a completed confusion matrix as a fallback.|Show why a feature derived from the final label leaks information. Calculate precision and recall by hand.|The example metrics are 80% precision and approximately 66.7% recall.|Cleaning and charts 4, modeling and split 3, evaluation and interpretation 3.|Add one chart or threshold check and explain how it changes the interpretation.
+& Explain a data exclusion to a peer using its reason, count, and effect on the result.
+^ numpy,pandas,matplotlib,sklearn
+? Which plot shows a numeric distribution?|Histogram|Random decorative icon|A heading|A blank cover slide|A histogram groups numeric values into intervals.
+? What should be documented when cleaning data?|Treatment of missing and duplicate values|Only the chart color|Only the notebook name|A guaranteed success rate|Documenting decisions makes analysis reproducible.
+? Which task predicts a number?|Regression|Document retrieval only|Binary classification|File sorting|Regression estimates a numeric target.
+? What is precision for TP=4 and FP=1?|80%|66.7%|20%|100%|4 divided by 5 gives 0.8.
+? When should learned preprocessing be fit?|On training data only, before evaluation|On the entire dataset including holdout|On the holdout alone|After reading every test answer|Learned preprocessing must not use held-out information.
+! A model gets 95% accuracy because most test rows have the same class. What should you compare?|A majority-class baseline and per-class metrics.|Only the logo color.|Only training time.|A different task's highest score.|Class imbalance can hide weak minority-class performance.
+# Natural language processing & sentiment|7|Build and test a small sentiment classifier with transparent text processing.
++ Explain tokenization, stop words, stemming, and lemmatization.
++ Compare bag-of-words and TF-IDF.
++ Evaluate a classifier on fictional local reviews, including negation and mixed-language cases.
+> Prepare text|Tokenization splits text into pieces. Normalize case or whitespace where useful and record choices.|Stop words are common words. Removing them may remove important negation or context.|“Not helpful” may be misclassified if “not” is dropped.
+> Reduce word variants|Stemming heuristically reduces forms. Lemmatization aims for dictionary forms with language-aware rules.|Text in English, Urdu, and Roman Urdu may need different tokenization and evaluation practices.|“running” can map to “run” in English. A Roman Urdu phrase may require explicit test coverage.
+> Turn text into features|Bag-of-words counts terms while losing order. TF-IDF weights terms by their frequency in a document and rarity across documents.|Fit the vectorizer on training text and evaluate unseen examples. Compare a keyword rule with a trained baseline.|“Schedule” may be common, while “confusing” can provide a more discriminating feature.
+> Decide what labels mean|Write label guidance for positive, negative, neutral, or mixed cases. Agree on how to handle ambiguity.|Use synthetic or properly authorized reviews. Separate test examples and label them independently of the model.|“Teacher was clear but timing was difficult” may be mixed under the written rules.
+> Review failures|Inspect negation, sarcasm, ambiguous, and multilingual examples. Report the errors along with overall performance.|Different errors may need better labeling, preprocessing, or modeling rather than more training alone.|“Great, another canceled class” may look positive to a literal keyword model.
+$ Sentiment classifier lab|Classify a fictional review collection and evaluate five challenging phrases.|Submit a notebook or recorded model run, labeling guide, error table, and one retested improvement.
+- Write label definitions and prepare representative practice examples.
+- Compare a simple rule with TF-IDF features and a lightweight classifier.
+- Test negation, mixed sentiment, sarcasm, spelling, and Roman Urdu examples.
+- Change one rule or feature and report what improved or regressed.
+% Prepare label cards and a dataset with an intentionally ambiguous review.|Remove “not” in a demo and ask students to predict the new classification.|A good error table distinguishes label ambiguity from model failure.|Label and features 4, model and comparison 3, error review 3.|Add three varied examples with clear label rationale and rerun the evaluation.
+& Have two classmates label the same reviews independently, then discuss one disagreement and update the guide.
+^ hfllm,sktext
+? What is tokenization?|Splitting text into units|Creating a slide template|Approving a file transfer|Changing the dataset owner|A tokenizer produces units for text processing.
+? Why can removing “not” be risky?|It can reverse or obscure sentiment.|It guarantees perfect normalization.|It only changes capitalization.|It makes labels public.|Negation carries important meaning.
+? What does TF-IDF help represent?|Term importance relative to the corpus|Image size in pixels|The model's authorization rules|The color of a chart|The weighting combines within-document frequency and across-document rarity.
+? How should ambiguous reviews be handled?|Follow the written labeling policy and document uncertainty.|Always label them positive.|Delete evaluation history.|Let every model use a different unstated definition.|Consistent policy supports fair comparison.
+? Why test Roman Urdu or mixed-language text?|To see whether the model handles intended users' wording|To change output resolution|To guarantee every metric improves|To replace the need for labels|Relevant language examples reveal robustness limits.
+! A model misses “not good” after stop-word removal. What is a focused experiment?|Preserve negation and rerun the same held-out cases.|Remove every adjective.|Publish the result without testing.|Change the color palette.|A controlled preprocessing change addresses the observed failure.
+# Transformers, Hugging Face & prompt design|8|Explain how language models generate text and compare prompts using fixed tests.
++ Describe tokens, attention, transformers, and autoregressive generation.
++ Use model cards and evaluate model choice or an available demo.
++ Write and test a prompt with source, constraints, and output format.
+> Tokens and attention|Language models process token sequences. Tokens may be words, word pieces, or punctuation.|Transformers use attention to model relationships in context. An autoregressive model repeatedly predicts the next token.|The word “bank” can refer to a river or finance. Nearby words change which meaning fits.
+> GPT-style and other transformer models|Decoder-only models commonly generate text left to right. Encoder models are often used for representation and classification. Encoder-decoder models can transform one sequence into another.|Hugging Face model cards describe intended use, limitations, and often licensing. Verify fit before running a model.|A short classifier and an instruction-tuned generator serve different tasks.
+> Write a prompt contract|Specify goal, audience, approved context, output shape, length, and how to handle unknowns. Give examples when consistency matters.|Test a baseline and a revised prompt on the same inputs. Keep facts in the provided source where appropriate.|“Answer in two sentences from the policy card and cite its section. If absent, say it is unspecified.”
+> Verify generated outputs|A fluent answer can be wrong. Check claims, names, numbers, and citations before sharing. Avoid putting confidential content into a tool without approved handling.|Score correctness, usefulness, format, and handling of missing information.|A response invents a course start date. The evaluator marks the claim unsupported.
+> Apply to a business brief|Generate a short FAQ or description from a fictional business fact sheet. Compare changes in tone and structure.|Test a normal request, unclear request, and missing-fact request. Preserve the same evidence sheet.|A local stationery shop's brief lists opening times and items. The draft should avoid inventing discounts.
+$ Prompt comparison and model card|Create two versions of a prompt for a fictional business FAQ.|Submit a model-card note, baseline and revised prompts, and four scored outputs with evidence.
+- Choose a text task and read a model card for intended use and limitations.
+- Write a basic and improved prompt against the same fact sheet.
+- Test four cases including a missing fact and a format constraint.
+- Verify each claim and explain one error or tradeoff.
+% Prepare a short fact sheet, an offline output set, and a model card.|Ask learners to distinguish a token from a whole word. Show a confident unsupported fact and trace it to the source.|The improved prompt asks for evidence and explicitly handles absent information.|Concepts and model card 3, prompt quality 3, evaluation and verification 4.|Add two paraphrased test inputs and preserve the scoring rubric.
+& Explain a generated error to a client without overstating the model's capability, then give a verification plan.
+^ hfllm,prompt,hfmodels
+? What is a token?|A text unit that may be part of a word|Always a complete paragraph|A guarantee of truth|An image filename only|Tokens are model input and output units.
+? What is attention used for?|Weighing relationships in context|Granting account permissions|Selecting a PDF filename|Guaranteeing source accuracy|Attention helps model relationships between sequence elements.
+? Where can you check intended use and limitations?|The model card|Only the toolbar color|A random caption|The filename extension alone|Model cards can describe usage context and limitations.
+? What should a prompt include for a source-limited FAQ?|Allowed facts, output format, and missing-information behavior|Only a vague greeting|A demand to invent prices|A promise that every answer is true|A clear contract supports consistent and checkable answers.
+? How should you compare two prompts?|Use the same test set and scoring rules.|Use unrelated inputs for each.|Change every variable at once.|Score only the longest answer.|A controlled comparison makes changes easier to assess.
+! The answer cites section 2, but section 2 does not contain the claim. How should it be scored?|The citation is unsupported.|It is correct because it has a citation.|It passes if the wording is fluent.|It should receive full points for length.|Citations must directly support the claims they accompany.
+# Multimodal AI, image generation & captioning|9|Create and evaluate visual outputs from a clear brief and verify image-based answers.
++ Explain text-to-image, image captioning, and multimodal input.
++ Compare hosted image models and Stable Diffusion workflows.
++ Generate two or three assets and check fidelity, text, and rights.
+> Multimodal inputs and outputs|A multimodal system works with more than one input or output type. Image captioning describes an image. Text-to-image creates a visual from instructions.|Check both the input quality and the intended use. Visual outputs can omit, distort, or invent details.|A model can describe a poster, but its extracted schedule still needs comparison with the image.
+> Image models and workflows|Hosted tools such as OpenAI image generation or diffusion systems such as Stable Diffusion have different setup and control choices.|Diffusion-based generation starts from noise and progressively denoises under conditioning. Verify model license and compute needs.|Use a trainer-approved hosted tool, a local diffusion workflow, or a provided output set.
+> Prompt for a visual brief|Describe subject, composition, style, lighting, audience, format, and what must stay consistent. Keep iterations tied to a specific change.|Use original or approved assets. For precise text, add editable lettering in a design tool and proofread it.|Generate a clean background for a training flyer, then add approved timetable text separately.
+> Evaluate images and captions|Check prompt alignment, layout, legibility, factual claims, people or objects, and visual defects.|Confirm source details such as dates, prices, or locations manually. An accurate caption needs evidence from the image.|If a crop hides the classroom number, label it unreadable rather than inferring it.
+> Document versions|Record prompt, model or workflow, edits, rights or source notes, and chosen output. Save alternatives and explain the decision.|Select the candidate that best serves the audience and format. Check accessibility where it will be published.|For an event header, choose a wide image with space for readable real text.
+$ Visual concept mini-project|Design two or three visual assets for a fictional stationery or tutoring brand.|Submit prompts, candidate images or approved sample outputs, final selection, and an image-caption verification table.
+- Write a brief with audience, destination, dimensions, and visual constraints.
+- Generate two or three variants or use the instructor's supplied outputs.
+- Compare results on alignment, defects, text, and asset rights.
+- Caption one candidate and verify a factual detail against the original image.
+% Prepare two sample visual briefs and an image with intentionally unclear small text.|Show a generated visual at phone size. Ask students to verify one detail independently.|The selected image fits its use. Captions avoid unsupported details and report uncertainty.|Brief and prompt 3, image review 4, caption and decision 3.|Create an adapted version for a different aspect ratio while preserving the message.
+& Present two visual options and explain the choice based on the audience and format.
+^ imageguide,diffusers
+? Which is multimodal input?|A flyer image plus a written question|The same sentence repeated|Only a number|Only a text filename|The image and the text are different modalities.
+? What is image captioning?|Producing a description from an image|Compressing a spreadsheet|Training a firewall|Selecting a database key|Captioning maps visual information to text.
+? What should happen if a date is illegible?|Flag it as unreadable and verify the source.|Guess a plausible date.|Publish the longest generated answer.|Remove the date from every official source.|The source must support factual details.
+? What belongs in a visual prompt?|Subject, composition, format, and constraints|Only “make it good”|A private ID number|An unrelated password|A brief gives the image system and reviewer specific goals.
+? How can you compare image variants reliably?|Change one planned attribute and evaluate against the same brief.|Change every constraint at once.|Pick the largest file automatically.|Ignore aspect ratio.|Focused iteration supports a meaningful comparison.
+! A generated poster has the wrong course date. How should it be prepared for release?|Correct the date using approved editable text and proofread the result.|Use it because the image looks polished.|Guess a second date.|Publish both conflicting versions.|An attractive output still needs factual verification.
+# Chatbots, LangChain & retrieval-augmented generation|10|Build a source-grounded question-answering prototype with traceable citations.
++ Explain chatbot state, context, and controlled conversation memory.
++ Use chunking, embeddings, and vector retrieval with approved sources.
++ Build and evaluate a LangChain-style RAG flow using a small FAQ.
+> Chatbot state and context|Track the current question, recent relevant turns, and the answer context. Set clear limits on retention and avoid unnecessary personal information.|Memory helps with follow-ups but does not serve as authoritative evidence.|After asking about classes, “What time?” can refer to the class schedule in context.
+> Index a small corpus|Split documents into passages that preserve meaning. Store section IDs, versions, and readable source names.|Use embeddings to support vector similarity. Chroma or Pinecone can store and search vectors depending on the environment.|Index Schedule §1, Materials §2, and Location §3 separately.
+> Retrieve and generate|Retrieve candidate passages, then prompt the model to answer from the supplied sources and cite relevant IDs.|Define fallback behavior for missing or conflicting sources. Check access to the underlying content.|“How much are the fees?” returns unspecified if no approved passage gives the fee.
+> Use LangChain deliberately|Separate ingestion, retrieval, answer generation, and evaluation so failures can be traced.|Use a mock local retriever when credentials or compute are unavailable and apply the same contracts.|Record retrieved source IDs before comparing the generated answer to each section.
+> Test with fixed cases|Evaluate known facts, paraphrases, follow-ups, absent facts, and conflicting versions. Score factual support independently from formatting.|Inspect whether failures came from retrieval or the model's use of retrieved evidence.|A correct timing passage is retrieved, but the answer changes 4 p.m. to 5 p.m. That is a grounding failure.
+$ Build a cited FAQ assistant|Use a fictional source sheet: Tuesday and Thursday, 4–6 p.m., bring a notebook, fees unspecified.|Submit the source corpus, chatbot or local simulation, and five scored test cases.
+- Assign section IDs and split the sheet into retrievable passages.
+- Build or simulate a retriever and a prompt that requires evidence.
+- Test exact, paraphrased, follow-up, missing, and conflicting questions.
+- Revise one chunk or instruction and retest using the same cases.
+% Prepare a fictional FAQ and an old timetable. Keep a local mock retriever available.|Ask learners to click or open the cited section and verify the exact claim.|The timing answer cites the source. An absent fee or unresolved conflict is flagged.|Data and retrieval 4, citation and prompt 3, evaluation and correction 3.|Add a new document version and define when it supersedes the old one.
+& Explain one retrieval failure and one generation failure to a nontechnical audience.
+^ rag,chromadb,pinecone,guardrails
+? What is RAG used for?|Supply retrieved evidence at answer time.|Guarantee every claim is correct.|Delete source names.|Send every draft automatically.|Retrieval gives generation relevant evidence to work from.
+? What should chunks preserve?|Meaning and traceable source metadata|Only randomized bytes|All private credentials|No links to originals|Usable passages need enough context and identifiers.
+? What should a chatbot say when the fee is absent?|The supplied sources do not specify a fee.|Invent the most likely fee.|Return the first number it finds.|Assume the fee is zero.|The answer should acknowledge missing evidence.
+? What helps diagnose a failed answer?|Inspect retrieved passages before checking the generated response.|Read only the visual theme.|Disable source IDs.|Replace every test input.|The separate stages can fail for different reasons.
+? What is useful for a follow-up question?|Retain relevant conversation context with limits.|Keep every personal detail indefinitely.|Delete the evidence policy.|Always ignore the previous turn.|Relevant state resolves references without unnecessary retention.
+! The retriever returns an old schedule and a new one with unclear precedence. What should the assistant do?|Flag the conflict and request authoritative clarification.|Average the times.|Select the longest passage as fact.|Claim both are confirmed.|A conflict should be resolved before giving a confirmed answer.
+# Agents, fine-tuning, capstone & career|11–12|Choose a practical GenAI project, test the selected method, and publish a reproducible portfolio case.
++ Compare agent workflows and fine-tuning with simpler prompting and retrieval.
++ Prepare a small tuning dataset and evaluate baseline versus candidate behavior.
++ Build and present a capstone with a portfolio and freelance plan.
+> Add tools and review|An agent may choose a tool to advance a task. LangChain and CrewAI illustrate tool use and coordination. Restrict tools to the needs of the workflow.|Use validation and human review before externally visible or consequential actions.|A summarizer can read approved notes and draft a response. A human approves publication.
+> Fine-tune for behavior|Fine-tuning adjusts parameters or adapters using examples. Small model options include GPT-2 or suitable Llama-family variants under their terms.|Use clean examples and held-out tests. Compare against prompting or RAG before paying compute or maintenance costs.|Train for a stable JSON answer format only after a baseline indicates a recurring behavior gap.
+> Choose the capstone|Options include chatbot, summarizer, image tool, assistant, RAG system, or bounded workflow. Define user, input, output, and measurable success.|Prepare a reproducible repository with setup, data rights, dependencies, evaluation, and limitations.|A course FAQ targets five known and five difficult questions, with evidence checked for each claim.
+> Verify and improve|Evaluate facts, citations, output quality, unknowns, and behavior under invalid inputs. Use the same test set before and after a fix.|Document one failure, the fix, and the new result. Keep test data synthetic or authorized.|A chatbot invents fees. Update the policy prompt or retrieval context, then retest fees and known timings.
+> Present and prepare for work|Show goal, approach, verification, and limits. Present a portfolio case with evidence and an approved demo.|Draft a scoped Upwork, Fiverr, or LinkedIn offer and practice explaining one design decision in an interview.|Offer a source-grounded FAQ prototype with a set number of approved documents and a testing report.
+$ Build and present a GenAI prototype|Choose one use case, use approved sources, and define a scoring rubric before building.|Submit a working demo or reproducible prototype, evaluation table, one tuning comparison or review, and a three-minute portfolio pitch.
+- Define audience, task, data and licensing, and success criteria. Choose prompting, RAG, image generation, or an agent workflow.
+- Build the smallest complete prototype. Compare a baseline with a small controlled tuning run or trainer-provided outputs for one specific behavior.
+- Run at least six test cases, fix one observed problem, and rerun the related checks.
+- Publish or share the approved portfolio artifact and write a scoped client proposal.
+% Prepare evaluation sheets, recorded small-model results, and a guest or peer reviewer if available.|Ask whether fine-tuning solves the observed behavior gap. Have learners show one controlled failure in the demo.|The portfolio is reproducible, uses permitted data, and presents one verified result plus a clear limitation.|Prototype and documentation 4, evidence and retesting 4, presentation and career plan 2.|Write a one-month career plan with a project improvement, interview practice, and a small outreach goal.
+& Conduct a mock interview. Explain which decisions you verified, which tradeoff remains, and what evidence would change your approach.
+^ hftrain,hfpeft,langgraph,crew,gitbook
+? What should be chosen before a capstone tool?|A problem, audience, success criterion, and source boundaries|The most expensive model by default|Every possible integration|A published promise of accuracy|The task and evaluation criteria guide the method.
+? When might fine-tuning help?|A stable behavior gap persists and can be tested with suitable examples.|The course timetable changes daily.|The app needs a larger logo.|The team has no evaluation criteria.|Fine-tuning is a behavior intervention that needs evidence and tests.
+? Which should stay out of a public repository?|Secrets and unauthorized personal data|A README|Fictional sample inputs|Evaluation instructions|A reproducible repository can provide safe examples without exposing credentials.
+? What follows a bug fix?|Rerun the failing test and related checks.|Declare success from a new title.|Delete past evidence.|Change the task to avoid the error.|Retesting proves the fix and checks for regressions.
+? What makes a portfolio demo effective?|A clear goal, verified result, and stated limitation|Only a long list of tools|A guaranteed outcome for everyone|An unsupported claim about a client|Evidence and limits let viewers understand the work.
+! A source-grounded prototype answers known questions but fabricates fees when the source is silent. Which release check should block it?|The missing-information test should require a verified abstention or review.|Only the title check.|Only the average answer length.|Only the deployment speed.|A key failure case must pass before the prototype is shared as reliable.

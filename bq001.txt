@@ -1,0 +1,182 @@
+@ Digital Marketing Beginner|A hands-on course in audience research, content, SEO, campaigns, and freelance marketing.|Build a measurable campaign and present a beginner marketing portfolio.|market
+# Marketing channels, audiences & funnels|1–2|Identify whom you want to reach, where to reach them, and what action you want them to take.
++ Compare search, social, email, paid media, and referral channels.
++ Define an audience segment and build an evidence-based buyer persona.
++ Map TOFU, MOFU, and BOFU to AIDA and a measurable customer journey.
+> Channels and campaign goals|Search captures existing intent, social helps audiences discover offers, and email can follow up with people who opted in.|Separate owned channels such as a website, paid placement such as an ad, and earned mentions from others.|A fictional Balakot skills center uses a search page for course details and a short social clip for awareness.
+> Compare case studies|Read three documented cases and identify audience, action, channel, and evidence. Check whether the result uses an absolute count, a rate, or a claimed change.|Beginner roles include content assistant, SEO assistant, social coordinator, and paid-media assistant. Match each role to an actual deliverable.|Compare an enrollment explainer, a local store's location page, and a newsletter signup campaign using the same four-column grid.
+> Audience segments and personas|Demographics describe traits such as location and age range. Psychographics describe goals, priorities, and barriers.|Write a persona as a testable hypothesis. Confirm or revise it through interviews, surveys, or behavior.|Evening learners may value a predictable schedule and a nearby venue. Test that assumption by asking three prospective learners.
+> Funnel and AIDA|TOFU introduces a need, MOFU helps people compare, and BOFU invites action. AIDA describes attention, interest, desire, and action.|A real journey can loop back. Pair each stage with a question and a clear next action.|A short video draws attention, a fee and timing FAQ helps comparison, and a schedule-request form supports action.
+> Track the right outcome|Separate impressions, visits, and conversions. A conversion is the meaningful action defined for the campaign.|Write the numerator, denominator, time window, and source before reporting a conversion rate.|12 verified inquiries from 300 landing-page visits is 4% for that period.
+$ Map a local campaign|A fictional training center wants more qualified inquiries for evening classes.|Submit a one-page audience and journey map with a primary conversion, three channel choices, and a calculation.
+- Write one measurable goal and define one audience segment.
+- Draft a persona with two motivations, two barriers, and one validation question.
+- Make a three-stage table with one asset, channel, and CTA per stage.
+- Compute 12 ÷ 300 as a percentage and compare three campaign examples using the same evidence columns.
+% Prepare three public campaign examples and a blank journey table.|Ask which channel the audience would use before showing a paid campaign. Model the distinction between attention and action.|A complete table connects an explainer, FAQ, and inquiry form. The sample rate is 4%.|Audience and evidence 3, funnel and channels 4, goal and metric 3.|Compare a local and global campaign and write 150 words on the role you would like to explore.
+^ hubmarket,persona
+? Which channel can capture a search for a nearby course?|Search|An unsent email|A private spreadsheet|A logo file|Search can reach people already expressing interest in a topic or location.
+? Which is a psychographic trait?|Preference for evening classes|City of residence|Postal code|Age range|Preferences and motivations describe how people make decisions.
+? Which asset best serves the middle of the funnel?|Schedule and fees FAQ|An unrelated teaser|A staff-only spreadsheet|A blank receipt|A comparison-stage learner wants details before taking action.
+? What is 12 verified inquiries divided by 300 visits?|4%|12%|25%|40%|12 ÷ 300 × 100 equals 4%.
+? What should a persona assumption lead to?|A plan to validate it|A guaranteed sales forecast|An immediate budget increase|Removal of the target audience|A persona is improved using evidence from actual audience behavior or research.
+! A campaign gets 18 inquiries from 450 visits. What should the report say?|4% inquiry rate for the measured period|18% of visits converted|450 inquiries were verified|4% proves that the ad caused all sales|18 ÷ 450 is 4%. The rate alone does not establish causation.
+# Freelancing platforms & first profiles|3|Write a clear beginner profile, a scoped service, and a client-ready response.
++ Compare proposal-led work, catalog-style gigs, and other marketplace workflows.
++ Write a focused profile with real skills and labeled sample work.
++ Define deliverables, exclusions, revision limits, and client inputs.
+> How marketplaces differ|Upwork commonly supports proposals to posted jobs, Fiverr supports packaged gigs, and Freelancer supports bidding and other project formats.|Check each platform's current communication, payment, and profile rules before operating an account.|Compare an Upwork reply to a small business and a Fiverr package for three social graphics.
+> Write a focused profile|Lead with a specific audience and outcome, then show what you can deliver. Use a clear photo and relevant skills where the platform supports them.|Use genuine evidence. Label sample projects as fictional, and avoid claiming results you did not measure.|“I create three editable Instagram graphics and captions for local training providers” gives a buyer a concrete expectation.
+> Scope the first service|Define quantities, formats, turnaround, revision rounds, and what the buyer must supply. Estimate effort before quoting.|Name optional extras separately, such as an additional design or rush turnaround.|Package one includes three PNG files, editable links, and one revision. The client provides logo and approved copy.
+> Communicate before starting|Ask a specific discovery question about goal, audience, or acceptance criteria. Confirm the agreement in a written recap.|Protect private credentials and request the minimum access required for the job.|“Can you share the approved schedule and indicate which CTA you want on each post?”
+> Build a sample and review it|Choose one sample that resembles the service. Show the original brief, your design decisions, and the deliverable.|Ask a peer to read the profile like a buyer and flag unclear claims or missing scope.|A social post mockup is stronger when it includes target audience, caption, and intended action.
+$ Write a mock marketplace profile|A small local tutoring center needs social posts. Draft the materials offline using fictional contact information.|Submit a 100-word profile, one service package, a three-line proposal, and one labeled sample.
+- Compare two platforms by buying process, portfolio options, and payment workflow.
+- Write the profile title, opening statement, four skills, and one evidence line.
+- Scope a package with deliverables, turnaround, buyer inputs, and revisions.
+- Role-play a prospect's question and revise the package from feedback.
+% Bring screenshots of real marketplace layouts and a fictional client brief.|Read a vague profile aloud, then rewrite its first line as an outcome for one audience.|A buyer should be able to identify what arrives, when, and what input they must provide.|Profile 3, scope 4, sample and communication 3.|Prepare a second service aimed at a different audience and justify the change.
+^ upwork,fiverr
+? Which profile opening gives the clearest offer?|I design three editable social posts for training providers.|I can do every type of work.|I am the best in every field.|Please contact me for details only.|The opening states an audience and measurable deliverable.
+? How should a fictional example be labeled?|Practice or sample project|Paid campaign with verified results|Confidential client win|Official client endorsement|Accurate labeling lets buyers interpret the evidence.
+? What belongs in a service package?|Deliverables and revision limits|A promise of unlimited scope|The buyer's password|A guaranteed ranking|Clear quantity and revisions support a shared agreement.
+? What should you ask before writing a tutoring campaign?|Which audience and action should the posts target?|Can I reuse any private contact list?|Can I skip approval for the copy?|Can I charge before sharing any scope?|Audience and action shape the content and success criteria.
+? What should a written recap capture?|Agreed scope, inputs, and next step|Only the freelancer's photo|All client credentials|An unrelated portfolio statistic|A recap documents decisions before work begins.
+! A buyer asks for six posts on a three-post package. What response fits the scope?|Confirm the three included posts and quote the three additional posts.|Deliver six silently and dispute later.|Remove the revision policy.|Promise all future work for free.|An explicit change to scope lets both parties agree before work expands.
+# Content planning, writing & AI editing|4|Plan, draft, proofread, and repurpose content that answers a real audience question.
++ Choose a content format based on goal and customer journey.
++ Use an AI prompt to brainstorm and draft with source constraints.
++ Edit a 150–200-word article and adapt it for social or email.
+> Content with a purpose|An article answers a question in detail, a social post earns attention quickly, and an email speaks to a permission-based audience.|Tie the format to the task. A clear FAQ may do more for course inquiries than a generic motivational graphic.|Turn a question about class timing into a 170-word FAQ with a link to request the schedule.
+> Plan the brief|Record audience, problem, key answer, evidence, format, CTA, and approval owner.|Draft a headline, opening answer, two supporting sections, and a closing action.|For beginners choosing a WordPress course, address prerequisites, practice time, and what to bring.
+> Prompt and verify|Give AI a goal, audience, supplied facts, length, tone, and an instruction to flag missing information.|Treat output as a draft. Check claims, names, prices, and dates against approved sources before publication.|“Draft 170 words for first-time students. Use only the approved course sheet. Mark absent facts as unconfirmed.”
+> Edit for clarity and access|Cut repetition, replace vague verbs, use descriptive headings, and use plain language. Provide descriptive alt text when a visual communicates information.|Check spelling, factual claims, brand tone, and the CTA in separate passes.|Replace “take your future to new heights” with “Request the evening class schedule.”
+> Repurpose with intention|Keep the central claim while changing length, hook, and CTA for the destination.|Maintain a short style checklist and version log so feedback is actionable.|Convert a blog explanation into a three-slide carousel and a two-sentence opt-in email summary.
+$ Publish-ready content practice|Your fictional course organizer has provided a verified schedule and a notebook requirement. The fee is unconfirmed.|Submit a 150–200-word article, two shorter variants, the prompt, and a five-item editing checklist.
+- Write a brief and outline the main answer with two supporting facts.
+- Draft the article with or without AI, then highlight every factual claim.
+- Edit for readability, evidence, headline, and CTA. Flag the missing fee.
+- Rewrite the main message as a social caption and an email introduction.
+% Prepare a source fact sheet and a deliberately flawed draft.|Demonstrate verification of a fabricated fee and turn the claim into an unanswered FAQ.|The final article has a clear answer, supported facts, one CTA, and no invented fee.|Brief and structure 3, verification 3, writing and adaptations 4.|Add a second headline for a different audience and explain which detail you emphasized.
+^ hubcontent,prompt
+? What should come before drafting?|A brief with audience and goal|Selecting random stock photos|Publishing a first draft|Changing the website domain|The brief guides choices about content and CTA.
+? What should an editor do with an unsupported fee in AI text?|Remove or flag it and confirm with the source owner|Publish it because it sounds plausible|Increase it to avoid errors|Replace it with any competitor's fee|An unsupported claim needs verification before publication.
+? Which CTA is easiest to act on?|Request the evening class schedule|Do better today|Things are changing|Keep looking around|The specific action describes what happens next.
+? Which format is suited to a detailed explanation?|Article or FAQ|Profile image alone|An unlabeled icon|A random emoji|An article has space for context and supporting facts.
+? What changes when repurposing a blog into a social post?|Hook, length, and format|The verified schedule facts|The underlying meaning|The authenticity of the evidence|Adapt the message to the channel while preserving factual content.
+! A photo shows a timetable that is central to an article. What makes it more accessible?|Provide equivalent schedule text and descriptive image context.|Place the timetable in the background only.|Use the filename as the only description.|Add a decorative border and no text.|Essential information should be available as text.
+# Search visibility, keyword research & audits|5–6|Improve the search usefulness and discoverability of one real or practice page.
++ Distinguish on-page SEO, off-page mentions, and technical discovery.
++ Use Keyword Planner and Trends to compare relevant queries and intent.
++ Run a simple audit and revise a page with an evidence-based checklist.
+> Match search intent|Informational queries ask a question. Commercial queries compare options, and transactional queries suggest a next action.|Match one page to its main intent and related questions. Separate a tutorial from a local enrollment page.|“How to install WordPress” fits a tutorial. “WordPress classes in Balakot” fits a local landing page.
+> Research keywords responsibly|Keyword Planner offers estimates within its account and date context. Google Trends reports normalized relative interest.|Record the region, timeframe, intent, and estimate range. Prefer relevance over volume alone.|Two phrases may both score 100 in separate Trends charts. Compare them in the same chart.
+> Audit the page itself|Review title, main heading, URL, useful copy, alt text, internal links, and public indexability.|Use a concise title and readable headings. Meta descriptions are candidate snippets and may be rewritten by search engines.|Rename “Course Page” to “Beginner WordPress Classes in Balakot” if that is genuinely the page's purpose.
+> Earn relevant external links|A helpful article or community contribution can earn a link. Evaluate quality, audience fit, and editorial context.|Avoid bulk spam links. In a forum, answer the question fully and include a link only when allowed and useful.|A partner training center cites your open course checklist because it supports their own guide.
+> Build an audit record|Record baseline observations, revisions, and one measurable follow-up. Use Search Console for inspection where you have access.|AI tools can suggest headings or checklist items. Verify against the page, query intent, and documentation.|Before and after: clearer title, working links, accurate alt text, and a note to inspect indexing after release.
+$ Keyword map and mini SEO audit|A fictional local academy needs a discoverable WordPress course page. Start with a generic title and two unhelpful internal links.|Submit a three-keyword intent map, an audit with five fixes, and before-and-after copy.
+- Compare three queries in the same market. Record sources and whether the numbers are relative or estimated.
+- Inspect the page title, heading, URL, content, image text, links, and indexability.
+- Rewrite the title, description, and one short paragraph with descriptive link text.
+- Propose one credible outreach idea and name a follow-up metric.
+% Prepare a generic practice page and a shared Trends comparison.|Have a pair justify one keyword without referring to volume. Ask another pair to test a link.|A sound submission maps the local enrollment query to the course page and explains all five changes.|Intent and data 3, page audit 4, revised copy and follow-up 3.|Explain an audit finding in a two-sentence update a nontechnical client could understand.
+& Give a partner a one-minute audit update. They restate the issue, impact, and next action before suggesting edits.
+^ seo,keyword,trends
+? Which query best fits an enrollment page?|WordPress classes in Balakot|History of WordPress|What is a CMS?|Definition of a URL|The query combines a service and location.
+? What does Google Trends show?|Normalized relative interest|Exact visits to your website|Exact sales by advertiser|Every searcher's identity|Trends values reflect relative interest in the selected context.
+? Which change is an on-page improvement?|Write a descriptive main heading|Buy 500 random links|Add a fake review|Rename the router|A descriptive heading clarifies what the page covers.
+? What makes an external link credible?|Relevant editorial context and real usefulness|Buying links in bulk|An unrelated hidden footer|Using anonymous comments at scale|A link serves the audience when it adds relevant context.
+? What is a useful baseline before an audit?|Page title, indexing status, and traffic evidence where available|Only the editor's name|The time of the last meeting|A promise of top ranking|Baseline evidence makes later comparison possible.
+! A high-volume query is unrelated to the offer. What should guide the decision?|Choose a query that matches the audience and page purpose.|Use the high-volume term repeatedly.|Remove all page headings.|Publish a ranking promise.|Relevance and intent guide content decisions.
+# Social strategy, creative & mock ads|7–8|Build a one-week organic plan and an ad mockup with measurable goals.
++ Choose channel, content format, and business-account needs.
++ Produce mobile-friendly social assets with consistent hierarchy.
++ Outline a Meta campaign with objective, audience, creative, and tracking.
+> Channels and accounts|Choose platforms using audience habits, content capability, and expected action. Compare Facebook, Instagram, and TikTok formats.|Business tools may support role access, reporting, and ads. Check access levels before adding collaborators.|Use a Facebook event for a community session and an Instagram vertical clip for a behind-the-scenes teaser.
+> Create social graphics|Set dimensions for the destination, prioritize a short headline and a single CTA, and leave room around important text.|Use brand colors with contrast, consistent typography, and source rights. Preview the image on a phone.|Design one square announcement and one vertical story in Canva using the same headline hierarchy.
+> Strategy and tactics|Strategy defines the audience, result, positioning, and resources. Tactics are the specific actions that implement the plan.|Write a seven-day calendar with owner, channel, asset, stage, CTA, and metric.|“Earn ten qualified inquiries this month” is a goal. A Wednesday FAQ carousel is a tactic.
+> Plan a mock paid campaign|Choose the campaign objective closest to the business outcome. Decide where the action happens and how it is measured.|Map a campaign to an ad set and creative. Document audience, budget as a classroom estimate, placement, and test event.|Model an inquiry campaign with two variants that change only the headline.
+> Measure and iterate|Compare reach, clicks, confirmed actions, and cost per result when appropriate.|Check attribution limits and compare one changed variable at a time when evaluating a creative test.|PKR 2,000 spent for 20 verified inquiries yields PKR 100 per inquiry in the example.
+$ Launch plan without spending|The center wants to announce a weekend demo. Create a mock campaign and keep every asset in draft.|Submit a seven-day calendar, two graphics, mock ad settings, and one tracking plan.
+- Write the target audience, business goal, and primary conversion.
+- Schedule at least three original items and give the remaining days a clear activity or rest.
+- Design two graphics, check phone readability, and create a mock campaign with two headline variants.
+- Explain what event you would test and calculate sample cost per inquiry.
+% Prepare two sample ad creatives and a blank campaign worksheet.|Check whether the campaign objective matches the result. Compare one headline variation at a time.|Sample cost is PKR 100 per verified inquiry. The CTA and event should describe the same action.|Strategy 3, design and calendar 4, campaign measurement 3.|Pitch the plan in 90 seconds and document one adjustment after peer review.
+& Role-play a client asking for every channel at once. Agree on a priority, owner, and realistic delivery date.
+^ canva,meta,analytics
+? What should determine an ad objective?|The intended campaign outcome|The designer's preferred font|The length of a caption|The color of the dashboard|An objective should align delivery and measurement with the desired action.
+? Which is a tactic?|Publish a Wednesday FAQ carousel|Define the audience|Set a monthly business goal|Choose the market position|A tactic is a concrete action that executes a plan.
+? What is PKR 2,000 divided by 20 verified inquiries?|PKR 100|PKR 20|PKR 2,000|PKR 40,000|Cost per inquiry is spend divided by the number of verified inquiries.
+? What makes a social design easier to read on a phone?|Clear hierarchy, contrast, and safe spacing|More words in smaller text|A low-contrast background|Several equal-weight CTAs|Mobile readers need clear content hierarchy and sufficient space.
+? What should change in a simple headline test?|The headline|Headline, audience, and creative together|The business goal and tracking simultaneously|The conversion definition every day|Isolating the headline makes comparison easier to interpret.
+! Two ads have equal spend. One yields 10 verified inquiries and the other 20. Which has the lower cost per inquiry?|The one with 20 verified inquiries|The one with 10 verified inquiries|They must have equal cost per inquiry|It depends on the image resolution|With equal spend, more results means lower cost per result.
+# Email marketing & lead generation|9|Design a permission-based two-message sequence and a relevant lead magnet.
++ Identify an audience problem and create a useful lead magnet.
++ Plan an opt-in, welcome message, and follow-up.
++ Check deliverability basics and report clicks or confirmed actions.
+> Earn the opt-in|A lead magnet solves a small related problem, such as a checklist, sample lesson, or worksheet.|Tell people what they will receive and let them choose to subscribe. Avoid adding scraped contacts.|Offer a one-page “What to bring to your first WordPress class” checklist.
+> Design the signup path|Use a short form, confirmation state, and clear explanation of email expectations. Collect only what the sequence needs.|Test form submission, list membership, and delivery with a fictional or test address you control.|A learner submits an email, sees a confirmation message, and receives a working checklist link.
+> Write the sequence|The first email delivers the promise. The second provides related help and one next action.|Use a descriptive subject, concise preview text, and a visible unsubscribe mechanism.|Message 1 links to the checklist. Message 2 answers a prerequisite question and invites a schedule request.
+> Quality and deliverability|Use an authorized sender, maintain clean lists, review links on mobile, and honor unsubscribes.|Keep authentication concepts such as SPF, DKIM, and DMARC in the trainer demonstration. Use platform guidance for configuration.|A test account receives the message and unsubscribes. Verify later campaign mail excludes it.
+> Measure results|Count delivery, clicks, opt-outs, and verified outcomes in context. Opens can be noisy because of email privacy features.|State the reporting window and what action you actually observed.|8 clicks from 80 delivered messages equals a 10% click rate for this definition.
+$ Two-email campaign|Draft an opt-in sequence for a fictional course starter kit.|Submit a signup wireframe, lead magnet outline, two emails, and a test checklist.
+- Pick one audience pain point and describe a resource that addresses it.
+- Write form fields and consent copy, plus a confirmation state.
+- Draft the two emails with subject, body, CTA, and unsubscribe placement.
+- Test in preview and compute 8 clicks from 80 deliveries. Explain one limitation.
+% Prepare a mock signup and one good and one confusing welcome email.|Ask which email delivers the promised resource and where a subscriber can leave the list.|The sample click rate is 10%. Every email has a defined purpose and working intended action.|Lead magnet and opt-in 4, copy 3, test and measurement 3.|Write one follow-up variant for learners who already opened the checklist link.
+& Practice sending a respectful follow-up to a client who missed an approval deadline.
+^ mailchimp,analytics
+? What is a relevant lead magnet?|A short checklist addressing the target audience's immediate need|A scraped contact list|A random photo archive|An unverified testimonial|A useful lead magnet solves a specific problem.
+? What should the welcome email do first?|Deliver the resource promised at signup|Send unrelated promotions immediately|Hide the resource link|Demand a password|Fulfill the expectation created by the signup form.
+? How should a newsletter list grow?|Through clear opt-in|Through scraped contact addresses|Through automatic inclusion of every visitor|By copying another brand's subscriber list|Consent clarifies why the recipient is receiving messages.
+? What is 8 clicks from 80 deliveries?|10%|8%|80%|0.8%|8 divided by 80 is 0.10.
+? What should you verify after a test unsubscribe?|Later mail excludes that test address|The recipient gets more promotional mail|The sender's logo changes|The social calendar resets|Unsubscribe should change future send eligibility.
+! The signup promises a checklist but the first email only asks for a sale. What is the first revision?|Deliver the checklist and make the next action clear.|Hide the signup description.|Send the sales email more often.|Remove the unsubscribe link.|The first message should honor the original promise.
+# YouTube setup & short video|10|Plan a branded channel and produce a 15-second instructional short.
++ Define a channel audience, content promise, and brand elements.
++ Storyboard, edit, caption, and preview a short vertical video.
++ Select practical metrics and write a follow-up improvement.
+> Plan the channel|Write an audience and content promise before configuring a channel. Make the name, image, description, and thumbnails consistent.|Group videos by learner needs. Use tools such as vidIQ or TubeBuddy for ideas and check recommendations against real audience data.|A course channel promises 30-second introductions to beginner digital tools.
+> Storyboard a 15-second clip|Open with a useful hook, show one idea, and close with one action. Keep each scene visually simple.|Write scene duration, visual, spoken line, and on-screen text before recording.|0–3 seconds: show a messy folder. 3–11: organize files. 11–15: invite learners to try the method.
+> Record and edit|Use vertical framing for the exercise, readable captions, and clean audio. Keep important labels away from edges and overlays.|Create in Canva or Pictory if available. Use original or licensed assets and check caption accuracy.|Record a screen crop using fictional file names, then review whether viewers can read it on a phone.
+> Preview and publish|Check title, description, audience settings, visibility, and asset rights before upload.|Use private or unlisted visibility for trainer review when appropriate. Publish when authorized.|Ask a partner to watch with sound off and identify the same action shown in the storyboard.
+> Interpret early metrics|Look at retention, average view duration, and audience response. Record the date and compare clips with similar goals.|A drop before the demonstration may point to a slow opening. Test a clearer hook in a follow-up clip.|If viewers leave in the first three seconds, show the result first in the next draft.
+$ Produce one vertical short|Teach one digital task in 15 seconds with fictional or instructor-approved assets.|Submit the storyboard, video file or approved review link, captions, and a metrics hypothesis.
+- Write a one-sentence channel promise and three content ideas.
+- Storyboard three timed scenes with a hook, lesson, and action.
+- Edit and caption the clip. Verify visual legibility, audio, and permissions.
+- Prepare upload metadata and suggest one change you would test next.
+% Prepare a short example and a sample shot list. Keep a local preview option.|Ask a student to describe the action after watching without sound. Correct caption errors live.|The video explains one task in approximately 15 seconds and uses a clear CTA.|Plan 3, editing and accessibility 4, metadata and improvement 3.|Draft a three-video series with one concept per clip.
+& Deliver a 30-second spoken pitch, then ask a partner to restate the main value in one sentence.
+^ youtube,canva
+? What belongs in the first seconds?|A hook tied to the learner's problem|A long unrelated title sequence|Every course detail|A screenshot of analytics|A relevant hook establishes a reason to keep watching.
+? Which check matters for captions?|Words match the speech and stay readable.|They overlap the video controls.|They use decorative fonts only.|They replace all visual demonstrations.|Accurate, readable captions support viewers using muted audio.
+? What does a storyboard record?|Scenes, timing, visuals, and spoken or on-screen text|Only final subscriber count|Only the camera model|Only the channel name|The storyboard makes the sequence explicit before editing.
+? What should be checked before uploading a music track?|Permission or applicable license|Only the file size|Only the thumbnail color|Whether the song is popular|Asset rights are part of release preparation.
+? What metric can show where viewers leave?|Audience retention|Project filename|Profile image size|Number of editing layers|Retention can show where viewers stop watching.
+! Most viewers leave before the demonstration starts. What change is most relevant to test?|Show the outcome earlier in the opening.|Remove all captions.|Increase the logo size only.|Upload the same video with no comparison plan.|Moving value earlier directly addresses the observed drop-off.
+# Portfolio, earning plan & client presentation|11–12|Package evidence, scope a paid offer, and present a realistic 30-day plan.
++ Write two concise portfolio case studies with evidence and limitations.
++ Draft a tailored freelance proposal and a four-week outreach plan.
++ Present work professionally and respond to client questions.
+> Choose the evidence|Show the problem, audience, assets, and verified result or test. Label mock campaigns clearly.|Create a small portfolio in Notion, Wix, or a simple site. Link only work you can share.|Use the local campaign and short video as separate cases with one artifact and one lesson each.
+> Write a proposal|Start by reflecting the client's specific goal. Give a short approach, scope, timeline, and discovery question.|Estimate time and revisions before choosing a price. Use realistic assumptions for a first month.|“I can audit your course landing page and deliver five prioritized fixes within three working days.”
+> Plan four weeks of work|Set a weekly time budget for profile updates, tailored applications, skill practice, and review.|Track applications, replies, interviews, and paid work separately. Treat income goals as planning assumptions.|A goal of four tailored proposals a week creates a measurable activity target without promising income.
+> Handle client communication|Summarize the requirement in writing, define acceptance, share a status update, and request explicit approval for new scope.|Ask for feedback against criteria. Explain changes, expected date, and impact on budget when relevant.|A client adds a second channel. Reply with delivery options and a revised scope for approval.
+> Present and interview|Give the context in 30 seconds, show one decision and its evidence, then close with what you would improve.|Use a mock interview to practice a specific example, tradeoff, and next action.|Explain why a strong click rate does not prove a campaign made sales.
+$ Portfolio and 30-day roadmap|Present two practice projects to an instructor or guest reviewer as if pitching to a real client.|Submit a portfolio link or PDF, two cases, a proposal, and a weekly roadmap. Give a three-minute presentation.
+- Pick two pieces and write objective, process, artifact, result, and limitation for each.
+- Draft a scoped proposal for one fictional client and check the price assumptions.
+- Write a four-week plan with activity goals, review checkpoints, and one skill gap.
+- Rehearse the pitch, answer two peer questions, and revise one claim.
+% Invite a marketing practitioner or freelancer for feedback where available. Prepare a timer and marking sheet.|Have one learner act as client. Ask how results were verified and what the freelancer would change first.|Each portfolio case identifies evidence and scope. The roadmap sets actions that the student can control.|Portfolio 4, proposal and roadmap 4, presentation 2.|Revise the portfolio after feedback and collect a screenshot or export that shows the improvement.
+& Run a mock interview. Explain one project with situation, action, result, and a lesson you can use on the next project.
+^ upwork,fiverr,hubmarket
+? What should a portfolio case show?|Goal, process, evidence, and limits|A guaranteed future outcome|An unlabeled borrowed image|Only contact details|A case study should make the work and its evidence clear.
+? Which is a controllable weekly target?|Submit four tailored proposals|Guarantee a specific income|Guarantee an interview from every proposal|Force every client to reply|Applications are an action the freelancer can plan and count.
+? What should a proposal reference first?|The specific client need|An unrelated credential list|A generic greeting only|The same copied pitch for every job|A relevant opening shows that the scope has been understood.
+? How should additional scope be handled?|Confirm it and discuss price and schedule before proceeding.|Add it silently.|Delete the original agreement.|Share login details to speed it up.|Written agreement avoids confusion about impact and ownership.
+? What makes a presentation more credible?|Show a decision and the evidence behind it.|Read every word on the screen.|Claim results you did not observe.|Use as many animations as possible.|Evidence helps a reviewer judge the decision.
+! A portfolio uses mock analytics. How should it present those numbers?|Label the numbers as fictional and explain the measurement plan.|Claim they came from a paying client.|Remove all definitions but keep the numbers.|Present them as independently audited revenue.|Labeling mock data preserves credibility and keeps the example useful.

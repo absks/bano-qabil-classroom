@@ -1,0 +1,189 @@
+@ Computer & IT Fundamentals|Build confidence with computers, Microsoft Office, collaboration, and workplace communication.|Present a workplace-ready document, spreadsheet, slide deck, and shared portfolio.|office
+# Computer hardware, Windows & file management|1–2|Operate a computer confidently and organize files for study or office work.
++ Classify computers and explain input, processing, output, storage, and memory.
++ Distinguish hardware, system software, and applications.
++ Create a file structure, use Windows shortcuts, and verify file formats.
+> Computers and IT|IT uses systems to collect, process, store, and share information. Match device types to work such as portability, shared services, or embedded control.|A desktop workstation, laptop, server, phone, and embedded system serve different constraints.|An office laptop prepares attendance, a server hosts records, and a barcode reader captures input.
+> Follow the data|Input devices capture information. The CPU runs instructions. RAM holds active work, and nonvolatile storage preserves saved files.|Output devices show or produce a result. A touchscreen can provide both input and output.|Keyboard → CPU and RAM → displayed worksheet → save to SSD → print.
+> Software layers|The operating system manages hardware, files, accounts, and running applications. Drivers help the OS communicate with devices.|Applications such as Word and browsers perform user tasks. Utilities help maintain or inspect the system.|A printer driver makes the printer usable. Word creates the document you print.
+> Navigate and manage files|Use Windows desktop, Start, taskbar, and File Explorer. Practice copy, move, rename, search, and restore from Recycle Bin.|Ctrl+C and Ctrl+V copy. Ctrl+X and Ctrl+V move when supported. Use meaningful names and a predictable hierarchy.|Training/Source, Training/Drafts, and Training/Exports separate input, working files, and handoff.
+> Recognize file formats|A file extension indicates its format. Export or Save As to convert content properly.|Use version names and verify that the recipient has the correct file and permissions.|Keep report-v02.docx editable and export report-v02.pdf to share a stable reading copy.
+$ Build a course file system|Organize fictional attendance, contact, and report files on a practice computer.|Submit a folder screenshot, four files in the correct folders, and a paragraph comparing two computer types.
+- Inspect the device's installed RAM and storage capacity without changing settings.
+- Create Source, Drafts, and Exports. Copy and rename two fictional files.
+- Export a text document to PDF using a supported application and reopen it.
+- Explain a file operation and identify hardware, OS, and application used.
+% Prepare hardware photos, Windows screenshots, and a practice folder with duplicate files.|Show memory versus storage using one open document. Demonstrate a wrong extension and a correct export.|A correct portfolio separates editable originals and exports. Students can explain copy versus move.|Hardware and software reasoning 3, file organization 4, export and verification 3.|List three computing devices used in a school and identify their inputs and outputs.
+^ computbasics,fileexplorer
+? Which part retains a saved file after shutdown?|SSD|RAM|An unsaved window|Keyboard buffer|Nonvolatile storage preserves saved files.
+? Which is system software?|Windows|Word report|A slideshow|A photo|An operating system manages shared system resources.
+? Which device can perform both input and output?|Touchscreen|Typical keyboard|Passive printer|SSD status label|A touchscreen displays and senses touches.
+? How do you convert DOCX into PDF?|Use Export or Save As PDF.|Rename the extension.|Move it to another folder.|Change the icon.|The export operation creates PDF content.
+? Which folders are useful for a handoff?|Source, Drafts, and Exports|One folder with every copy named Final|An empty Recycle Bin only|Three unnamed folders|Clear folder roles make work easier to find.
+! You need a copy in another folder while preserving the original. What should you do?|Copy and paste the file.|Cut and paste the file.|Delete the original first.|Rename the original extension.|Copy creates a second instance while retaining the source.
+# Microsoft Word essentials & CV design|3|Create, format, and export a clean one-page CV.
++ Navigate the Word interface and apply consistent formatting.
++ Use page layout, headers, footers, lists, and tables.
++ Save an editable document and verify a printable PDF.
+> Word workspace|The ribbon groups commands. Use the navigation pane or Find for longer documents. Save the file before substantial edits.|Use undo and redo to inspect changes. Edit text with selection and keyboard shortcuts.|Save Khan-Sample-CV-v01.docx and verify it appears in Drafts.
+> Format for reading|Choose a readable font and consistent heading hierarchy. Use paragraph spacing and alignment rather than repeated spaces or blank lines.|Use bullets for comparable items and numbering where order matters.|Use bullets for skill examples and a numbered list for application steps.
+> Page layout and tables|Set paper size, margins, and orientation. Use headers or footers when information should repeat across pages.|Use tables for aligned data with header rows. Avoid unnecessary grid lines in a short CV.|Use a small table for course and year only when it improves alignment.
+> Write a concise CV|Lead with a name, contact method, and relevant skills or education. Describe project work using a concrete action and result.|Use fictional contact information for class. Check dates and use consistent formatting across entries.|“Built a spreadsheet that totals weekly attendance and flags low attendance” is more specific than “Good with computers.”
+> Review and export|Use spelling review, print preview, and manual proofreading. Check page count, broken links, and accidental blank pages.|Keep DOCX for edits and export PDF for review. Reopen the export and test all links.|A CV section stranded on a new page may fit after reducing redundant spacing.
+$ One-page CV|A learner applies for an entry-level office assistant role using fictional personal details.|Submit one DOCX and one matching PDF with a short review checklist.
+- Create a one-page CV with summary, education, skills, and two practice examples.
+- Apply consistent headings and paragraph spacing. Add a small purposeful table or list.
+- Use a header or footer where appropriate, and review page layout.
+- Export and reopen the PDF. Ask a partner to locate the main qualification in ten seconds.
+% Prepare a strong and weak sample CV and a blank file.|Demonstrate paragraph spacing versus repeated returns. Show a bullet list and a table with a clear header.|Both exports match, use consistent dates, and keep key information on one page.|Content 3, formatting 4, export and review 3.|Write a second project bullet using action, tool, and result.
+^ word,mstraining
+? Which helps keep headings consistent?|Apply the same style to each matching heading.|Set each heading with random fonts.|Add multiple blank lines.|Place headings in unrelated images.|A style lets similar headings share a definition.
+? What should an ordered procedure use?|A numbered list|A paragraph of random symbols|A decorative image only|A list with no sequence|Numbering communicates order.
+? What belongs in a footer when needed?|Repeated information such as page number|Every skill description|An entire unrelated article|A duplicate cover page|Footers repeat information at the bottom of pages.
+? Which export keeps the editable original?|Save DOCX and export a separate PDF.|Overwrite the original with an image.|Rename DOCX to PDF.|Delete all drafts.|Keeping both formats supports editing and distribution.
+? What should you check in print preview?|Page breaks, margins, and content fit|Only the file icon|Only the app's version|Whether the keyboard is connected|Preview reveals layout issues before export.
+! The final CV has a blank second page. What should you inspect first?|Extra paragraphs or page breaks and the preview.|Whether the mouse is wireless.|The file's name length.|The display color mode.|Stray paragraphs or breaks can create an empty page.
+# Advanced Word, mail merge & review|4|Create consistent personalized letters using one template and a structured data source.
++ Use styles, themes, and page and section breaks.
++ Set up a mail merge and validate record-to-field mapping.
++ Add a suitable graphic and review the final printable document.
+> Styles, themes, and structure|A style applies formatting to a document role. A theme coordinates fonts, colors, and effects across elements.|Use Heading 1 and Heading 2 for hierarchy. Change the style to update matching headings at once.|Update Heading 1 size once to adjust every major section title.
+> Page and section breaks|A page break starts a new page. A section break permits different page setup or headers when configured.|Enable formatting marks to find hidden paragraphs and breaks before fixing pagination.|Use a section break before a landscape appendix while keeping the letter portrait.
+> Prepare a merge data source|Use one row per recipient and unique column headers. Normalize names, IDs, and dates before connecting.|Preserve text values with leading zeros when needed. Remove blank rows and verify which records are included.|Columns Name, Group, and SessionDate map to those same fields in the letter template.
+> Merge and validate|Connect the data, insert named fields, preview first and last records, and inspect empty values.|Generate an editable output for review and export only after checking the letters.|Check that “Dear Amina” and “Dear Hamza” pair with the right fictional group and date.
+> Add graphics and review|Use SmartArt for a simple relationship or process. Use a chart for numerical comparison.|Review with comments and Track Changes when appropriate. Use print preview to check placement.|Use a three-step SmartArt process for registration and a chart for counts by group.
+$ Personalize three letters|A fictional training office needs three appointment letters and a short registration guide.|Submit the spreadsheet, mail merge template, merged PDF, and a verification checklist.
+- Prepare three fictional records with clear headers and valid dates.
+- Create a styled letter with placeholders and a page break before the guide.
+- Add a simple SmartArt graphic or chart. Use preview to check three records.
+- Generate the merged document, review it, export PDF, and compare the names and dates.
+% Prepare a table with a blank record and an ID with a leading zero.|Model selecting data and inspecting the last record. Show what a section break changes.|The three letters match the three intended recipients, and the registration graphic communicates a real step.|Data quality 3, merge 4, styles and review 3.|Add a fourth fictional record and rerun the verification.
+^ word,mailmerge
+? What does mail merge combine?|One template and a set of records|Only two image files|A page background and an icon|A browser history and a password|Data fields populate a reusable document template.
+? When is a section break useful?|A later section needs different page setup.|Every bold word needs a new line.|A title needs a font change.|A folder needs renaming.|A new section supports independent layout settings.
+? How should a merge data source be arranged?|One recipient per row and fields in named columns|All names in one merged cell|A paragraph with no labels|One column per recipient|A tabular structure supports correct field mapping.
+? Which tool can illustrate a simple process?|SmartArt|VLOOKUP|File Explorer|Recycle Bin|SmartArt can visualize structured relationships or steps.
+? What should happen before finishing a merge?|Preview records and check names, dates, and blanks.|Delete the data source.|Print without reviewing.|Change every record to the same name.|Preview catches data and mapping mistakes.
+! A mail-merged ID loses its leading zero. What should you check first?|Whether the source stores the ID as text and previews correctly.|The slide theme.|The document margins only.|The chart's title.|Identifiers may need text formatting to preserve the leading zero.
+# Excel worksheets, formulas & reporting|5–6|Build a marks and price workbook with dependable calculations and controls.
++ Use worksheet structure, formatting, formulas, and charts.
++ Use SUM, AVERAGE, IF, COUNTIF, VLOOKUP, and text functions.
++ Validate data entry, filter complete records, and test formula boundaries.
+> Workbook structure|A workbook contains worksheets. Rows identify records and columns identify fields. Use one header row and distinct input and output areas.|Add, rename, and move worksheets carefully. Format numbers by meaning and keep units visible.|Use Marks, Prices, and Summary sheets with consistent names.
+> Basic formulas and references|SUM adds values and AVERAGE calculates their arithmetic mean. Relative references move when copied. Absolute references such as $F$1 stay anchored.|IF returns one of two values. COUNTIF counts cells matching a condition.|For 8, 10, 6, 9, total is 33 and average is 8.25. A threshold of 8 gives 3 on track.
+: =SUM(B2:B5)
+: =AVERAGE(B2:B5)
+: =IF(B2>=$F$1,"On track","Follow up")
+: =COUNTIF(B2:B5,">=8")
+> Lookup and text cleaning|VLOOKUP searches the first column in the table range. Use FALSE for an exact key match. Anchor the lookup table when copying.|Use TRIM to remove surplus spaces, LEN to check length, and CONCATENATE or equivalent to join text.|A product code P02 returns PKR 250 from the table. An unknown code should be flagged.
+: =VLOOKUP(A2,Prices!$A$2:$B$4,2,FALSE)
+: =LEN(TRIM(C2))
+: =CONCATENATE(TRIM(C2)," - ",A2)
+> Control and inspect data|Use a dropdown to constrain inputs, conditional formatting for status, and Freeze Panes to retain headers.|When sorting, move the complete table so fields remain aligned. Filtering hides nonmatching rows. Hiding a column does not protect its data.|Restrict the status column to Pending and Complete, then filter Pending rows.
+> Choose a chart|A column chart compares categories, a line chart shows change over time, and a pie chart shows parts of a meaningful whole with few categories.|Name the metric, units, period, and data source. Check chart values against cells.|Use a two-column chart for three on track and one follow-up.
+$ Marks and product price workbook|Build with marks 8, 10, 6, and 9 and product codes P01, P02, P03 priced 100, 250, and 400.|Submit an XLSX with formulas, one chart, a dropdown, and screenshots or notes for edge-case tests.
+- Build and name the Marks, Prices, and Summary sheets with clean data.
+- Calculate total, mean, status, and criteria count. Change threshold to 9 and verify results.
+- Look up P02 and an unknown key using exact match. Normalize one padded description.
+- Apply validation and conditional formatting, freeze the header, and build a chart.
+% Prepare a workbook with one padded code, a missing code, and a moved threshold cell.|Demonstrate full-table sorting, then show how a relative threshold drifts when copied.|Total 33, average 8.25, count 3 at threshold 8 and 2 at threshold 9. P02 is PKR 250.|Formulas 4, data controls 3, chart and tests 3.|Add a fifth record and extend the summary and chart accurately.
+& Pair up. One student explains a formula and the other independently verifies it using the source rows.
+^ excel,vlookup,countif
+? What is the mean of 8, 10, 6, and 9?|8.25|8|33|9.25|The sum is 33, and 33 ÷ 4 is 8.25.
+? Which reference stays fixed when copied?|$F$1|F1|B2|B2:B5|Dollar signs fix both the column and row.
+? What does FALSE request in VLOOKUP?|Exact match|Nearest match only|Alphabetical output|Deletion of missing rows|FALSE requires the lookup value to match exactly.
+? What is the best way to constrain allowed cell entries?|Data validation with a list|A larger font|Hiding the worksheet name|Changing print margins|Validation can present allowed options and reject other values.
+? What does COUNTIF with >=8 return for the sample marks?|3|2|4|33|Values 8, 10, and 9 meet the condition.
+! A student needs to sort by mark without breaking the link to names. What should they sort?|The whole table by the marks column|Only the mark cells|Only the first row|Only the name column|Whole-row sorting preserves record integrity.
+# PowerPoint design, media & presentations|7–8|Create and deliver a five-slide portfolio deck with a coherent visual system.
++ Choose layouts and use text, images, shapes, and charts.
++ Distinguish slide masters, themes, transitions, and animations.
++ Review a deck with a collaborator and export it for sharing.
+> Plan a short deck|Write an audience, goal, and one takeaway for each slide. Choose layouts suited to the content.|Use concise headings, sufficient contrast, and readable text at projector distance.|A portfolio deck can show opening, project goal, process, result, and next step.
+> Themes and Slide Master|A theme coordinates colors, fonts, and visual treatment. Slide Master and layouts control shared placement and formatting.|Use placeholder types consistently. Keep content slides flexible within the design.|Add a footer or logo to the master layout so it appears on intended slides.
+> Motion and multimedia|Transitions occur between slides. Animations reveal or move objects within a slide.|Use motion to show sequence or draw attention. Test audio, captions, and video on the playback device.|Reveal three project steps one at a time while explaining each decision.
+> Data and collaboration|Use charts for numerical comparisons, tables for exact values, and SmartArt for relationships or steps.|Collaborate with comments and version history where supported. Decide who can edit, comment, or view.|Use a bar chart for results and a comment to request verification of its source.
+> Present and export|Rehearse with Slide Show or Presenter View. Check timing, readability, media, and links.|Export PDF for a static handoff or video for timed playback where supported. Verify what media the export retains.|Compare a PDF handout with the original presentation to see how animation becomes static.
+$ Five-slide portfolio|Present a practice Office project to a reviewer unfamiliar with your work.|Submit the editable deck, PDF or video export, and a rehearsal and peer-review checklist.
+- Make a three-slide introduction, then extend it with results and next steps.
+- Apply a consistent layout and include one chart or table plus one meaningful graphic.
+- Add one purposeful animation or transition. Check media or captions if used.
+- Rehearse a three-minute pitch, resolve one peer comment, and verify the export.
+% Prepare a deck with too much text and an example of a clean chart.|Demonstrate a master change and ask learners to identify a transition versus an animation.|A reviewer can name the goal and evidence. The deck has five readable slides and a verified export.|Story and design 4, evidence and tools 4, rehearsal and review 2.|Create a captioned 30-second rehearsal recording or write speaker notes for each slide.
+& Give one specific comment about the message, one about the evidence, and one about delivery.
+^ powerpoint,slides
+? What is an animation?|An effect on an object within a slide|A shift only between slides|A copied worksheet formula|A Google Drive permission|Animations change how objects appear or move on a slide.
+? Where can you change common layout elements across many slides?|Slide Master|A single image caption|The file explorer|The browser address bar|Slide Master controls shared layout and styles.
+? Which visual best compares two category counts?|A bar or column chart|Unlabeled clip art|A sound effect|A random transition|Bars make category differences easy to compare.
+? Which export is designed for a static handout?|PDF|A speaker's private notes file|Only a video editor project|A folder shortcut|PDF presents fixed pages for viewing or printing.
+? What should you test before class?|Readability, media, and slide timing on the presentation device|Only the wallpaper|Only the file extension|Only the mouse speed|Playback checks catch device and layout problems.
+! A theme change should affect the whole presentation. Where is the most maintainable place to make it?|Theme and master layouts|A manual font change in each line|The exported PDF only|The file name|Shared theme and layout controls keep styling consistent.
+# Internet, email & online safety|9|Use the web carefully and write clear professional email.
++ Identify browser elements, domains, and links.
++ Choose To, CC, and BCC deliberately and attach appropriate files.
++ Recognize suspicious email and use labels, filters, and safe verification.
+> Browser and URL basics|A browser opens web resources. Read the hostname before entering information and inspect unexpected destinations through safe context.|HTTPS protects the connection. Verify that the hostname matches the service you intended to visit.|A copied sign-in link uses a confusing hostname. Open the portal from a known bookmark instead.
+> Compose email|Use a descriptive subject, greeting, purpose, requested action, deadline if relevant, and professional closing.|Keep To for primary recipients, CC for visible copies, and BCC for hidden copies where appropriate.|Subject: Week 4 marks workbook for review. Request feedback by Thursday.
+> Attachments and sharing|Choose an attachment for a fixed copy, or a restricted share link when recipients need collaboration.|Check filename, file format, and recipient access before sending. Avoid exposing unnecessary data.|Send an approved PDF for printing and keep the editable original in a restricted folder.
+> Organize the inbox|Use labels or folders for projects and create filters based on reliable conditions.|Review automation so important messages remain easy to find.|A filter adds the Class Reports label to a known internal sender's weekly summary.
+> Respond to phishing|Review sender, message context, link, and request. Unusual urgency is a cue to verify independently.|Report suspicious messages through an approved process and keep credentials out of email.|An unexpected payroll attachment is verified using a previously known staff contact.
+$ Professional email practice|Send a draft only, or use an instructor-approved practice inbox with fictional materials.|Submit the draft, recipient-choice rationale, filename checklist, and a phishing response note.
+- Write a message asking for a review of a practice report.
+- Choose To, CC, or BCC as the situation requires and add the correct PDF or share link.
+- Create one label and describe a useful inbox filter.
+- Inspect a mock suspicious message and name an independent verification channel.
+% Prepare a model email and a mock phishing screenshot. Use a disposable training inbox if sending is authorized.|Ask the sender to explain who needs action and who only needs awareness.|The message has a clear request and deadline, and the recipient can access the correct file.|Writing 4, recipient and attachment handling 3, inbox and safety 3.|Write a polite follow-up when a report review is overdue.
+& Rewrite a rushed message so it identifies the request, deadline, and one next action.
+^ gmail,cisa
+? Who normally belongs in To?|The primary recipient expected to act|Only the sender|Every unrelated contact|A hidden mailing list by default|The primary recipient should be clear.
+? What does BCC do?|Hides those addresses from other recipients|Makes all recipients public|Removes the attachment|Sends without a subject|BCC helps avoid disclosing those addresses to other recipients.
+? What should you verify for a share link?|The intended person can open it with the expected permission.|Only that it is long.|Only that it contains a color.|Only that the sender can open it.|Sender access alone does not prove recipient access.
+? What makes an email subject useful?|It names the request or document.|It says “Important” for every email.|It is always blank.|It contains a password.|A descriptive subject lets recipients prioritize and find messages.
+? How should staff verify an unexpected sign-in request?|Use the known portal or an independent contact.|Follow the message link first.|Reply with the password.|Ignore every future message.|Independent verification avoids relying on a possibly malicious message.
+! A colleague needs to review a PDF and should not change it. Which method fits?|Send the approved PDF or a view-only link to the intended recipient.|Share the editable document with public edit access.|Send the password to every contact.|Rename the file without exporting.|A stable copy or viewer permission supports review without editing the source.
+# Cloud collaboration, Google tools & forms|10|Share a project with role-based access and collect responses through a simple form.
++ Organize a shared Drive folder and choose viewer, commenter, and editor roles.
++ Collaborate across Docs, Sheets, and Slides using comments and version history.
++ Build a Google Form and inspect its response destination.
+> Shared folder structure|Use clear folder and file names. Understand inherited access when a file is inside a shared folder.|Give the least access needed. Check the share link as the intended user where possible.|A trainer can edit submissions. A reviewer gets view or comment access as required.
+> Real-time collaboration|Use Docs for text, Sheets for data, and Slides for presentations. Assign a comment to the right person and resolve it after review.|Use version history to investigate changes or restore an earlier version when appropriate.|A partner suggests a headline edit. The owner accepts it and records a named milestone.
+> Form structure|Choose field types that fit the data and make a question required only when necessary.|Explain what is collected and use validation and branching when they help the task.|A training feedback form asks session, usefulness rating, and an optional suggestion.
+> Inspect responses|Preview the form, enter two fictional responses, and inspect the form summary and linked sheet where configured.|Keep the response destination restricted. Check that a respondent cannot see more data than intended.|Responses show 4 and 5 on a five-point rating and no private identifiers.
+> Share and hand off|Document the folder owner, link permissions, naming rules, and backup or export path.|Review access after work finishes and remove obsolete invitations if authorized.|Transfer the read-only project link and a short note about who maintains the form.
+$ Build a shared office workspace|A fictional course team needs a brief, dataset, presentation, and feedback form.|Submit a folder map, role matrix, one reviewed artifact, and two test response results.
+- Create a Drive folder with a Doc, Sheet, and Slides file.
+- Assign restricted viewer and editor access to approved classroom accounts or document the roles with a mockup.
+- Create a short form and test it with two fictional responses. Inspect the response destination.
+- Add one actionable comment, verify version history, and hand off a view link.
+% Prepare two practice accounts or use screenshots of the share dialog and a form preview.|Demonstrate viewer, commenter, and editor distinctions. Check the form and linked sheet separately.|Two test responses appear, and the response sheet has restricted access.|Folder and roles 4, form and tests 4, collaboration 2.|Add a data validation rule to the form and test an invalid input.
+& Practice assigning a clear task in a comment and resolving it only after the requested change is checked.
+^ drive,forms,slides
+? Which role fits someone who should suggest changes without directly editing?|Commenter|Editor|Owner|Public administrator|Commenters can give feedback while editing remains controlled.
+? What helps trace a changed paragraph?|Version history|The file's icon|A blank row|A downloaded slide background|History shows versions and changes over time.
+? What should you use to test a form?|Fictional responses entered through the respondent view|Real private data from another class|Only a screenshot of the title|The dashboard color|Practice inputs test the user path safely.
+? Which item needs separate privacy review?|The linked response spreadsheet|Only the form title|Only the logo image|Only the row count|Responses may be more sensitive than the public form.
+? Which tool fits tabular collaboration?|Google Sheets|Only Google Slides|A blank image|File Explorer alone|Sheets supports collaborative tabular data.
+! The public feedback form works, but its linked response sheet is publicly viewable. What should change?|Restrict response-sheet access while preserving intended form access.|Make the response link easier to discover.|Publish every response in a slide.|Delete the form title.|Form access and response access need separate settings.
+# Digital careers, freelancing & final project|11–12|Package office skills into a practical portfolio and present it professionally.
++ Explain beginner Fiverr and Upwork workflows and draft a mock service.
++ Write a tailored proposal with price assumptions and client inputs.
++ Deliver a complete office project and a three-minute presentation.
+> Skills and services|Connect Word formatting, Excel cleanup, slide design, and cloud organization to concrete client needs.|Describe skills with evidence from your own practice files. Label fictional projects clearly.|Offer a one-page report and an editable attendance workbook with clear scope.
+> Profile and packages|Choose a professional profile headline, clear sample, and a service package with deliverable format, turnaround, and revisions.|Estimate effort and explain what the buyer supplies. Keep communication on approved channels.|A basic package formats a three-page document and includes one revision.
+> Proposal and pricing|Start with the client's stated problem, explain your approach, and ask one question about inputs or acceptance.|Price by estimated effort, scope, complexity, and revisions. Agree changes before expanding work.|“I can organize the roster, add status formulas, and return an XLSX and a PDF summary in two days.”
+> Assemble final evidence|Prepare an editable document, validated workbook, short deck, and restricted share folder.|Include a README or short handoff note with file names, sources, access, and what was tested.|The reviewer can verify the reported total directly in the workbook.
+> Present and handle questions|Use three minutes to explain problem, process, evidence, and next action. Invite feedback from a guest or peer.|Show one working formula and one limitation. Record feedback and plan one improvement.|Demonstrate the threshold changing from 8 to 9 and explain why the summary updates.
+$ Office portfolio and client pitch|A fictional training center needs an attendance report and a short handoff presentation.|Submit a CV, mock profile and proposal, DOCX or PDF report, XLSX, slides, and approved share or export.
+- Choose two skills for a mock profile and scope a beginner service with a price assumption.
+- Finalize the report, workbook, and slide deck with consistent data.
+- Write a handoff note and check share permissions or exports.
+- Present for three minutes, answer questions, and make one documented revision.
+% Invite a practitioner or peer reviewer if available. Prepare a sample client brief and scoring sheet.|Ask the learner to demonstrate an actual formula and show the exported artifact.|The totals agree across documents. The proposal identifies scope, timing, revision, and client input.|Office artifacts 5, proposal and handoff 3, presentation and revision 2.|Turn the completed work into a concise portfolio case with one measurable improvement.
+& Role-play a client change request. Confirm the revised scope and date in a written recap.
+^ mstraining,upwork,fiverr
+? What makes a beginner service clear?|Specified deliverable, scope, time, and revisions|Unlimited work with no agreement|Only a nickname|A guarantee of all future results|Clear scope gives the buyer a concrete expectation.
+? What should a handoff note include?|File names, formats, access, and verification|Private passwords|Only a picture|A promise to explain later|A handoff should let the recipient use and verify the work.
+? How should a portfolio label practice work?|As practice or fictional work|As a paid client project|As a verified sales record|As an official employer reference|Accurate labels preserve credibility.
+? What should a client proposal start with?|The client's problem or desired outcome|Every unrelated skill|An unsupported income claim|A random price with no scope|An outcome-focused opening shows the brief was understood.
+? What evidence best verifies a spreadsheet result?|Source cells and a working formula that produces it|A screenshot of the app icon|A slide theme|A file renamed Final|A calculation can be checked against the inputs.
+! Your PDF reports 35 sessions and the workbook totals 33. What should happen before presenting?|Trace the source, correct the mismatch, and verify both outputs.|Hide the workbook.|Change all numbers at random.|Present both numbers as confirmed.|Cross-checking evidence prevents inconsistent handoffs.

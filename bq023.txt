@@ -1,0 +1,195 @@
+@ Agentic AI|Build and evaluate controlled AI agents, tool workflows, and retrieval systems.|Deliver a tested agent prototype with tool contracts, evidence, and an approval path.|agent
+# Agentic AI foundations & Python setup|1–2|Recognize when a workflow needs an agent and write a small Python automation.
++ Define data, model, environment, training, inference, tools, and agent.
++ Compare fixed automation, single agents, and multi-agent systems.
++ Set up Python, Jupyter or VS Code, and Git, then run a small script.
+> From fixed rules to agents|A fixed workflow follows predefined branches. An agent can select an action or tool within the limits of its environment.|Models learn patterns during training. At inference, an agent uses a model, state, and available tools to pursue a bounded task.|A fixed intake form routes known categories. An agent may decide whether to look up guidance or ask a follow-up.
+> Tools and local use cases|A tool has a defined capability and input contract. Permissions and stop rules limit the action it can take.|Compare examples from LangChain and CrewAI. Examine a Pakistan-relevant use case and substantiate any company claims with sources.|A fictional Balakot training center needs an assistant that retrieves a course schedule and flags uncertain cases.
+> Set up the workspace|Install or select Python 3, create a project folder and virtual environment, and choose Jupyter or VS Code. Confirm the interpreter runs.|Track code and a README in Git. Keep API keys and virtual environment files out of commits.|Run `python --version`, then save an initial commit describing the script.
+> Variables and branches|Use strings for labels, numbers for counts, and booleans for decisions. Operators compare or calculate values.|Input arrives as text in basic console scripts. Normalize it and return a defined result for an unknown value.|An intake script prints “lookup” for schedule and “review” for an unsupported request.
+: topic = input("Topic: ").strip().lower()
+: if topic in {"schedule", "location"}:
+:     print("lookup")
+: else:
+:     print("review")
+> Loop and verify|A loop processes each incoming item. Record input, branch, output, and expected result for a small test set.|Separate what a deterministic script can do from decisions that require language understanding.|Process schedule, location, and refund. The first two route to lookup and the third to review.
+$ Build a simple intake router|A fictional center receives messages about schedule, location, or other topics.|Submit a script, README with run instructions, test table, and a sourced one-page use-case note.
+- Confirm your interpreter and start a Git repository or notebook with a run guide.
+- Build a loop that processes three or more topic strings and routes known topics.
+- Test uppercase, whitespace, unknown, and blank input.
+- Compare the script with an agent design and document where a model could help.
+% Prepare Python, a terminal or notebook, and a printed trace table for learners without access.|Trace a case before running it. Draw the line between rules, model decisions, and permissions.|SCHEDULE with spaces routes to lookup. Unknown and blank inputs go to review.|Environment and tests 3, working routing 4, accurate AI comparison 3.|Compare one documented local use case and one global use case. Identify the evidence for agent behavior.
+^ python,gitbook,jupyter,langgraph
+? What can an agent do within an approved environment?|Choose an action or tool based on the situation|Grant itself arbitrary access|Guarantee every response is correct|Operate without rules or limits|Agents select actions within configured capabilities and boundaries.
+? What does strip() remove by default?|Leading and trailing whitespace|All internal letters|The entire file|The first Git commit|strip cleans surrounding whitespace.
+? What should stay out of Git?|API keys and credentials|Run instructions|Source code|A safe example data file|Secrets should not be committed to source control.
+? What is inference?|Using a trained model to produce a result|Always training from scratch|Erasing a dataset|Changing the website domain|Inference runs the model on an input.
+? Which case fits a fixed rule well?|Route an exact schedule label to lookup.|Resolve every ambiguous request automatically.|Approve sensitive actions alone.|Invent missing records.|An explicit mapping can be implemented deterministically.
+! A workflow has two known labels and a safe default. Which starting design is easiest to verify?|A small deterministic router with tests for both labels and the default|An unrestricted multi-agent process|An agent with every available external tool|A model that retrains on each request|A fixed decision rule is sufficient and testable for the task.
+# Python logic, files & agent task objects|3–4|Build reusable Python code and manage queued tasks with simple data structures.
++ Use functions, modules, loops, and comprehensions to process records.
++ Choose lists, tuples, dictionaries, and sets for distinct tasks.
++ Read and write files and define a class with clear methods.
+> Logic and reusable functions|Use if and elif to choose paths and loops for repeated work. Comprehensions can express simple filtering clearly.|A function should take explicit inputs and return a result. Import a module to reuse named behavior.|Make a function normalize a task's topic and test it independently.
+> Select a data structure|A list is an ordered collection. A tuple is an immutable sequence. A dictionary maps keys to values. A set supports unique membership.|Choose by behavior and preserve important ordering when deduplicating.|Use a list for the queue, dictionaries for records, and a set for processed IDs.
+> Load and save records|Read JSON or CSV through standard libraries. Use a context manager, UTF-8 where appropriate, and checks for required fields.|Handle missing files, malformed records, and repeated IDs. Record rejected inputs with a reason.|Load three tasks and send malformed records to a separate report.
+> Classes and behavior|A class combines state and methods. Objects are instances. Use inheritance when a specialized type can fulfill the same contract.|Start with a clear task model. Keep the authorization decision separate from data representation.|A Task object stores an identifier and status, and a method changes state after validation.
+: class Task:
+:     def __init__(self, task_id):
+:         self.task_id = task_id
+:         self.status = "queued"
+:     def start(self):
+:         if self.status == "queued":
+:             self.status = "running"
+> Test state and errors|Test ordinary, boundary, invalid, and duplicate cases. Use clear messages and define what data remains after failure.|Keep the input file separate from generated output and record outcomes for each processed task.|A duplicate task ID is reported while the first valid record remains in the queue.
+$ Implement a task queue|Read a small dataset of fictional tasks with two valid rows, one duplicate ID, and one missing topic.|Submit a module, task class, output JSON or CSV, and four tests.
+- Define the input schema and a function to normalize topics.
+- Load the practice file and validate required fields.
+- Track unique IDs, create task objects, and write outputs and rejection reasons separately.
+- Run success, duplicate, missing-field, and malformed-file tests.
+% Prepare a small JSON file and a malformed copy. Show a trace of the task state.|Demonstrate a pure normalization function before introducing a class. Compare a list and set for membership.|Two valid tasks are retained. A duplicate and missing topic are recorded as rejections.|Functions and data structures 4, class and file handling 3, tests 3.|Add a specialist task type or a new method and document why its contract fits.
+^ python,pythonjson
+? What data structure maps named fields to values?|Dictionary|Integer|Boolean|Comment|Dictionaries pair keys with values.
+? Which helps test whether an ID has already appeared?|Set|Only a page title|A chart image|A tuple containing unrelated values|Sets efficiently represent membership and uniqueness.
+? What does a function return?|A result available to its caller|A guaranteed file edit|A new database by default|An unrelated browser alert|return passes a value back to calling code.
+? What is an object?|An instance of a class|Only a source file|A command prompt|A missing value|An object has state and behavior described by its class.
+? Why use with open(...) for a file?|It closes the file at the end of the block.|It guarantees valid JSON.|It deletes every error.|It automatically commits the file.|A context manager handles resource cleanup.
+! One file contains a malformed task among valid tasks. Which design best preserves useful results?|Validate each record and log the rejected row with its reason.|Silently treat every record as valid.|Overwrite the source immediately.|Discard all evidence of invalid rows.|Per-record validation supports predictable handling and preserves valid data.
+# NumPy, Pandas, visualization & machine learning|5–6|Prepare a task dataset and train a baseline model to route requests.
++ Use arrays and DataFrames to clean and summarize tabular data.
++ Distinguish supervised and unsupervised learning, regression, and classification.
++ Train a scikit-learn baseline and interpret accuracy, precision, and recall.
+> Arrays and operations|NumPy arrays represent typed numerical data. Vectorized operations can compute across values. Shape identifies dimensions.|Use counts, means, and simple comparisons to inspect numeric inputs.|Response times [2, 5, 3] minutes average 10 ÷ 3 minutes.
+> Clean and visualize tabular data|Pandas loads and selects columns, handles missing values, and removes appropriate duplicates. Document choices before changing values.|Use Matplotlib or Seaborn to compare category counts or response distributions. Give figures units and labels.|Keep rows with valid category labels, flag unknowns, and chart category balance.
+> Define the ML task|Supervised learning uses target labels. Unsupervised learning can discover groups without target labels. Classification predicts a category and regression a number.|Choose features available at prediction time and avoid leaking later outcomes.|Predict the support queue from a request. Estimating time to resolution is regression.
+> Train a baseline|Hold out evaluation records before fitting a model. Use a simple baseline and compare a classifier with it.|Fit preprocessing only on training data. A scikit-learn Pipeline can keep preprocessing and estimator together.|Compare a most-common-category baseline with logistic regression on suitable features.
+> Read evaluation metrics|Accuracy is overall correct divided by all evaluated examples. Precision is TP ÷ (TP + FP) and recall is TP ÷ (TP + FN).|Choose a metric that fits the mistake that matters. Inspect errors by category and compare baseline performance.|With TP=3, FP=1, FN=2, precision is 75% and recall is 60%.
+$ Baseline request routing|Use a trainer-provided fictional dataset with request size, channel, assigned category, and missing or duplicate rows.|Submit a cleaned dataset, two charts, baseline notebook, and an evaluation note.
+- Inspect columns and document missing-value and duplicate decisions.
+- Plot category counts and one numeric distribution.
+- Split records into training and test sets, then fit a simple baseline and classifier.
+- Compare results using a confusion matrix and accuracy, precision, and recall where defined.
+% Prepare a labeled fictional dataset with enough rows for a split, plus a precomputed confusion matrix.|Explain that splitting before fitting protects the holdout. Discuss when precision and recall matter.|TP=3, FP=1, FN=2 gives precision 75% and recall 60%. Report minority-class behavior.|Cleaning and plots 4, baseline and split 3, evaluation 3.|Add a boundary test or document one feature that would leak the answer.
+& Practice explaining an evaluation result with numerator, denominator, and practical impact.
+^ numpy,pandas,matplotlib,sklearn
+? Which task is classification?|Predict the destination support queue.|Estimate response time in minutes.|Calculate a known count.|Sort the filenames.|Queue is a category label.
+? When should a holdout set be separated?|Before model fitting and learned preprocessing|After choosing the best scores from it repeatedly|Only after publishing|When all labels are removed|The holdout estimates performance on unseen examples.
+? What is precision for TP=3 and FP=1?|75%|60%|25%|100%|Precision is 3 ÷ (3 + 1).
+? What is recall for TP=3 and FN=2?|60%|75%|40%|100%|Recall is 3 ÷ (3 + 2).
+? What should you do with an unverified missing label?|Flag or handle it using a documented rule.|Replace it with every possible label.|Assume it is the most successful outcome.|Erase the processing history.|Documented treatment makes the dataset and results interpretable.
+! A model input includes the queue assigned by a staff member after the request was resolved. What is the problem?|The feature can leak the answer and may be unavailable at prediction time.|It only changes chart colors.|It makes the dataset too short to open.|It always improves valid real-world estimates.|Features should match data available when predictions are made.
+# NLP and intent detection for agents|7|Convert text to features and evaluate a simple intent router.
++ Explain tokenization, stop words, stemming, and lemmatization.
++ Compare bag-of-words and TF-IDF feature representations.
++ Test an intent classifier and route uncertain cases for review.
+> Tokenization and normalization|A tokenizer splits text into units. Lowercasing can help a simple baseline but can remove distinctions.|Stop words are common words. Removing them blindly can erase important meaning, such as negation.|“I do not need a refund” contains refund but signals a different intent.
+> Stemming and lemmatization|Stemming uses rules to reduce variants. Lemmatization aims at a dictionary form using language knowledge.|Check spelling, Roman Urdu, and mixed-language requests. Decide which normalization improves your dataset.|“classes” may map to “class.” Roman Urdu phrases may need their own examples and labels.
+> Extract features|Bag-of-words counts tokens without preserving their order. TF-IDF downweights common terms relative to rarer useful terms.|Fit vectorizers on training data and test generalization using separate messages.|A term like timetable can help distinguish schedule questions from refund requests.
+> Define intent labels|Write categories, examples, and ambiguity rules before labeling. Use a review path for mixed or uncertain requests.|Compare a keyword baseline with a trained classifier using held-out messages.|“I need timings and fee details” has more than one request and may need clarification.
+> Test real language variation|Evaluate paraphrases, misspellings, negatives, and mixed languages. Inspect errors rather than trusting aggregate accuracy alone.|Record which errors could lead to a harmful action. Keep intent prediction separate from execution permission.|A “refund” prediction never authorizes a payment operation by itself.
+$ Build an intent baseline|Use synthetic enrollment messages labeled schedule, location, or review.|Submit a test set, model or rule notebook, and an error review for five difficult phrases.
+- Write label definitions and collect varied fictional examples.
+- Compare a keyword baseline with a TF-IDF classifier or inspect the provided classifier output.
+- Hold out paraphrases, negation, and mixed-language cases.
+- Document errors and set a human review path for unclear or mixed requests.
+% Prepare labeled examples in English and Roman Urdu, including deliberately ambiguous prompts.|Show how removing “not” changes meaning. Ask pairs to agree on label policy before comparing results.|A good router explains uncertainty and sends mixed or low-confidence cases for review.|Labels and test set 3, features and baseline 4, error review 3.|Add two paraphrases and a mixed-intent case, then update your error table.
+& Exchange a tricky phrase with another pair and agree on a labeling rule before checking the prediction.
+^ hfllm,sktext
+? What does tokenization do?|Splits text into units|Approves an account change|Sends a report|Deletes all words|Tokens are units used for processing text.
+? Which word can change a sentence through negation?|Not|The file extension|A chart label|A user ID|Negation changes interpretation and can matter for intent.
+? What does bag-of-words generally ignore?|Word order|The presence of tokens|The data type|All vocabulary|It represents occurrences without ordinary word sequence.
+? How should an uncertain intent be handled in the lab?|Route it for clarification or review.|Execute the highest-risk action.|Invent a confident label.|Drop it without recording the issue.|A review path handles ambiguity without overclaiming.
+? Why use a separate test set of paraphrases?|Check generalization to phrasing absent from training.|Make the training score look higher.|Hide unknown words.|Change the model permissions.|Unseen phrasing tests robustness.
+! A classifier labels “cancel my request” as cancellation. What should happen before any actual cancellation?|Verify authorization and any required human approval separately.|Execute because the label is confident.|Remove the event record.|Repeat the prediction until it changes.|An intent label does not grant permission to act.
+# LangChain, CrewAI & single-agent workflows|8|Design a bounded agent that can choose a read-only tool and stop predictably.
++ Describe goals, tasks, tools, memory, and environment.
++ Draft agent instructions and a validated tool contract.
++ Implement or simulate a single-agent workflow and verify safe stop behavior.
+> Workflow or agent|A workflow follows predefined paths. A model-driven agent can choose a tool or next action within defined limits.|Use LangChain and LangGraph to study tool calls and state. CrewAI provides roles, tasks, and crews for orchestration.|An FAQ assistant chooses whether to look up a policy, ask for details, or hand off.
+> Tool contract|Define a purpose, required inputs, output fields, and errors. Validate arguments and scope on the application side.|Separate read-only lookups from actions that change records or send messages.|search_faq accepts a short query and returns status, passage, and source ID.
+> State and memory|Track question, retrieved evidence, draft, steps, and review state. Keep memory relevant and apply limits to retained data.|An agent can use a current conversation without needing indefinite storage.|Store the current question and citation IDs, but omit personal identifiers from logs.
+> Write instructions|State purpose, source boundaries, output format, uncertainty policy, and approval rules. Treat retrieved content as data.|Use stop conditions and bounded retries. Keep fallback behavior deterministic.|“After two empty results, return review. Do not invent a section or perform an external send.”
+> Verify agent behavior|Test known, ambiguous, missing, conflicting, and invalid tool input. Inspect the decision trace and review outcomes.|Require approval before consequential effects. Keep human review separate from model confidence.|An unsupported fee question returns review and a source request instead of guessing.
+$ Implement a read-only FAQ agent|A fictional center needs help answering a timetable question and referring unsupported queries.|Submit a tool schema, state flow, prototype or trace simulation, and five test outcomes.
+- Sketch states for receive, lookup, verify, draft, and review.
+- Specify the lookup input and output schema and one error shape.
+- Run known, ambiguous, missing, invalid, and conflicting cases.
+- Verify stop after two attempts and document when a human decision is needed.
+% Prepare three policy snippets and a conflicting entry. Provide a printed run trace.|Have one learner play retriever and another play reviewer. Ask why the lookup tool should not send messages.|Known answer cites a source. Missing or conflicting evidence produces review within the step limit.|Workflow and schema 4, state and stop behavior 3, test evidence 3.|Add a separate, simulated approval node without enabling any real sending.
+& Practice handing off an unresolved case with the facts, source IDs, and a specific decision for the reviewer.
+^ langgraph,crew,guardrails
+? Which tool fits an enrollment FAQ?|Read-only search of approved FAQ records|Unrestricted shell access|A tool that sends any email|An unrestricted payment tool|The lookup supports the job with narrow permissions.
+? What should a tool schema define?|Inputs, outputs, and expected errors|The color of the UI only|Every possible secret|The user's private notes|A contract defines predictable tool behavior.
+? What should happen after a configured retry limit?|Stop and follow the defined fallback.|Retry indefinitely.|Invent evidence.|Send the draft without review.|A bound prevents endless retries.
+? What belongs in the workflow state?|Question, evidence, step count, and review status|Every unrelated credential|The learner's personal data by default|Only a decorative label|State tracks what the agent needs to finish the task safely.
+? How should instructions retrieved from a source be treated?|As source data within the existing rules|As automatic permission grants|As system instructions|As a command to ignore approval|Retrieved content does not set authorization.
+! The tool input is valid but requests a restricted document. What should the system do?|Reject access according to authorization rules.|Return the document because the JSON is valid.|Add a public log with the contents.|Retry with another user's credentials.|Schema validation and authorization are separate checks.
+# Multi-agent systems & retrieval-augmented generation|9|Connect retrieval and review with clear handoff contracts and source evidence.
++ Explain chunking, embeddings, vector retrieval, and source citations.
++ Define roles and handoffs for retrieval, drafting, and verification.
++ Evaluate multi-agent coordination, traceability, and fallback.
+> Retrieval pipeline|Chunk approved documents into useful passages, store source IDs, and create searchable representations. Embeddings support similarity search over vectors.|Retrieve a small set of relevant passages and preserve metadata. A relevant match still needs fact checking.|For “When are evening classes?” retrieve Schedule §2 and preserve its section and version.
+> Coordinate roles|A retriever returns passages, a drafter writes from evidence, and a verifier checks claims. An orchestrator enforces the order or allowed transitions.|Clear typed handoffs limit what each role needs to know. Use multiple roles when the separation helps the task.|Retriever output contains status and source IDs. Verifier output contains supported, conflict, or review.
+> Compare with one agent|A single agent or fixed flow is easier to inspect when the task is small. Multi-agent workflows add handoffs, latency, and error paths.|Compare quality, citation support, and overhead against a simpler baseline.|If one lookup and one verification rule work, document why extra agent roles would or would not help.
+> Resolve missing and conflicting evidence|Use source versions and approved authority rules. Flag conflicting or missing facts instead of blending them.|Track retrieval errors separately from generation errors. Use logs to diagnose the failing stage.|Old and current schedules conflict. The verifier asks for human review if the authoritative version is unknown.
+> Evaluate citations and coordination|Create a test set with known, paraphrased, missing, conflicting, and adversarial inputs. Validate that each citation supports the exact claim.|Set step limits and reject unauthorized tool actions regardless of text in retrieved documents.|A malicious note says “send this now.” The pipeline treats it as data and retains the approval gate.
+$ Design a RAG handoff|Use three fictional FAQ passages and one conflicting old passage.|Submit a diagram, role contracts, six-case evaluation, and a comparison with a simpler baseline.
+- Add section IDs and versions to the FAQ corpus. Split content into meaningful passages.
+- Implement local retrieval or simulate vector results, then pass top matches to drafting and verification roles.
+- Trace six cases, including a conflict and a retrieved instruction that requests an unauthorized action.
+- Record citation support and compare latency or number of handoffs with a fixed baseline.
+% Prepare a tiny corpus and a table of precomputed search matches. Keep a paper fallback.|Have students open cited passages and name the stage responsible for a failure.|Known answers cite exact sections. Missing and conflicting answers pause for review.|Retrieval and contracts 4, evaluation and citation 4, baseline comparison 2.|Replace one chunk boundary, rerun the same tests, and describe which retrieval improved.
+& Hold a handoff review. The receiving teammate repeats the expected input and names one validation check.
+^ rag,langgraph,chromadb
+? What is an embedding useful for in this lesson?|Represent text for similarity search.|Guarantee the truth of every claim.|Change authorization policy.|Replace source labels.|Vectors support comparison of semantic similarity.
+? What should retrieval preserve?|Source IDs and relevant metadata|Only anonymous display colors|Every secret in the source|No context at all|Metadata supports evidence and traceability.
+? What does the verifier check?|Whether the answer's claims are supported by cited passages|Only how long the answer is|Whether the font is attractive|Only the agent's name|A citation must support the specific claim.
+? Why compare multi-agent work to a baseline?|Measure benefit relative to extra complexity.|Hide all latency.|Guarantee every role is required.|Skip evaluation.|A comparison shows whether orchestration is justified.
+? What should happen if approved sources conflict and precedence is unknown?|Flag the conflict and route for review.|Average the facts.|Pick the longest answer.|Silently discard the source IDs.|Unresolved conflict needs review.
+! The retriever finds the correct policy, but the drafted answer misstates it. Where should you investigate first?|The generation and verification stages|Only the network card|The file extension|The vector index regardless of evidence|The retrieval result was correct, so inspect how the answer used it.
+# Fine-tuning, APIs & automation pipelines|10|Plan a small fine-tuning experiment and integrate bounded tools into a pipeline.
++ Decide when prompting, retrieval, or fine-tuning fits the observed issue.
++ Prepare training and held-out examples and define evaluation criteria.
++ Design API integration with safe validation, retries, and audit traces.
+> Choose an intervention|Prompting changes instructions. Retrieval supplies current evidence. Fine-tuning adjusts model parameters or adapters using examples.|Use a baseline and an observed failure before selecting an intervention. Consider cost, data rights, and maintenance.|Use RAG to update a timetable. Consider tuning a small model for a stable structured-output behavior after testing prompts.
+> Prepare fine-tuning data|Use consistent input-output examples. Separate training, validation, and test records by source or duplicate groups.|Remove secrets and unauthorized data. Check license and hardware requirements for GPT-2, Llama-family, or other small models.|Use synthetic requests paired with expected tool-choice JSON and hold out near-duplicate groups.
+> Run a small experiment|Compare a baseline prompt with a small supervised fine-tuning or adapter experiment in a trainer-controlled environment.|Where compute is limited, inspect instructor-provided training logs and score held-out outputs against the same rubric.|Compare valid JSON, routing correctness, and safe handling of unsupported actions.
+> Build a bounded API connection|Define endpoint, inputs, timeouts, permissions, error responses, and rate limits. Keep credentials outside source files.|Retry only when appropriate. For write operations, design for idempotency and approval to avoid duplicate effects.|A read-only timetable lookup returns a typed result or a timeout. A booking write would need a separate authorized path.
+> Monitor and refine|Track evaluation cases, model or adapter version, prompts, tool calls, and failure categories. Change one variable at a time.|Keep a rollback target and recheck regressions before handing off a new configuration.|If invalid JSON drops but unapproved action requests rise, the candidate needs further work.
+$ Plan and evaluate a tuning run|An agent returns inconsistent structured outputs for fictional requests.|Submit a dataset card, experiment notebook or reviewed run logs, evaluation table, and API contract.
+- Write six clean input-output examples and hold out three separate tests.
+- Run the baseline prompt. If approved compute exists, use a small trainer-provided tuning notebook or compare provided tuned outputs.
+- Score schema validity, correct tool choice, and approval behavior.
+- Define one read-only API call with timeout, validation, and fallback.
+% Prepare synthetic examples, baseline outputs, and a tiny notebook or recorded run. Check model license and runtime.|Discuss why current facts belong in retrieval. Ask whether the experiment tests unseen examples.|The selected approach is supported by baseline evidence and one tested limitation. No credentials appear in source.|Data and evaluation 4, intervention decision 3, API and error design 3.|Add one duplicate-case guard and retest the same held-out inputs.
+& Present a short experiment decision with expected benefit, cost, and remaining risk.
+^ hftrain,hfpeft,agenttools
+? Which intervention supplies current source material at inference?|Retrieval|Changing the theme|Training on a private password|A longer filename|Retrieval supplies current context when a request is handled.
+? What should be kept separate from training examples?|Held-out test cases|Documentation of the task|Allowed model settings|The entire baseline|Held-out cases give a better estimate of generalization.
+? What does fine-tuning change?|Model parameters or trainable adapters|The source file extension only|The browser bookmark|The account's authorization policy|Training examples adjust learned behavior.
+? Why add a timeout to an API call?|Avoid indefinite waiting and trigger a defined fallback.|Guarantee the server never fails.|Remove all logging.|Give the model extra permissions.|Timeouts bound waiting and support recovery.
+? What helps avoid duplicate write effects during retries?|An idempotency design|Unlimited retries with no state|A duplicate email address|A more complex prompt alone|Idempotency can make repeated requests produce one intended effect.
+! Tuning improves valid JSON but makes approval behavior worse. What should you do?|Treat the approval regression as a release blocker and investigate.|Release because JSON validity improved.|Remove the approval tests.|Add unrelated metrics until the result looks positive.|A candidate must satisfy required behavior across the evaluation set.
+# Agent capstone, portfolio & career preparation|11–12|Deliver a usable prototype and explain its evidence, boundaries, and maintenance plan.
++ Scope an agent that helps with one real or fictional workflow.
++ Test tool choices, source grounding, approval, and recovery.
++ Present a documented repository and a scoped proposal or interview response.
+> Scope the prototype|Choose a bounded problem, approved data, intended users, and one measurable success criterion.|Start with read-only retrieval or an isolated simulation. Record what the system can access and who owns decisions.|Build a campus FAQ assistant that answers supported questions and hands off uncertainty.
+> Build and document|Create a repository with setup, architecture, tool schema, data notes, test instructions, and sample outputs.|Keep environment variables outside committed files. Describe how to run a local demo with synthetic data.|A reviewer can run a sample request without using your personal key.
+> Test failures and improve|Cover expected, ambiguous, missing, conflicting, invalid, injected, and denied cases. Record what happened at each stage.|Fix one observed issue and rerun related checks and core happy paths.|A suspicious instruction appears in a retrieved record. The system still waits for authorized approval.
+> Prepare a professional offer|Describe the audience, scoped outcome, technical approach, timeline, ownership, and evaluation evidence.|Draft a profile or proposal for Upwork, Fiverr, or LinkedIn using claims you can support.|Offer a read-only FAQ prototype and evaluation report with a clear set of approved source documents.
+> Demonstrate and interview|Show one successful answer and one controlled failure. Explain a tradeoff and the next change you would make.|Invite an AI practitioner where available and record feedback as an issue with a testable acceptance criterion.|Demonstrate a missing fee response that directs the instructor to review without inventing a fact.
+$ Ship a tested agent prototype|Create a local or approved-host demo for workflow support, document retrieval, or assistance.|Submit a repository or approved export, six-case minimum evaluation, one improvement, and a three-minute demo.
+- Write problem, authorized tools and sources, and success criteria.
+- Implement a bounded prototype and document how someone else can run it.
+- Test at least six scenarios, fix one failure, and rerun affected checks.
+- Present the demo and prepare a one-page proposal plus next-month learning goals.
+% Prepare a demo rubric, sample role contract, and three audience questions. Invite a practitioner or peer reviewer if available.|Ask students to show a rejected or uncertain action and its expected trace, then demonstrate recovery.|A reviewer can run the prototype, inspect source IDs, and see that consequential actions require approval.|Prototype and setup 4, evaluation and iteration 4, communication and proposal 2.|Write a portfolio case with one measurable result and a transparent limit.
+& Run a mock client interview and explain an incident or failure using context, action, result, and prevention.
+^ langgraph,guardrails,gitbook,upwork
+? What makes an agent demo reproducible?|Documented setup, synthetic data, and test instructions|A recording with no instructions|Only private credentials|An untracked local filename|Reproducible instructions allow another reviewer to run the same flow.
+? Which test checks a consequential action boundary?|Reject or withhold approval and verify no effect occurs.|Rename the sidebar.|Count the slides.|Disable test logging.|The system should respect a denial or missing approval.
+? What should be shown after fixing a failure?|The original failing case passes and key related cases still work.|Only a changed heading.|A deleted issue with no evidence.|A different untested feature.|Retesting demonstrates a verified correction.
+? Which makes a proposal credible?|A clear scope, deliverable, and evaluation evidence|Guaranteed automation with no limits|A request for all production credentials immediately|A fake performance claim|Concrete scope and evidence support client trust.
+? What should a portfolio mention alongside results?|Limitations and how results were measured|Private user data|An invented award|Every hidden configuration secret|Limits help others interpret reported outcomes.
+! A reviewer rejects a proposed send. What evidence should the prototype show?|A recorded rejection with no external send.|A send action from another tool.|A blank trace and a successful send.|A removed approval policy.|A controlled workflow respects the review decision and records the outcome.
